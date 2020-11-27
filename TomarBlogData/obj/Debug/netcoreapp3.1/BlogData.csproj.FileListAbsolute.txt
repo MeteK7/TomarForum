@@ -1,0 +1,9 @@
+C:\Lessons\Multi Layered Architecture\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\BlogData.csprojAssemblyReference.cache
+C:\Lessons\Multi Layered Architecture\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\BlogData.AssemblyInfoInputs.cache
+C:\Lessons\Multi Layered Architecture\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\BlogData.AssemblyInfo.cs
+C:\Lessons\Multi Layered Architecture\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\BlogData.csproj.CoreCompileInputs.cache
+C:\Lessons\Multi Layered Architecture\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.1\BlogData.deps.json
+C:\Lessons\Multi Layered Architecture\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.1\BlogData.dll
+C:\Lessons\Multi Layered Architecture\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.1\BlogData.pdb
+C:\Lessons\Multi Layered Architecture\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\BlogData.dll
+C:\Lessons\Multi Layered Architecture\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\BlogData.pdb
