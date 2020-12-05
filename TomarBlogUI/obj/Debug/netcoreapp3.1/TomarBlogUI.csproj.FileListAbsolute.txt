@@ -895,3 +895,7 @@ C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcorea
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\TomarBlogUI.dll
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\TomarBlogUI.pdb
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\TomarBlogUI.genruntimeconfig.cache
+C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\TomarBlogUI.MvcApplicationPartsAssemblyInfo.cs
+C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Edit.cshtml.g.cs
+C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\bin\Debug\netcoreapp3.1\PagedList.Core.dll
+C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\bin\Debug\netcoreapp3.1\PagedList.Core.Mvc.dll

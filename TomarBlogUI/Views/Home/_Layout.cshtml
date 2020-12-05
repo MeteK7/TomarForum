@@ -29,7 +29,9 @@
     @await Component.InvokeAsync("Header")
 
     <!--Page Body-->
-    @RenderBody()
+    <div class="content">
+        @RenderBody()
+    </div>
 
     <!--Page Footer-->
     @await Component.InvokeAsync("Footer")

@@ -22,14 +22,35 @@ namespace TomarBlogUI.Controllers
 
         public IActionResult Create()
         {
-            return View(new CreateBlogViewModel());
+            return View(new CreateViewModel());
+        }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            var actionResult = await blogBusinessManager.GetEditViewModel(id, User);
+
+            if (actionResult.Result is null)
+                return View(actionResult.Value);
+
+            return actionResult.Result;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(CreateBlogViewModel createBlogViewModel) //You can name this action result as "Create" because it has post attribute so that there won't be a conflict.
+        public async Task<IActionResult> Add(CreateViewModel createViewModel) //You can name this action result as "Create" because it has post attribute so that there won't be a conflict.
         {
-            await blogBusinessManager.CreateBlog(createBlogViewModel, User);
+            await blogBusinessManager.CreateBlog(createViewModel, User);
             return RedirectToAction("Create");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(EditViewModel editViewModel)
+        {
+            var actionResult= await blogBusinessManager.UpdateBlog(editViewModel, User);
+
+            if (actionResult.Result is null)
+                return RedirectToAction("Edit", new { editViewModel.Blog.Id });
+
+            return actionResult.Result;
         }
     }
 }

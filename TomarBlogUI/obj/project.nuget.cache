@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XFvapIRGMaaDeXJq1kRvf57MVTv0vYMQ3l9RgzAd6EaSSHfAejzZhvfUwO2NW3oe7p4GkzMb+E/cd/ZllFlBAg==",
+  "dgSpecHash": "mEJvIKnguU8/ZeziTeIjiZTrZywzgTT8K+ta6OXrYbYUdpC0B9Tw5psnvd1d2rXrRGidH0jCaOGhHmWzFr/GXQ==",
   "success": true,
   "projectFilePath": "C:\\Lessons\\Multi Layered Architecture\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj",
   "expectedPackageFiles": [
@@ -69,6 +69,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
+    "C:\\Users\\MeteK\\.nuget\\packages\\pagedlist.core\\1.17.4\\pagedlist.core.1.17.4.nupkg.sha512",
+    "C:\\Users\\MeteK\\.nuget\\packages\\pagedlist.core.mvc\\3.0.0\\pagedlist.core.mvc.3.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

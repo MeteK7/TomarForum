@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using TomarBlogData.Models;
 
-namespace TomarBlogUI.Models.BlogViewModels
+namespace TomarBlogUI.Models.AdminViewModels
 {
-    public class CreateBlogViewModel
+    public class IndexViewModel
     {
-        public Blog Blog { get; set; }
+        public IEnumerable<Blog> Blogs { get; set; }
     }
 }
