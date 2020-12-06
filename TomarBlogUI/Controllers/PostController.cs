@@ -4,16 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TomarBlogUI.BusinessManagers.Interfaces;
-using TomarBlogUI.Models.BlogViewModels;
+using TomarBlogUI.Models.PostViewModels;
 
 namespace TomarBlogUI.Controllers
 {
-    public class BlogController : Controller
+    public class PostController : Controller
     {
-        private readonly IBlogBusinessManager blogBusinessManager;
-        public BlogController(IBlogBusinessManager blogBusinessManager)
+        private readonly IPostBusinessManager postBusinessManager;
+        public PostController(IPostBusinessManager postBusinessManager)
         {
-            this.blogBusinessManager = blogBusinessManager;
+            this.postBusinessManager = postBusinessManager;
         }
         public IActionResult Index()
         {
@@ -27,7 +27,7 @@ namespace TomarBlogUI.Controllers
 
         public async Task<IActionResult> Edit(int? id)
         {
-            var actionResult = await blogBusinessManager.GetEditViewModel(id, User);
+            var actionResult = await postBusinessManager.GetEditViewModel(id, User);
 
             if (actionResult.Result is null)
                 return View(actionResult.Value);
@@ -38,17 +38,17 @@ namespace TomarBlogUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(CreateViewModel createViewModel) //You can name this action result as "Create" because it has post attribute so that there won't be a conflict.
         {
-            await blogBusinessManager.CreateBlog(createViewModel, User);
+            await postBusinessManager.CreatePost(createViewModel, User);
             return RedirectToAction("Create");
         }
 
         [HttpPost]
         public async Task<IActionResult> Update(EditViewModel editViewModel)
         {
-            var actionResult= await blogBusinessManager.UpdateBlog(editViewModel, User);
+            var actionResult= await postBusinessManager.UpdatePost(editViewModel, User);
 
             if (actionResult.Result is null)
-                return RedirectToAction("Edit", new { editViewModel.Blog.Id });
+                return RedirectToAction("Edit", new { editViewModel.Post.Id });
 
             return actionResult.Result;
         }

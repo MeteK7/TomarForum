@@ -10,8 +10,8 @@ using TomarBlogData;
 namespace TomarBlogData.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201127125030_Adding Blog and Post to database.")]
-    partial class AddingBlogandPosttodatabase
+    [Migration("20201206185644_Initialize")]
+    partial class Initialize
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -227,7 +227,40 @@ namespace TomarBlogData.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("TomarBlogData.Models.Blog", b =>
+            modelBuilder.Entity("TomarBlogData.Models.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AuthorId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("ParentId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("PostId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("ParentId");
+
+                    b.HasIndex("PostId");
+
+                    b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("TomarBlogData.Models.Post", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -255,44 +288,14 @@ namespace TomarBlogData.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("UpdatedOn")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ApproverId");
 
                     b.HasIndex("CreatorId");
-
-                    b.ToTable("Blogs");
-                });
-
-            modelBuilder.Entity("TomarBlogData.Models.Post", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int?>("BlogId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Content")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("ParentId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PoserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BlogId");
-
-                    b.HasIndex("ParentId");
-
-                    b.HasIndex("PoserId");
 
                     b.ToTable("Posts");
                 });
@@ -348,7 +351,22 @@ namespace TomarBlogData.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("TomarBlogData.Models.Blog", b =>
+            modelBuilder.Entity("TomarBlogData.Models.Comment", b =>
+                {
+                    b.HasOne("TomarBlogData.Models.ApplicationUser", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId");
+
+                    b.HasOne("TomarBlogData.Models.Comment", "Parent")
+                        .WithMany()
+                        .HasForeignKey("ParentId");
+
+                    b.HasOne("TomarBlogData.Models.Post", "Post")
+                        .WithMany("Comments")
+                        .HasForeignKey("PostId");
+                });
+
+            modelBuilder.Entity("TomarBlogData.Models.Post", b =>
                 {
                     b.HasOne("TomarBlogData.Models.ApplicationUser", "Approver")
                         .WithMany()
@@ -357,21 +375,6 @@ namespace TomarBlogData.Migrations
                     b.HasOne("TomarBlogData.Models.ApplicationUser", "Creator")
                         .WithMany()
                         .HasForeignKey("CreatorId");
-                });
-
-            modelBuilder.Entity("TomarBlogData.Models.Post", b =>
-                {
-                    b.HasOne("TomarBlogData.Models.Blog", "Blog")
-                        .WithMany("Posts")
-                        .HasForeignKey("BlogId");
-
-                    b.HasOne("TomarBlogData.Models.Post", "Parent")
-                        .WithMany()
-                        .HasForeignKey("ParentId");
-
-                    b.HasOne("TomarBlogData.Models.ApplicationUser", "Poser")
-                        .WithMany()
-                        .HasForeignKey("PoserId");
                 });
 #pragma warning restore 612, 618
         }

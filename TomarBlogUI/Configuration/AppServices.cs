@@ -16,6 +16,7 @@ using TomarBlogService.Interfaces;
 using TomarBlogUI.Authorization;
 using TomarBlogUI.BusinessManagers;
 using TomarBlogUI.BusinessManagers.Interfaces;
+using TomarpostService;
 
 namespace TomarBlogUI.Configuration
 {
@@ -36,15 +37,15 @@ namespace TomarBlogUI.Configuration
 
         public static void AddCustomServices(this IServiceCollection serviceCollection)
         {
-            serviceCollection.AddScoped<IBlogBusinessManager, BlogBusinessManager>();
+            serviceCollection.AddScoped<IPostBusinessManager, PostBusinessManager>();
             serviceCollection.AddScoped<IAdminBusinessManager, AdminBusinessManager>();
 
-            serviceCollection.AddScoped<IBlogService, BlogService>();
+            serviceCollection.AddScoped<IPostService, PostService>();
         }
 
         public static void AddCustomAuthorization(this IServiceCollection serviceCollection)
         {
-            serviceCollection.AddTransient<IAuthorizationHandler, BlogAuthorizationHandler>();
+            serviceCollection.AddTransient<IAuthorizationHandler, PostAuthorizationHandler>();
         }
     }
 }

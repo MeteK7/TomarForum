@@ -6,12 +6,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using TomarBlogData.Models;
 
-namespace TomarBlogUI.Models.BlogViewModels
+namespace TomarBlogUI.Models.PostViewModels
 {
-    public class EditViewModel
+    public class CreateViewModel
     {
-        [Display(Name = "Header Image")]
-        public IFormFile BlogHeaderImage { get; set; }
-        public Blog Blog { get; set; }
+        [Required, Display(Name ="Header Image")]
+        public IFormFile HeaderImage { get; set; }
+        public Post Post { get; set; }
     }
 }
