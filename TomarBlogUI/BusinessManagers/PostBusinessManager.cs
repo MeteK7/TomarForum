@@ -34,7 +34,7 @@ namespace TomarBlogUI.BusinessManagers
         }
 
         public IndexViewModel GetIndexViewModel(string searchString, int? page) {
-            int pageSize = 20;
+            int pageSize = 20;//Every page, there will be this amount of posts. You can change it to whatever number you want. 
             int pageNumber = page ?? 1;
             var posts = postService.GetPosts(searchString ?? string.Empty)
                 .Where(post=>post.Published);
@@ -46,6 +46,36 @@ namespace TomarBlogUI.BusinessManagers
                 PageNumber=pageNumber
             };
         }
+
+        public async Task<ActionResult<PostViewModel>> GetPostViewModel(int? id, ClaimsPrincipal claimsPrincipal)
+        {
+            if (id is null)
+            {
+                return new BadRequestResult();
+            }
+
+            var postId = id.Value;
+
+            var post = postService.GetPost(postId);
+
+            if (post is null)
+            {
+                return new NotFoundResult();
+            }
+
+            if (!post.Published)
+            {
+                var authorizationResult = await authorizationService.AuthorizeAsync(claimsPrincipal, post, Operations.Read);
+
+                if (!authorizationResult.Succeeded) return DetermineActionResult(claimsPrincipal);
+            }
+
+            return new PostViewModel
+            {
+                Post = post
+            };
+        }
+
         public async Task<Post> CreatePost(CreateViewModel createViewModel, ClaimsPrincipal claimsPrincipal)
         {
             Post post = createViewModel.Post;

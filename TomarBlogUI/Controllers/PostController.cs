@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,7 @@ using TomarBlogUI.Models.PostViewModels;
 
 namespace TomarBlogUI.Controllers
 {
+    [Authorize]
     public class PostController : Controller
     {
         private readonly IPostBusinessManager postBusinessManager;
@@ -15,9 +17,16 @@ namespace TomarBlogUI.Controllers
         {
             this.postBusinessManager = postBusinessManager;
         }
-        public IActionResult Index()
+
+        [Route("Post/{id}"), AllowAnonymous]
+        public async Task<IActionResult> Index(int? id)
         {
-            return View();
+            var actionResult = await postBusinessManager.GetPostViewModel(id, User);
+
+            if (actionResult.Result is null)
+                return View(actionResult.Value);
+
+            return actionResult.Result;
         }
 
         public IActionResult Create()

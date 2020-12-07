@@ -899,3 +899,4 @@ C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcorea
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\Razor\Views\Post\Edit.cshtml.g.cs
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\Razor\Views\Post\Index.cshtml.g.cs
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\Razor\Views\Post\_Layout.cshtml.g.cs
+C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\Razor\Views\Post\_ReadLayout.cshtml.g.cs
