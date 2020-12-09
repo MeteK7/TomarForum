@@ -27,7 +27,7 @@ using TomarBlog.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"98218c9eaf86e9790879b4de9f5e70615e2b7373", @"/Views/Post/Edit.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f91083dc40d9f91c6ef903c6abc509d564fbd79a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ab260d0be4e395ca39594699a8c44e2558f3d63f", @"/Views/_ViewImports.cshtml")]
     public class Views_Post_Edit : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<TomarBlogUI.Models.PostViewModels.EditViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("custom-file-input"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

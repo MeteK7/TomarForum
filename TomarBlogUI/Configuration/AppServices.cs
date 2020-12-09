@@ -38,6 +38,7 @@ namespace TomarBlogUI.Configuration
         public static void AddCustomServices(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddScoped<IPostBusinessManager, PostBusinessManager>();
+            serviceCollection.AddScoped<IHomeBusinessManager, HomeBusinessManager>();
             serviceCollection.AddScoped<IAdminBusinessManager, AdminBusinessManager>();
 
             serviceCollection.AddScoped<IPostService, PostService>();

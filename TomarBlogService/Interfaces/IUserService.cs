@@ -8,6 +8,7 @@ namespace TomarBlogService.Interfaces
 {
     public interface IUserService
     {
+        ApplicationUser Get(string id);
         Task<ApplicationUser> Update(ApplicationUser applicationUser);
     }
 }

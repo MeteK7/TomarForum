@@ -27,7 +27,7 @@ using TomarBlog.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bda63bf4322de2f2a48f8ac2b83f626ba17697be", @"/Views/Shared/Components/AdminFooter/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f91083dc40d9f91c6ef903c6abc509d564fbd79a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ab260d0be4e395ca39594699a8c44e2558f3d63f", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_AdminFooter_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
