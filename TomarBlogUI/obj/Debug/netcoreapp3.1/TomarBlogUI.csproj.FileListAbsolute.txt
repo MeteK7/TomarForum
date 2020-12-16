@@ -903,3 +903,5 @@ C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcorea
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Author.cshtml.g.cs
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditAbout.cshtml.g.cs
+C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogUI\obj\Debug\netcoreapp3.1\Razor\Views\Contact\_Layout.cshtml.g.cs

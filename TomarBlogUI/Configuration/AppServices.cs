@@ -40,6 +40,7 @@ namespace TomarBlogUI.Configuration
             serviceCollection.AddScoped<IPostBusinessManager, PostBusinessManager>();
             serviceCollection.AddScoped<IHomeBusinessManager, HomeBusinessManager>();
             serviceCollection.AddScoped<IAdminBusinessManager, AdminBusinessManager>();
+            serviceCollection.AddScoped<IContactBusinessManager, ContactBusinessManager>();
 
             serviceCollection.AddScoped<IPostService, PostService>();
             serviceCollection.AddScoped<IUserService, UserService>();
