@@ -23,7 +23,7 @@ namespace TomarBlogUI.Controllers
             return View(await adminBusinessManager.GetAdminDashboard(User));
         }
 
-        public async Task<IActionResult> About()
+        public async Task<IActionResult> EditAbout()//The about page for author (Not for the site creator!)
         {
             return View(await adminBusinessManager.GetAboutViewModel(User));
         }

@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="~/css/clean-blog.min.css" rel="stylesheet">
+    <link href="~/css/about-page.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -29,16 +30,18 @@
     @await Component.InvokeAsync("Header")
 
     <!--Page Body-->
-    <div class="content">
-        @RenderBody()
-    </div>
+    @RenderBody()
 
     <!--Page Footer-->
     @await Component.InvokeAsync("Footer")
 
     <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="C:\Users\MeteK\.nuget\packages\bootstrap\4.5.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js"></script>
     <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/clean-blog.min.js"></script>
-
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/respond.min.js"></script>
+    <script src="~/js/about-page.js"></script>
+    @RenderSection("Head", required: false)
 </body>
 </html>

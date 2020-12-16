@@ -25,7 +25,8 @@ namespace TomarBlog.Controllers
             return View(postBusinessManager.GetIndexViewModel(searchString, page));
         }
 
-        public IActionResult Author(string authorId, string searchString, int? page)
+        /*IT MUST BE IN ADMIN CONTROLLER!!!*/
+        public IActionResult Author(string authorId, string searchString, int? page) //View Author's about me page in About editing.
         {
             var actionResult = homeBusinessManager.GetAuthorViewModel(authorId, searchString, page);
 
@@ -33,6 +34,11 @@ namespace TomarBlog.Controllers
                 return View(actionResult.Value);
 
             return actionResult.Result;
+        }
+
+        public IActionResult About()
+        {
+            return View();
         }
     }
 }

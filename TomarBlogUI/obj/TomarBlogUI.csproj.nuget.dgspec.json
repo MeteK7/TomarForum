@@ -215,6 +215,10 @@
             "PagedList.Core.Mvc": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[4.5.3, )"
             }
           },
           "imports": [

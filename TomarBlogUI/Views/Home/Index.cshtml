@@ -1,10 +1,14 @@
 ﻿@model TomarBlogUI.Models.HomeViewModels.IndexViewModel
 @using PagedList.Core.Mvc
+@{
+    ViewData["HeaderImage"] = $"../../img/view.jpg";
+
+}
 
 <div class="container">
     <form asp-controller="Home" asp-action="Index" class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
         <div class="input-group mb-3">
-            <input asp-for="SearchString" type="text" class="form-control" placeholder="Search posts for..."/>
+            <input asp-for="SearchString" type="text" class="form-control" placeholder="Search posts for..." />
             <div class="input-group-append">
                 <button class="btn btn-outline-secondary" style="padding:0 10px 0 10px">Search</button>
             </div>

@@ -1,0 +1,175 @@
+﻿@{
+    ViewData["Title"] = "About";
+    ViewData["HeaderImage"] = $"../../img/view.jpg";
+
+}
+
+@section Head{
+        <style type="text/css">
+            body {
+                /* Center and scale the image nicely */
+                background-image: url('../../img/wavy.jpg');
+                background-position: center;
+                background-repeat: repeat-y;
+                background-size: cover;
+            }
+        </style>
+    }
+
+<div class="content">
+    <div id="main">
+        <div class="tab-wrap">
+            <div class="tab-menu">
+                <button class="tab-links" onclick="openTab(event, 'profile')" id="defaultOpen">PROFILE</button>
+                <button class="tab-links" onclick="openTab(event, 'education')">EDUCATION</button>
+                <button class="tab-links" onclick="openTab(event, 'experience')">EXPERIENCE</button>
+                <button class="tab-links" onclick="openTab(event, 'skills')">SKILLS</button>
+            </div>
+            <div class="tab-content-about" id="profile">
+                <div class="div-profile">
+                    <figure>
+                        <img src="~/img/profile_img.jpg" class="img-profile" alt="You cannot see my profile photo for now:/">
+                    </figure>
+                    <h1 class="header-owner">Mete Kaba</h1>
+                    <center><p>A software engineer with a desire to build stable and powerful applications for people. Working as a team is one of the primary goals. Extensive collaboration ability to work with a team. Got experience in local and web applications using C # WPF, ASP.Net, Java, PHP, and MSSQL database technologies. Experience in GitHub version control system to work remotely and collaboratively. Love learning new things and tools.</p></center>
+                </div>
+                <div class="div-experience">
+                    <div class="sub-div-experience">
+                        <h1 class="experience-year">1</h1>
+                    </div>
+                    <div class="sub-div-experience">
+                        <h3 class="experience-text">Years of experience in Web Design</h3>
+                    </div>
+                </div>
+                <div class="div-experience">
+                    <div class="sub-div-experience">
+                        <h1 class="experience-year">3</h1>
+                    </div>
+                    <div class="sub-div-experience">
+                        <h3 class="experience-text">Years of experience in Desktop Programming (especially C# WPF)</h3>
+                    </div>
+                </div>
+                <div class="div-experience-sum">
+                    <small>Sorry for my years of experience:/ As a new graduated student, let's talk frankly :)</small>
+                </div>
+                <div class="div-social">
+                    <ul id="list-social">
+                        <li><a href="https://www.instagram.com/metekaba" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC5Xq8BrAJPB86Tzl42oKa3g" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mete-kaba-89b5221b8/" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/MeteK7" title="Github"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content-about" id="education">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Here is my low-level education.</p>
+                        <div class="div-corporation">
+                            <div class="div-logo">
+                                <img class="img-logo" src="~/img/toros-university-logo.png" />
+                            </div>
+                            <div class="div-text">
+                                <h3 class="corporation">Toros University</h3>
+                                <small>2015-2020</small>
+                                <p class="topic">Computer and Software Engineering in Bachelor's Degree</p>
+                            </div>
+                        </div>
+                        <div class="div-corporation">
+                            <div class="div-logo">
+                                <img class="img-logo" src="~/img/logo_pwsz_jaroslaw.png" />
+                            </div>
+                            <div class="div-text">
+                                <h3 class="corporation">PWSTE w Jarosławiu</h3>
+                                <small>2018-2018</small>
+                                <p class="topic">Erasmus+ Programme</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content-about" id="experience">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>I had chance to work with these cool companies.</p>
+                        <div class="div-corporation">
+                            <div class="div-logo">
+                                <img class="img-logo" src="~/img/temsa-logo.png" />
+                            </div>
+                            <div class="div-text">
+                                <h3 class="corporation">Temsa Global</h3>
+                                <small>03/02/2020-15/05/2020</small>
+                                <p class="topic">Long-Term Internship</p>
+                            </div>
+                        </div>
+                        <div class="div-corporation">
+                            <div class="div-logo">
+                                <img class="img-logo" src="~/img/kardelen-logo.png" />
+                            </div>
+                            <div class="div-text">
+                                <h3 class="corporation">Kardelen Software</h3>
+                                <small>06/24/2019-07/24/2019</small>
+                                <p class="topic">Summer Internship</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content-about" id="skills">
+                <div class="col-md-12">
+                    <p>Have a look at my skills. Someone must have used a special device to identify my knowledge in percentage:)</p>
+                </div>
+                <div class="row-skills">
+                    <div class="skill-container">
+                        <span><strong>C#</strong></span>
+                        <div class="skill-progress">
+                            <div class="skill-percentage c-sharp">50%</div>
+                        </div>
+                        <span><strong>MVC</strong></span>
+                        <div class="skill-progress">
+                            <div class="skill-percentage mvc">60%</div>
+                        </div>
+                        <span><strong>Java</strong></span>
+                        <div class="skill-progress">
+                            <div class="skill-percentage java">30%</div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <span><strong>Arduino</strong></span>
+                        <div class="skill-progress">
+                            <div class="skill-percentage arduino">80%</div>
+                        </div>
+                        <span><strong>HTML</strong></span>
+                        <div class="skill-progress">
+                            <div class="skill-percentage html">70%</div>
+                        </div>
+                        <span><strong>CSS</strong></span>
+                        <div class="skill-progress">
+                            <div class="skill-percentage css">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <span><strong>JavaScript</strong></span>
+                        <div class="skill-progress">
+                            <div class="skill-percentage java-script">50%</div>
+                        </div>
+                        <span><strong>PHP</strong></span>
+                        <div class="skill-progress">
+                            <div class="skill-percentage php">40%</div>
+                        </div>
+                        <span><strong>MySQL</strong></span>
+                        <div class="skill-progress">
+                            <div class="skill-percentage mysql">50%</div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <span><strong>MSSQL</strong></span>
+                        <div class="skill-progress">
+                            <div class="skill-percentage mssql">55%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

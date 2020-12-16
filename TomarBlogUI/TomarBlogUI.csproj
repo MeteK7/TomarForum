@@ -6,6 +6,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\img\abstract-blue-dotted.png" />
+    <None Include="wwwroot\img\abstract-cloud.jpg" />
+    <None Include="wwwroot\img\abstract-light.png" />
+    <None Include="wwwroot\img\view.jpg" />
+    <None Include="wwwroot\img\beautiful-wide-shot-ruth-glaciers-covered-snow.jpg" />
+    <None Include="wwwroot\img\blue-1634110_1280.png" />
+    <None Include="wwwroot\img\blurred.jpg" />
+    <None Include="wwwroot\img\kardelen-logo.png" />
+    <None Include="wwwroot\img\kardelen-white-logo.png" />
+    <None Include="wwwroot\img\lines.jpg" />
+    <None Include="wwwroot\img\login-background.png" />
+    <None Include="wwwroot\img\login-rounded-right.png" />
+    <None Include="wwwroot\img\logo_pwsz_jaroslaw.png" />
+    <None Include="wwwroot\img\profile_img.jpg" />
+    <None Include="wwwroot\img\temsa-logo.png" />
+    <None Include="wwwroot\img\toros-university-logo.png" />
+    <None Include="wwwroot\img\wavy.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.5.3" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.8" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.9" />

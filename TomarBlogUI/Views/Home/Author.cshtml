@@ -16,7 +16,7 @@
         </div>
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
-                <form asp-controller="Home" asp-action="Author" class="d-none" d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0>
+                <form asp-controller="Home" asp-action="Author" class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
                     <div class="input-group mb-3">
                         <input asp-for="SearchString" type="text" class="form-control" placeholder="Search post for..." />
                         <div class="input-group-append">
@@ -24,6 +24,7 @@
                         </div>
                     </div>
                 </form>
+
                 <div class="row align-content-center">
                     @foreach (var post in Model.Posts)
                     {
