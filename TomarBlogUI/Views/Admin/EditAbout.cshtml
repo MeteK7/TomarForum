@@ -1,9 +1,21 @@
 ﻿@model TomarBlogUI.Models.AdminViewModels.AboutViewModel
 
+@section Head{
+    <style type="text/css">
+        main {
+            /* Center and scale the image nicely */
+            background-image: url('../../img/vintage-typewriter-wooden-table.jpg');
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+}
+
 <div class="container-fluid">
     <h1 class="mt-4">About Me</h1>
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6" style="opacity: 0.6;">
             <div class="card mb-4">
                 <form asp-controller="Admin" asp-action="UpdateAbout" method="post" enctype="multipart/form-data">
                     <div class="card-header">
@@ -21,7 +33,7 @@
                         </div>
                         <div class="form-group">
                             <label asp-for="SubHeader"></label>
-                            <input asp-for="SubHeader" class="form-control"/>
+                            <input asp-for="SubHeader" class="form-control" />
                         </div>
                         <div class="form-group">
                             <label asp-for="Content"></label>
