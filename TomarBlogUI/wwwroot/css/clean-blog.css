@@ -173,7 +173,6 @@ img::-moz-selection {
 }
 
 header.masthead {
-  margin-bottom: 1%;
   background: no-repeat center center;
   background-color: #868e96;
   background-attachment: scroll;
@@ -235,7 +234,7 @@ header.masthead .site-heading .subheading {
 }
 
 header.masthead .post-heading h1 {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 header.masthead .post-heading .meta,
@@ -264,7 +263,7 @@ header.masthead .post-heading .meta a {
 
 @media only screen and (min-width: 768px) {
   header.masthead .post-heading h1 {
-    font-size: 55px;
+    font-size: 45px;
   }
   header.masthead .post-heading .subheading {
     font-size: 30px;
@@ -410,4 +409,8 @@ footer .copyright {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+#container-index{
+    padding-top:2%;
 }
