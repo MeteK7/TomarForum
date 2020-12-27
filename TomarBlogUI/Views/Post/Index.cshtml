@@ -11,12 +11,12 @@
 <article>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="col-lg-15 col-md-10 mx-auto">
                 @Html.Raw(Model.Post.Content)
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="col-lg-15 col-md-10 mx-auto">
                 <h3 class="mb-5">@Model.Post.Comments.Count() Comment(s)</h3>
                 <ul class="comment-list comment-top" list="@Model.Post.Comments" count="0">
                     @foreach (var comment in Model.Post.Comments.Where(comment=>comment.Parent is null))

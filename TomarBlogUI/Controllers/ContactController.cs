@@ -25,7 +25,7 @@ namespace TomarBlogUI.Controllers
         public IActionResult SendEmail(SendEmailViewModel sendEmailViewModel)
         {
 
-            ViewBag.message = contactBusinessManager.SendEmail(sendEmailViewModel);
+            ViewBag.Message = contactBusinessManager.SendEmail(sendEmailViewModel);
 
             return RedirectToAction("Index");
         }

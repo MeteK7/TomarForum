@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -21,5 +22,7 @@ namespace TomarBlogUI.Models.ContactViewModels
         public string Subject { get; set; }
         [Display(Name = "What is it about?:")]
         public string Body { get; set; }
+        [Display(Name = "Anything additional?")]
+        public List<IFormFile> Attachment { get; set; }
     }
 }
