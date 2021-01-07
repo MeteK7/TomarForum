@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FWelrgg98Dl6eQJTVKRA4ukgCiVT2Iy/l5uOXyx1aTjRGpHNnet7EunhXoeUjBnUJ1ihvU3Bed3IrZrmzoMwTg==",
+  "dgSpecHash": "tIKxpPIOCGBl0jT5yjWkSSHViy1EVbX2+gacb5YoQiW9NufelsfGbXXLFMCIipQHsdQw541oCkLQHUB6/unq/Q==",
   "success": true,
-  "projectFilePath": "C:\\Lessons\\Multi Layered Architecture\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj",
+  "projectFilePath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.8\\microsoft.aspnetcore.cryptography.internal.3.1.8.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.8\\microsoft.aspnetcore.cryptography.keyderivation.3.1.8.nupkg.sha512",

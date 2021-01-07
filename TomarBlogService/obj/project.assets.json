@@ -5771,11 +5771,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Lessons\\Multi Layered Architecture\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj",
+      "projectUniqueName": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj",
       "projectName": "TomarBlogService",
-      "projectPath": "C:\\Lessons\\Multi Layered Architecture\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj",
+      "projectPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj",
       "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
-      "outputPath": "C:\\Lessons\\Multi Layered Architecture\\Tomar\\Tomar\\TomarBlogService\\obj\\",
+      "outputPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5795,8 +5795,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Lessons\\Multi Layered Architecture\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj": {
-              "projectPath": "C:\\Lessons\\Multi Layered Architecture\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj"
+            "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj": {
+              "projectPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj"
             }
           }
         }
