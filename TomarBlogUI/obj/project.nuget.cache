@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GH7BNWh0Ow404Mrq5y2XeTnFj9lkbYc4OjUTjJ7HzGf/MFRv3oBSENex2fX/AzDv9IEIu7hc2h0mZ0PXIvhLPA==",
+  "dgSpecHash": "jDg7Zce4rygMRi3Bg5TzxOhf9WXtyv3T34s+n2gId/TyFZWvo8umw0IyRprgfzsvnBSx842IWQWV4JlDzD61Dw==",
   "success": true,
-  "projectFilePath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj",
+  "projectFilePath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MeteK\\.nuget\\packages\\bootstrap\\4.5.3\\bootstrap.4.5.3.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",

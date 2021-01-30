@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj": {}
+    "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj": {}
   },
   "projects": {
-    "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj": {
+    "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj",
+        "projectUniqueName": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj",
         "projectName": "TomarBlogData",
-        "projectPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj",
+        "projectPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj",
         "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
-        "outputPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\obj\\",
+        "outputPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -71,18 +71,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj": {
+    "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj",
+        "projectUniqueName": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj",
         "projectName": "TomarBlogService",
-        "projectPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj",
+        "projectPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj",
         "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
-        "outputPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\obj\\",
+        "outputPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -102,8 +102,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj": {
-                "projectPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj"
+              "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj": {
+                "projectPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj"
               }
             }
           }
@@ -132,18 +132,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj": {
+    "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj",
+        "projectUniqueName": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj",
         "projectName": "TomarBlogUI",
-        "projectPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj",
+        "projectPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\TomarBlogUI.csproj",
         "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
-        "outputPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\obj\\",
+        "outputPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -163,11 +163,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj": {
-                "projectPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj"
+              "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj": {
+                "projectPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj"
               },
-              "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj": {
-                "projectPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj"
+              "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj": {
+                "projectPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogService\\TomarBlogService.csproj"
               }
             }
           }
@@ -239,7 +239,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

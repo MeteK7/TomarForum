@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VqE4TIisIDOzGzKz1ytrmizYvVgBxrmHjmPNnmt6Xe6nf0rKPJ3fDiY4JO2Q8jDqSZz3gWGZh9enOH5ghsjJdQ==",
+  "dgSpecHash": "BRpr5QEgP7egYG809gGqAqFu2IVD1oN6iXXeuHMeWZSXW2uq+hN/0lTWecuoXCNA/7m0P9xSY9r75ohWzp0s4A==",
   "success": true,
-  "projectFilePath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj",
+  "projectFilePath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.8\\microsoft.aspnetcore.cryptography.internal.3.1.8.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.8\\microsoft.aspnetcore.cryptography.keyderivation.3.1.8.nupkg.sha512",

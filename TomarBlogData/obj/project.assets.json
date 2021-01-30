@@ -5753,11 +5753,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj",
+      "projectUniqueName": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj",
       "projectName": "TomarBlogData",
-      "projectPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj",
+      "projectPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\TomarBlogData.csproj",
       "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
-      "outputPath": "C:\\Lessons\\ASP.NET Core (V3.1)\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\obj\\",
+      "outputPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\Tomar\\Tomar\\TomarBlogData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5817,7 +5817,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
