@@ -32,7 +32,7 @@ namespace TomarBlogUI.Controllers
         public async Task<IActionResult> UpdateAbout(AboutViewModel aboutViewModel)
         {
             await adminBusinessManager.UpdateAbout(aboutViewModel, User);
-            return RedirectToAction("About");
+            return RedirectToAction("EditAbout");
         }
     }
 }

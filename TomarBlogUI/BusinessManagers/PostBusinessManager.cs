@@ -20,6 +20,9 @@ namespace TomarBlogUI.BusinessManagers
 {
     public class PostBusinessManager:IPostBusinessManager
     {
+        string headerImage = "HeaderImage.jpg";
+        string leftSideImage = "LeftSideImage.jpg";
+
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IPostService postService;
         private readonly IWebHostEnvironment webHostEnvironment;
@@ -84,18 +87,10 @@ namespace TomarBlogUI.BusinessManagers
             post.CreatedOn = DateTime.Now;
             post.UpdatedOn= DateTime.Now;
 
-
             post = await postService.Add(post);
 
-            string webRootPath = webHostEnvironment.WebRootPath;
-            string pathToImage=$@"{webRootPath}\UserFiles\Posts\{post.Id}\HeaderImage.jpg";
-
-            EnsureFolder(pathToImage);//Ensuring that the file is exist or not.
-
-            using (var fileStream=new FileStream(pathToImage, FileMode.Create))
-            {
-                await createViewModel.HeaderImage.CopyToAsync(fileStream);
-            }
+            CreateImageInCreate(createViewModel, post.Id, headerImage);
+            CreateImageInCreate(createViewModel, post.Id, leftSideImage);
 
             return post;
         }
@@ -142,15 +137,12 @@ namespace TomarBlogUI.BusinessManagers
 
             if (editViewModel.HeaderImage!=null)
             {
-                string webRootPath = webHostEnvironment.WebRootPath;
-                string pathToImage = $@"{webRootPath}\UserFiles\Posts\{post.Id}\HeaderImage.jpg";
+                CreateImageInEdit(editViewModel, post.Id, headerImage);
+            }
 
-                EnsureFolder(pathToImage);//Ensuring that the file is exist or not.
-
-                using (var fileStream = new FileStream(pathToImage, FileMode.Create))
-                {
-                    await editViewModel.HeaderImage.CopyToAsync(fileStream);
-                }
+            if (editViewModel.LeftSideImage != null)
+            {
+                CreateImageInEdit(editViewModel, post.Id, leftSideImage);
             }
 
             return new EditViewModel
@@ -198,6 +190,37 @@ namespace TomarBlogUI.BusinessManagers
             if (directoryName.Length>0)
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(path));
+            }
+        }
+        private async void CreateImageInCreate(CreateViewModel createViewModel, int postId, string imageName)
+        {
+            string webRootPath = webHostEnvironment.WebRootPath;
+            string pathToImage = $@"{webRootPath}\UserFiles\Posts\{postId}\{imageName}";
+
+            EnsureFolder(pathToImage);//Ensuring that the file is exist or not.
+
+            using (var fileStream = new FileStream(pathToImage, FileMode.Create))
+            {
+                if (imageName== headerImage)
+                    await createViewModel.HeaderImage.CopyToAsync(fileStream);
+               
+                else
+                    await createViewModel.LeftSideImage.CopyToAsync(fileStream);
+            }
+        }
+        private async void CreateImageInEdit(EditViewModel editViewModel, int postId, string imageName)
+        {
+            string webRootPath = webHostEnvironment.WebRootPath;
+            string pathToImage = $@"{webRootPath}\UserFiles\Posts\{postId}\{imageName}";
+
+            EnsureFolder(pathToImage);//Ensuring that the file is exist or not.
+
+            using (var fileStream = new FileStream(pathToImage, FileMode.Create))
+            {
+                if(imageName== leftSideImage)
+                await editViewModel.HeaderImage.CopyToAsync(fileStream);
+                else
+                await editViewModel.LeftSideImage.CopyToAsync(fileStream);
             }
         }
     }

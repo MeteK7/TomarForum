@@ -2,6 +2,7 @@
 @{ 
     Layout = "_HomeLayout";
     ViewData["HeaderImage"] = $"../../UserFiles/Posts/{Model.Post.Id}/HeaderImage.jpg";
+    ViewData["LeftSideImage"] = $"../../UserFiles/Posts/{Model.Post.Id}/LeftSideImage.jpg";
     ViewData["HeaderTitle"] = Model.Post.Title;
     ViewData["AuthorName"] = $"{Model.Post.Creator.FirstName}{Model.Post.Creator.LastName}";
     ViewData["PostDate"] = Model.Post.UpdatedOn.ToString("MMMM d,yyyy");
@@ -9,7 +10,8 @@
 }
 
 <article>
-    <div class="container">
+    <div>
+        <img class="left-side-image" src="@ViewData["LeftSideImage"]" alt="Alternate Text" />
         <div class="row">
             <div class="col-lg-15 col-md-10 mx-auto">
                 @Html.Raw(Model.Post.Content)
