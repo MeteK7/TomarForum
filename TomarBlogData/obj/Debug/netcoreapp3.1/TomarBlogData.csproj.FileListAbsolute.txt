@@ -25,3 +25,12 @@ C:\Lessons\ASP.NET Core (V3.1)\Complete ASP.NET Core Applications\Tomar\Tomar\To
 C:\Lessons\ASP.NET Core (V3.1)\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\obj\Debug\netcoreapp3.1\TomarBlogData.csproj.CoreCompileInputs.cache
 C:\Lessons\ASP.NET Core (V3.1)\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\obj\Debug\netcoreapp3.1\TomarBlogData.dll
 C:\Lessons\ASP.NET Core (V3.1)\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\obj\Debug\netcoreapp3.1\TomarBlogData.pdb
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\bin\Debug\netcoreapp3.1\TomarBlogData.deps.json
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\bin\Debug\netcoreapp3.1\TomarBlogData.dll
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\bin\Debug\netcoreapp3.1\TomarBlogData.pdb
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\obj\Debug\netcoreapp3.1\TomarBlogData.csprojAssemblyReference.cache
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\obj\Debug\netcoreapp3.1\TomarBlogData.AssemblyInfoInputs.cache
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\obj\Debug\netcoreapp3.1\TomarBlogData.AssemblyInfo.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\obj\Debug\netcoreapp3.1\TomarBlogData.csproj.CoreCompileInputs.cache
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\obj\Debug\netcoreapp3.1\TomarBlogData.dll
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogData\obj\Debug\netcoreapp3.1\TomarBlogData.pdb

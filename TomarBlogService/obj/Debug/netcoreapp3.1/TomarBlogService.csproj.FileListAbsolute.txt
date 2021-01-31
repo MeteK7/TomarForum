@@ -19,3 +19,15 @@ C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogService\obj\Debug\net
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogService\obj\Debug\netcoreapp3.1\TomarBlogService.csproj.CopyComplete
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogService\obj\Debug\netcoreapp3.1\TomarBlogService.dll
 C:\Lessons\Multi Layered Architecture\Tomar\Tomar\TomarBlogService\obj\Debug\netcoreapp3.1\TomarBlogService.pdb
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\bin\Debug\netcoreapp3.1\TomarBlogService.deps.json
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\bin\Debug\netcoreapp3.1\TomarBlogService.dll
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\bin\Debug\netcoreapp3.1\TomarBlogService.pdb
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\bin\Debug\netcoreapp3.1\TomarBlogData.dll
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\bin\Debug\netcoreapp3.1\TomarBlogData.pdb
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\obj\Debug\netcoreapp3.1\TomarBlogService.csprojAssemblyReference.cache
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\obj\Debug\netcoreapp3.1\TomarBlogService.AssemblyInfoInputs.cache
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\obj\Debug\netcoreapp3.1\TomarBlogService.AssemblyInfo.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\obj\Debug\netcoreapp3.1\TomarBlogService.csproj.CoreCompileInputs.cache
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\obj\Debug\netcoreapp3.1\TomarBlogService.csproj.CopyComplete
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\obj\Debug\netcoreapp3.1\TomarBlogService.dll
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarBlogService\obj\Debug\netcoreapp3.1\TomarBlogService.pdb
