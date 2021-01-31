@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomarBlogUI", "TomarBlogUI\TomarBlogUI.csproj", "{3DAEA7F2-FF11-42DE-8049-AD3D82085EA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomarUI", "TomarUI\TomarUI.csproj", "{3DAEA7F2-FF11-42DE-8049-AD3D82085EA6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomarBlogData", "TomarBlogData\TomarBlogData.csproj", "{36B0BE12-A9BB-4D4B-A791-17E58234410C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomarData", "TomarData\TomarData.csproj", "{36B0BE12-A9BB-4D4B-A791-17E58234410C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomarBlogService", "TomarBlogService\TomarBlogService.csproj", "{ACCD96C0-8ECF-4401-8BDD-D137511B6FEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomarService", "TomarService\TomarService.csproj", "{ACCD96C0-8ECF-4401-8BDD-D137511B6FEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

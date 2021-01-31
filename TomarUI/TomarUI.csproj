@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-Tomar-92FDEBCF-DC5C-4AAE-8093-EC25B6673699</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\abstract-blue-dotted.png" />
+    <None Include="wwwroot\img\abstract-cloud.jpg" />
+    <None Include="wwwroot\img\abstract-light.png" />
+    <None Include="wwwroot\img\view.jpg" />
+    <None Include="wwwroot\img\beautiful-wide-shot-ruth-glaciers-covered-snow.jpg" />
+    <None Include="wwwroot\img\blue-1634110_1280.png" />
+    <None Include="wwwroot\img\blurred.jpg" />
+    <None Include="wwwroot\img\kardelen-logo.png" />
+    <None Include="wwwroot\img\kardelen-white-logo.png" />
+    <None Include="wwwroot\img\lines.jpg" />
+    <None Include="wwwroot\img\login-background.png" />
+    <None Include="wwwroot\img\login-rounded-right.png" />
+    <None Include="wwwroot\img\logo_pwsz_jaroslaw.png" />
+    <None Include="wwwroot\img\profile_img.jpg" />
+    <None Include="wwwroot\img\temsa-logo.png" />
+    <None Include="wwwroot\img\toros-university-logo.png" />
+    <None Include="wwwroot\img\wavy.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="PagedList.Core.Mvc" Version="3.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TomarData\TomarData.csproj" />
+    <ProjectReference Include="..\TomarService\TomarService.csproj" />
+  </ItemGroup>
+
+</Project>
