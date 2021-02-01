@@ -1,13 +1,19 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using TomarDAL.Entities;
 using TomarService.Interfaces;
+using TomarUI.Authorization;
 using TomarUI.BusinessManagers.Interfaces;
+using TomarUI.Models.HomeViewModels;
 using TomarUI.Models.PostViewModels;
 using TomarUI.ViewModels.PostViewModels;
 
