@@ -35,7 +35,7 @@ using TomarUI.Areas.Identity.Pages;
 #nullable disable
 #nullable restore
 #line 5 "C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\Tomar\TomarUI\Areas\Identity\Pages\_ViewImports.cshtml"
-using TomarData.Models;
+using TomarDAL.Entities;
 
 #line default
 #line hidden
@@ -48,7 +48,7 @@ using TomarUI.Areas.Identity.Pages.Account;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9ddac54c94d6e5b99aa8ca200d4c2469309c42f7", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d0d1d8e133d9db63f73ced07f3bd930a25b335d1", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3f3df2bc06880ae38108ce031f9e528a2e1fdf86", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Account__ViewImports : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

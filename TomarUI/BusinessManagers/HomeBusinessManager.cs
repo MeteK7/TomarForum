@@ -1,17 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PagedList.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TomarData.Models;
-using TomarService.Interfaces;
 using TomarUI.BusinessManagers.Interfaces;
 using TomarUI.Models.HomeViewModels;
 
 namespace TomarUI.BusinessManagers
 {
-    public class HomeBusinessManager:IHomeBusinessManager
+    public class HomeBusinessManager: IHomeBusinessManager
     {
         private readonly IPostService postService;
         private readonly IUserService userService;
@@ -40,10 +37,10 @@ namespace TomarUI.BusinessManagers
 
             return new AuthorViewModel
             {
-                Author=applicationUser,
+                Author = applicationUser,
                 Posts = new StaticPagedList<Post>(posts.Skip((pageNumber - 1) * pageSize).Take(pageSize), pageNumber, pageSize, posts.Count()),
-                SearchString=searchString,
-                PageNumber=pageNumber
+                SearchString = searchString,
+                PageNumber = pageNumber
             };
         }
     }
