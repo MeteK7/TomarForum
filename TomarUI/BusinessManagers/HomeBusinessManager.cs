@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TomarDAL.Entities;
+using TomarService.Interfaces;
 using TomarUI.BusinessManagers.Interfaces;
 using TomarUI.Models.HomeViewModels;
 

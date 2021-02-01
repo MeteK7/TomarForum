@@ -10,3 +10,15 @@ C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\TomarDAL\bin\Debug\n
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\TomarDAL\obj\Debug\net5.0\TomarDAL.dll
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\TomarDAL\obj\Debug\net5.0\ref\TomarDAL.dll
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\Tomar\TomarDAL\obj\Debug\net5.0\TomarDAL.pdb
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\bin\Debug\net5.0\TomarDAL.deps.json
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\bin\Debug\net5.0\TomarDAL.dll
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\bin\Debug\net5.0\ref\TomarDAL.dll
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\bin\Debug\net5.0\TomarDAL.pdb
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\obj\Debug\net5.0\TomarDAL.csprojAssemblyReference.cache
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\obj\Debug\net5.0\TomarDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\obj\Debug\net5.0\TomarDAL.AssemblyInfoInputs.cache
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\obj\Debug\net5.0\TomarDAL.AssemblyInfo.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\obj\Debug\net5.0\TomarDAL.csproj.CoreCompileInputs.cache
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\obj\Debug\net5.0\TomarDAL.dll
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\obj\Debug\net5.0\ref\TomarDAL.dll
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarDAL\obj\Debug\net5.0\TomarDAL.pdb

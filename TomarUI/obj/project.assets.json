@@ -2152,6 +2152,34 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "TomarDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.2",
+          "Microsoft.EntityFrameworkCore": "5.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TomarDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TomarDAL.dll": {}
+        }
+      },
+      "TomarService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "TomarDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TomarService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TomarService.dll": {}
+        }
       }
     }
   },
@@ -7450,6 +7478,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "TomarDAL/1.0.0": {
+      "type": "project",
+      "path": "../TomarDAL/TomarDAL.csproj",
+      "msbuildProject": "../TomarDAL/TomarDAL.csproj"
+    },
+    "TomarService/1.0.0": {
+      "type": "project",
+      "path": "../TomarService/TomarService.csproj",
+      "msbuildProject": "../TomarService/TomarService.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7460,7 +7498,9 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.1",
-      "PagedList >= 1.17.0"
+      "PagedList >= 1.17.0",
+      "TomarDAL >= 1.0.0",
+      "TomarService >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7493,7 +7533,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\TomarFiles\\Tomar\\TomarDAL\\TomarDAL.csproj": {
+              "projectPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\TomarFiles\\Tomar\\TomarDAL\\TomarDAL.csproj"
+            },
+            "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\TomarFiles\\Tomar\\TomarService\\TomarService.csproj": {
+              "projectPath": "C:\\Lessons\\ASP.NET\\Complete ASP.NET Core Applications\\TomarFiles\\Tomar\\TomarService\\TomarService.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
