@@ -13,8 +13,7 @@ using TomarDAL.Entities;
 using TomarService.Interfaces;
 using TomarUI.Authorization;
 using TomarUI.BusinessManagers.Interfaces;
-using TomarUI.Models.HomeViewModels;
-using TomarUI.Models.PostViewModels;
+using TomarUI.ViewModels.HomeViewModels;
 using TomarUI.ViewModels.PostViewModels;
 
 namespace TomarUI.BusinessManagers

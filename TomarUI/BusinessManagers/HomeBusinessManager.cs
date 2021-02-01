@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using TomarDAL.Entities;
 using TomarService.Interfaces;
 using TomarUI.BusinessManagers.Interfaces;
-using TomarUI.Models.HomeViewModels;
+using TomarUI.ViewModels.HomeViewModels;
 
 namespace TomarUI.BusinessManagers
 {

@@ -332,3 +332,4 @@ C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\o
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\TomarUI.Views.pdb
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\TomarUI.csproj.CopyComplete
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\TomarUI.genruntimeconfig.cache
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\bin\Debug\net5.0\PagedList.Mvc.dll

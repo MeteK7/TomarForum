@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TomarDAL.Entities;
 
-namespace TomarUI.Models.PostViewModels
+namespace TomarUI.ViewModels.PostViewModels
 {
     public class PostViewModel
     {

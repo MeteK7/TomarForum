@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TomarUI.Models.HomeViewModels;
+using TomarUI.ViewModels.HomeViewModels;
 
 namespace TomarUI.BusinessManagers.Interfaces
 {

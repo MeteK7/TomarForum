@@ -1,6 +1,6 @@
 using System;
 
-namespace TomarUI.Models
+namespace TomarUI.ViewModels
 {
     public class ErrorViewModel
     {

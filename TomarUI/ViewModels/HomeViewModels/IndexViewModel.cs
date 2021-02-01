@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TomarDAL.Entities;
 
-namespace TomarUI.Models.HomeViewModels
+namespace TomarUI.ViewModels.HomeViewModels
 {
     public class IndexViewModel
     {

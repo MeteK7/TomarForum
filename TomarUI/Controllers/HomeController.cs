@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using TomarUI.Models;
+using TomarUI.ViewModels;
 
 namespace TomarUI.Controllers
 {

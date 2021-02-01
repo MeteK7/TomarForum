@@ -5,8 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using TomarDAL.Entities;
-using TomarUI.Models.HomeViewModels;
-using TomarUI.Models.PostViewModels;
+using TomarUI.ViewModels.HomeViewModels;
 using TomarUI.ViewModels.PostViewModels;
 
 namespace TomarUI.BusinessManagers.Interfaces
