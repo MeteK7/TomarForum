@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TomarUI.BusinessManagers.Interfaces
 {
-    interface IPostBusinessManager
+    public interface IPostBusinessManager
     {
     }
 }
