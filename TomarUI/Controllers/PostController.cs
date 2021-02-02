@@ -18,7 +18,7 @@ namespace TomarUI.Controllers
             this.postBusinessManager = postBusinessManager;
         }
 
-        [Route("Post/{id}"), AllowAnonymous]
+        [AllowAnonymous]
         public async Task<IActionResult> Index(int? id)
         {
             var actionResult = await postBusinessManager.GetPostViewModel(id, User);
