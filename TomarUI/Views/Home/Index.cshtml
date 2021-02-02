@@ -1,5 +1,5 @@
 ﻿@model TomarUI.ViewModels.HomeViewModels.IndexViewModel
-@using PagedList.Mvc
+@using PagedList.Core.Mvc
 @{
     ViewData["HeaderImage"] = $"../../img/view.jpg";
     ViewData["HeaderTitle"] = "Tomar";
@@ -43,6 +43,6 @@
         }
     </div>
     <div list="@Model.Posts" count="20">
-        <pager class="pager-container" list="@Model.Posts" options="@PagedListRenderOptions.PageNumbersOnly" asp-action="Index" asp-controller="Home" asp-route-query="@Model.SearchString" />
+        <pager class="pager-container" list="@Model.Posts" options="@PagedListRenderOptions.Bootstrap4PageNumbersPlusPrevAndNext" asp-action="Index" asp-controller="Home" asp-route-query="@Model.SearchString" />
     </div>
 </div>

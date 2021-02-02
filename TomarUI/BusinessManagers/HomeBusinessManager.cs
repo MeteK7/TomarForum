@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PagedList;
+using PagedList.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;

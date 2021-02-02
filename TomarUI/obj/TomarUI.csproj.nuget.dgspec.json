@@ -210,9 +210,9 @@
               "target": "Package",
               "version": "[5.0.1, )"
             },
-            "PagedList.Mvc": {
+            "PagedList.Core.Mvc": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
