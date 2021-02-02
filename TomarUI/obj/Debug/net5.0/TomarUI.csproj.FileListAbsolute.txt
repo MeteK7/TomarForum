@@ -622,3 +622,6 @@ C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\o
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Home\Author.cshtml.g.cs
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Home\_Layout.cshtml.g.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Admin\EditAbout.cshtml.g.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Admin\_Layout.cshtml.g.cs
