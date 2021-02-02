@@ -15,6 +15,7 @@ namespace TomarUI.Configuration
             if (webHostEnvironment.IsDevelopment())
             {
                 applicationBuilder.UseDeveloperExceptionPage();
+                applicationBuilder.UseMigrationsEndPoint();
                 applicationBuilder.UseDatabaseErrorPage();
             }
             else

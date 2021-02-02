@@ -10,7 +10,7 @@ using TomarService.Interfaces;
 
 namespace TomarService
 {
-    public class PostService:IPostService
+    public class PostService : IPostService
     {
         private readonly ApplicationDbContext applicationDbContext;
 

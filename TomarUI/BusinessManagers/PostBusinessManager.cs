@@ -18,7 +18,7 @@ using TomarUI.ViewModels.PostViewModels;
 
 namespace TomarUI.BusinessManagers
 {
-    public class PostBusinessManager: IPostBusinessManager
+    public class PostBusinessManager : IPostBusinessManager
     {
         string headerImage = "HeaderImage.jpg";
         string leftSideImage = "LeftSideImage.jpg";

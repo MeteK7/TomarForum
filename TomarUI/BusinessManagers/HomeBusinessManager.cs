@@ -11,7 +11,7 @@ using TomarUI.ViewModels.HomeViewModels;
 
 namespace TomarUI.BusinessManagers
 {
-    public class HomeBusinessManager: IHomeBusinessManager
+    public class HomeBusinessManager : IHomeBusinessManager
     {
         private readonly IPostService postService;
         private readonly IUserService userService;
