@@ -5,33 +5,40 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using TomarUI.BusinessManagers.Interfaces;
 using TomarUI.ViewModels;
 
 namespace TomarUI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IPostBusinessManager postBusinessManager;
+        private readonly IHomeBusinessManager homeBusinessManager;
+        public HomeController(IPostBusinessManager postBusinessManager, IHomeBusinessManager homeBusinessManager)
         {
-            _logger = logger;
+            this.postBusinessManager = postBusinessManager;
+            this.homeBusinessManager = homeBusinessManager;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string searchString, int? page)
+        {
+            return View(postBusinessManager.GetIndexViewModel(searchString, page));
+        }
+
+        /*IT MUST BE IN ADMIN CONTROLLER!!!*/
+        public IActionResult Author(string authorId, string searchString, int? page) //View Author's about me page in About editing.
+        {
+            var actionResult = homeBusinessManager.GetAuthorViewModel(authorId, searchString, page);
+
+            if (actionResult.Result is null)
+                return View(actionResult.Value);
+
+            return actionResult.Result;
+        }
+
+        public IActionResult About()
         {
             return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
