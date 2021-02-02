@@ -612,3 +612,9 @@ C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\b
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Shared\Components\AdminFooter\Default.cshtml.g.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Shared\Components\AdminSideNav\Default.cshtml.g.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Shared\Components\AdminTopNav\Default.cshtml.g.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
+C:\Lessons\ASP.NET\Complete ASP.NET Core Applications\TomarFiles\Tomar\TomarUI\obj\Debug\net5.0\Razor\Views\Shared\Components\Navigation\Default.cshtml.g.cs
