@@ -6098,9 +6098,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForum\\TomarForum.csproj",
-      "projectName": "TomarForum",
-      "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForum\\TomarForum.csproj",
+      "projectUniqueName": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForum\\TomarForumUI.csproj",
+      "projectName": "TomarForumUI",
+      "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForum\\TomarForumUI.csproj",
       "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
       "outputPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForum\\obj\\",
       "projectStyle": "PackageReference",
@@ -6173,7 +6173,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
