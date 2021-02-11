@@ -168,3 +168,5 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\R
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\bin\Debug\net5.0\TomarForumServices.dll
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\bin\Debug\net5.0\TomarForumServices.pdb
