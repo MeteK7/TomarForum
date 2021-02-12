@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using TomarForumData.EntityModels;
-using TomarForumData.Models;
+using TomarForumData.EntityModels;
 
 namespace TomarForumData
 {

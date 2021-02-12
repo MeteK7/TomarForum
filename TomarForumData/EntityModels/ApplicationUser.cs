@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TomarForumData.Models
+namespace TomarForumData.EntityModels
 {
     public class ApplicationUser:IdentityUser
     {

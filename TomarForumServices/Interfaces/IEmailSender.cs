@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TomarForumServices.Interfaces
+namespace TomarForumService.Interfaces
 {
     public interface IEmailSender
     {

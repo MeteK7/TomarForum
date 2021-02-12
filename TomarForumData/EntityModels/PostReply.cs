@@ -1,5 +1,5 @@
 ﻿using System;
-using TomarForumData.Models;
+using TomarForumData.EntityModels;
 
 namespace TomarForumData.EntityModels
 {

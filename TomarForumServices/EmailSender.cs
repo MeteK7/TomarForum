@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TomarForumServices.Interfaces;
+using TomarForumService.Interfaces;
 
-namespace TomarForumServices
+namespace TomarForumService
 {
     public class EmailSender:IEmailSender
     {
