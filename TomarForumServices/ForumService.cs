@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TomarForumData;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
 
@@ -10,6 +12,11 @@ namespace TomarForumService
 {
     public class ForumService : IForumService
     {
+        private readonly ApplicationDbContext _applicationDbContext;
+        public ForumService(ApplicationDbContext applicationDbContext)
+        {
+            _applicationDbContext = applicationDbContext;
+        }
         public Task Create(Forum forum)
         {
             throw new NotImplementedException();
@@ -22,7 +29,8 @@ namespace TomarForumService
 
         public IEnumerable<Forum> GetAll()
         {
-            throw new NotImplementedException();
+            return _applicationDbContext.Forums//Getting every instance of a forum from the database.
+                .Include(forum=>forum.Posts);  //In order to load the virtual posts navigation property explicitly, we need to call "Include".
         }
 
         public IEnumerable<ApplicationUser> GetAllActiveUsers()
