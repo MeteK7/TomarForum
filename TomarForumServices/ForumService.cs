@@ -40,7 +40,12 @@ namespace TomarForumService
 
         public Forum GetById(int id)
         {
-            throw new NotImplementedException();
+            var forum = _applicationDbContext.Forums.Where(f => f.Id == id)
+                .Include(f => f.Posts).ThenInclude(p => p.User)
+                .Include(f => f.Posts).ThenInclude(p => p.Replies).ThenInclude(r => r.User)
+                .FirstOrDefault();
+
+            return forum;
         }
 
         public Task UpdateForumDescription(int forumId, string newDescription)
