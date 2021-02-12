@@ -25,7 +25,13 @@ namespace TomarForumUI.Controllers
                     Name=forum.Title,
                     Description=forum.Description
                 });
-            return View();
+
+            var model = new ForumIndexViewModel
+            {
+                ForumList = forums
+            };
+
+            return View(model);
         }
     }
 }
