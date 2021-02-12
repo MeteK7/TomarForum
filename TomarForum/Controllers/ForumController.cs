@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
+using TomarForumUI.ViewModels.ForumViewModels;
 
 namespace TomarForumUI.Controllers
 {
@@ -18,7 +19,12 @@ namespace TomarForumUI.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Forum> forums = _forumService.GetAll();
+            var forums = _forumService.GetAll()
+                .Select(forum=>new ForumListViewModel {
+                    Id=forum.Id,
+                    Name=forum.Title,
+                    Description=forum.Description
+                });
             return View();
         }
     }
