@@ -173,3 +173,4 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\bin\Debug\net5.0\T
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\bin\Debug\net5.0\TomarForumService.dll
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\bin\Debug\net5.0\TomarForumService.pdb
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Forum\Index.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Forum\Topic.cshtml.g.cs
