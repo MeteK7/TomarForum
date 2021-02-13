@@ -35,6 +35,7 @@ namespace TomarForum
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IForumService, ForumService>();
+            services.AddScoped<IPostService, PostService>();
             services.AddMvc();
         }
 
