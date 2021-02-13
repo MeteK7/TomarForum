@@ -10,11 +10,11 @@ namespace TomarForumService.Interfaces
     public interface IPostService
     {
         PostService GetById(int id);
-        IEnumerable<Post> GetAll();
-        IEnumerable<Post> GetFilteredPosts(string searchQuery);
         Task Add(Post post);
         Task Delete(int id);
         Task EditPostContent(int id, string newContent);
-        Task AddReply(PostReply reply);
+        IEnumerable<Post> GetAll();
+        IEnumerable<Post> GetFilteredPosts(string searchQuery);
+        IEnumerable<Post> GetPostsByForum(int id);
     }
 }

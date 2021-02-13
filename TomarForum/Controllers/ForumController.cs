@@ -38,7 +38,7 @@ namespace TomarForumUI.Controllers
         public IActionResult Topic(int id)
         {
             var forum = _forumService.GetById(id);
-            var posts = _postService.GetFilteredPosts(id);
+            var posts = _postService.GetPostsByForum(id);
 
             var postListings=
 
