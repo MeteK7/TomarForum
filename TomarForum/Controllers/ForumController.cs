@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
 using TomarForumUI.ViewModels.ForumViewModels;
+using TomarForumUI.ViewModels.PostViewModels;
 
 namespace TomarForumUI.Controllers
 {
@@ -23,7 +24,7 @@ namespace TomarForumUI.Controllers
             var forums = _forumService.GetAll()
                 .Select(forum=>new ForumListViewModel {
                     Id=forum.Id,
-                    Name=forum.Title,
+                    Title=forum.Title,
                     Description=forum.Description
                 });
 
@@ -38,11 +39,43 @@ namespace TomarForumUI.Controllers
         public IActionResult Topic(int id)
         {
             var forum = _forumService.GetById(id);
-            var posts = _postService.GetPostsByForum(id);
+            var posts = forum.Posts; //OR: _postService.GetPostsByForum(id);
 
-            var postListings=
+            var postListings = posts.Select(post => new PostListViewModel
+            {
+                Id = post.Id,
+                AuthorId = post.User.Id,
+                AuthorRating = post.User.Rating,
+                Title = post.Title,
+                DatePosted = post.Created.ToString(),
+                ReplyAmount=post.Replies.Count(),
+                Forum=BuildForumListing(post)
+            });
 
-            return View(forum);
+            var model = new ForumTopicViewModel
+            {
+                Posts = postListings,
+                Forum = BuildForumListing(forum)
+            };
+
+            return View(model);
+        }
+
+        private ForumListViewModel BuildForumListing(Post post)
+        {
+            var forum = post.Forum;
+            return BuildForumListing(forum);
+        }
+
+        private ForumListViewModel BuildForumListing(Forum forum)
+        {
+            return new ForumListViewModel
+            {
+                Id = forum.Id,
+                Title = forum.Title,
+                Description = forum.Description,
+                ImageUrl = forum.ImageUrl
+            };
         }
     }
 }

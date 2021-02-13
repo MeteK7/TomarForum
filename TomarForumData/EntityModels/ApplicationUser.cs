@@ -14,7 +14,7 @@ namespace TomarForumData.EntityModels
         public int Rating { get; set; }
         public bool IsAdmin { get; set; }
         public bool IsActive { get; set; }
-        public DateTime MemberSince { get; set; }
+        public DateTime MembershipCreatedOn { get; set; }
     }
 }
 
