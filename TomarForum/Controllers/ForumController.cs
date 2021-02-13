@@ -12,6 +12,7 @@ namespace TomarForumUI.Controllers
     public class ForumController : Controller
     {
         private readonly IForumService _forumService;
+        private readonly IPostService _postService;
         public ForumController(IForumService forumService)
         {
             _forumService = forumService;
@@ -37,6 +38,9 @@ namespace TomarForumUI.Controllers
         public IActionResult Topic(int id)
         {
             var forum = _forumService.GetById(id);
+            var posts = _postService.GetFilteredPosts(id);
+
+            var postListings=
 
             return View(forum);
         }
