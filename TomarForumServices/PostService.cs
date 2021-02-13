@@ -42,6 +42,7 @@ namespace TomarForumService
             return _applicationDbContext.Posts.Where(post => post.Id == id)
                 .Include(post => post.User)
                 .Include(post => post.Replies)
+                    .ThenInclude(reply=>reply.User)
                 .Include(post => post.Forum)
                 .First();
         }
