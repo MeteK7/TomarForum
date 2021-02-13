@@ -47,7 +47,7 @@ namespace TomarForumUI.Controllers
                 AuthorId = post.User.Id,
                 AuthorRating = post.User.Rating,
                 Title = post.Title,
-                DatePosted = post.Created.ToString(),
+                DatePosted = post.DateCreated.ToString(),
                 ReplyAmount=post.Replies.Count(),
                 Forum=BuildForumListing(post)
             });

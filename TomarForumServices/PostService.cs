@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,9 +37,13 @@ namespace TomarForumService
             throw new NotImplementedException();
         }
 
-        public PostService GetById(int id)
+        public Post GetById(int id)
         {
-            throw new NotImplementedException();
+            return _applicationDbContext.Posts.Where(post => post.Id == id)
+                .Include(post => post.User)
+                .Include(post => post.Replies)
+                .Include(post => post.Forum)
+                .First();
         }
 
         public IEnumerable<Post> GetFilteredPosts(string searchQuery)

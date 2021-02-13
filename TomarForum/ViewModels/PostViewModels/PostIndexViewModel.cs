@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TomarForumUI.ViewModels.ReplyViewModels;
 
 namespace TomarForumUI.ViewModels.PostViewModels
 {
@@ -13,7 +14,7 @@ namespace TomarForumUI.ViewModels.PostViewModels
         public string AuthorName { get; set; }
         public string AuthorImageUrl { get; set; }
         public int AuthorRating { get; set; }
-        public DateTime Created { get; set; }
+        public DateTime DateCreated { get; set; }
         public string PostContent { get; set; }
         public IEnumerable<PostReplyViewModel> Replies { get; set; }
     }
