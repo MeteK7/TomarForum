@@ -13,7 +13,6 @@ namespace TomarForumUI.Controllers
     public class ForumController : Controller
     {
         private readonly IForumService _forumService;
-        private readonly IPostService _postService;
         public ForumController(IForumService forumService)
         {
             _forumService = forumService;
@@ -46,6 +45,7 @@ namespace TomarForumUI.Controllers
                 Id = post.Id,
                 AuthorId = post.User.Id,
                 AuthorRating = post.User.Rating,
+                AuthorName=post.User.UserName, //Fix the naming
                 Title = post.Title,
                 DatePosted = post.DateCreated.ToString(),
                 ReplyAmount=post.Replies.Count(),
