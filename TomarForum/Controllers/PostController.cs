@@ -13,9 +13,11 @@ namespace TomarForumUI.Controllers
     public class PostController : Controller
     {
         public readonly IPostService _postService;
-        public PostController(IPostService postService)
+        public readonly IForumService _forumService;
+        public PostController(IPostService postService, IForumService forumService)
         {
             _postService = postService;
+            _forumService = forumService;
         }
         public IActionResult Index(int id)
         {
@@ -35,6 +37,18 @@ namespace TomarForumUI.Controllers
                 Replies =replies
 
             };
+            return View(model);
+        }
+
+        public IActionResult Create(int id)
+        {
+            var forum = _forumService.GetById(id);
+
+            var model = new NewPostViewModel
+            {
+
+            };
+
             return View(model);
         }
 
