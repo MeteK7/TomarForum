@@ -20,7 +20,13 @@ namespace TomarForum.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var model = BuildHomeIndexViewModel();
+            return View(model);
+        }
+
+        private object BuildHomeIndexViewModel()
+        {
+            throw new NotImplementedException();
         }
 
         public IActionResult Privacy()
