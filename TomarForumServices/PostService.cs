@@ -53,6 +53,11 @@ namespace TomarForumService
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Post> GetLatestPosts(int v)//Change the variable v!!!
+        {
+            return GetAll().OrderByDescending(post => post.DateCreated).Take(v);
+        }
+
         public IEnumerable<Post> GetPostsByForum(int id)
         {
             var posts = _applicationDbContext.Forums
