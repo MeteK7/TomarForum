@@ -1,8 +1,49 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model TomarForumUI.ViewModels.HomeViewModels.HomeIndexViewModel
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container body-content">
+    <div class="row front-page-splash">
+        <div class="col-md-6 front-page-learn">
+            <div class="front-page-heading">Header</div>
+            <p class="front-page-subheading">Hello There!</p>
+            <div>
+                <form asp-controller="Search" asp-action="Search" method="post">
+                    <input asp-for="SearchQuery" type="text" class="home-search" placeholder="Search..."/>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+    <div class="row front-page-content">
+        <h3 id="latest=posts">Latest Posts</h3>
+        <table class="table table-hover" id="tbl-latest-posts">
+            <tbody>
+                @foreach (var post in Model.LatestPosts)
+                {
+                    <tr>
+                        <td>
+                            <div class="forum-logo" style="background-image: url(@post.Forum.ImageUrl); background-size:100%"></div>
+                            <div class="post-title">
+                                <a asp-controller="Post" asp-action="Index" asp-route-id="@post.Id">@post.Title</a>
+                            </div>
+                            <div class="post-subtitle"> <!--IMPROVE THE IF STATEMENTS BELOW!!!-->
+                                @if (post.ReplyAmount==1)
+                                {
+                                    <span>@post.ReplyAmount Reply</span>
+                                }
+                                @if (post.ReplyAmount==0)
+                                {
+                                    <span>No Replies</span>
+                                }
+                                else
+                                {
+                                    <span>@post.ReplyAmount Replies</span>
+                                }
+                                <span class="post-user"><a asp-controller="Profile" asp-action="Detail" asp-route-id="@post.AuthorId">@post.AuthorName</a></span>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
