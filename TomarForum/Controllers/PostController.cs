@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TomarForumData;
+using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
 using TomarForumUI.ViewModels.PostViewModels;
 using TomarForumUI.ViewModels.ReplyViewModels;
@@ -12,12 +14,14 @@ namespace TomarForumUI.Controllers
 {
     public class PostController : Controller
     {
-        public readonly IPostService _postService;
-        public readonly IForumService _forumService;
-        public PostController(IPostService postService, IForumService forumService)
+        private readonly IPostService _postService;
+        private readonly IForumService _forumService;
+        private static UserManager<ApplicationUser> _userManager;
+        public PostController(IPostService postService, IForumService forumService, UserManager<ApplicationUser> userManager)
         {
             _postService = postService;
             _forumService = forumService;
+            _userManager = userManager;
         }
         public IActionResult Index(int id)
         {
@@ -46,10 +50,36 @@ namespace TomarForumUI.Controllers
 
             var model = new NewPostViewModel
             {
-
+                ForumTitle=forum.Title,
+                ForumId=forum.Id,
+                ForumImageUrl=forum.ImageUrl,
+                AuthorName=User.Identity.Name
             };
 
             return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddPost(NewPostViewModel newPostViewModel)
+        {
+            var userId = _userManager.GetUserId(User);
+            var user = await _userManager.FindByIdAsync(userId);
+            var post = BuildPost(newPostViewModel, user);
+
+            await _postService.Add(post);
+
+            return RedirectToAction("Index", "Post", post.Id);
+        }
+
+        private Post BuildPost(NewPostViewModel newPostViewModel, ApplicationUser user)
+        {
+            return new Post
+            {
+                Title = newPostViewModel.Title,
+                Content = newPostViewModel.Content,
+                DateCreated = DateTime.Now,
+                User = user
+            };
         }
 
         private IEnumerable<PostReplyViewModel> BuildPostReplies(IEnumerable<TomarForumData.EntityModels.PostReply> replies)

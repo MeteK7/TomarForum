@@ -7,9 +7,14 @@ namespace TomarForumUI.ViewModels.PostViewModels
 {
     public class NewPostViewModel
     {
-        public string ForumName { get; set; }
-        public int ForumId { get; set; }
-        public string AuthorName { get; set; }
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string ForumTitle { get; set; }//Forum name or title??????
         public string ForumImageUrl { get; set; }
+        public int ForumId { get; set; }
+        public string Content { get; set; }
+        public DateTime Created { get; set; }
+        public string UserId { get; set; }
+        public string AuthorName { get; set; }
     }
 }
