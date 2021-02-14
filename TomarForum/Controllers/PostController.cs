@@ -63,12 +63,12 @@ namespace TomarForumUI.Controllers
         public async Task<IActionResult> AddPost(NewPostViewModel newPostViewModel)
         {
             var userId = _userManager.GetUserId(User);
-            var user = await _userManager.FindByIdAsync(userId);
+            var user = _userManager.FindByIdAsync(userId).Result;
             var post = BuildPost(newPostViewModel, user);
 
             await _postService.Add(post);
 
-            return RedirectToAction("Index", "Post", post.Id);
+            return RedirectToAction("Index", "Post", new { id = post.Id });
         }
 
         private Post BuildPost(NewPostViewModel newPostViewModel, ApplicationUser user)
