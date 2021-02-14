@@ -17,9 +17,10 @@ namespace TomarForumService
         {
             _applicationDbContext = applicationDbContext;
         }
-        public Task Add(Post post)
+        public async Task Add(Post post)
         {
-            throw new NotImplementedException();
+            _applicationDbContext.Add(post);
+            await _applicationDbContext.SaveChangesAsync();
         }
 
         public Task Delete(int id)
