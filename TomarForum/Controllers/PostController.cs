@@ -73,12 +73,15 @@ namespace TomarForumUI.Controllers
 
         private Post BuildPost(NewPostViewModel newPostViewModel, ApplicationUser user)
         {
+            var forum = _forumService.GetById(newPostViewModel.ForumId);
+
             return new Post
             {
                 Title = newPostViewModel.Title,
                 Content = newPostViewModel.Content,
                 DateCreated = DateTime.Now,
-                User = user
+                User = user,
+                Forum=forum
             };
         }
 
