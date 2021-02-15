@@ -208,6 +208,80 @@ body {
     background-color:#ddd;
 }
 
+#forum-index-table td{
+    background-color:rgba(255,255,255,0.9);
+}
+
+#forum-index-table tr:hover{
+    background-color:rgba(0,116,238,1);
+}
+
+.forum-data{
+    display:inline-block;
+}
+
+.forum-title {
+    font-family: "Playfair";
+    font-weight:bold;
+    font-size:1.1em;
+}
+
+.forum-subtitle {
+    color: #888;
+    font-family: "Playfair";
+    font-size:0.8em;
+}
+
+.forum-description {
+    color: #555;
+    font-family: "Playfair";
+}
+
+.forum-logo{
+    border-radius:3px;
+    float:left;
+    margin-right:20px;
+    height:40px;
+    width:40px;
+    background-color:#ddd;
+    border:1px solid #555;
+    background-size:100%;
+}
+
+.forum-post-count {
+    color: #888;
+    font-family: "Playfair";
+    font-size:0.9em;
+}
+
+.forum-post-count {
+    color: #888;
+    font-family: "Playfair";
+    font-size:0.9em;
+}
+
+.forum-member-count {
+    color: #888;
+    font-family: "Playfair";
+    font-size:0.9em;
+}
+
+.font-index-content{
+    padding-bottom:60px;
+    background-color:white;
+}
+
+.no-post {
+    text-align: center;
+    padding-top: 30px;
+    font-family: "Playfair";
+}
+
+.create-post-section{
+    background-color:#fff;
+    padding:24px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
