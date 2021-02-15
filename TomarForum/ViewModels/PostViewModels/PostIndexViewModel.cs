@@ -16,6 +16,8 @@ namespace TomarForumUI.ViewModels.PostViewModels
         public int AuthorRating { get; set; }
         public DateTime DateCreated { get; set; }
         public string PostContent { get; set; }
+        public int ForumId { get; set; }
+        public string ForumTitle { get; set; }
         public IEnumerable<PostReplyViewModel> Replies { get; set; }
     }
 }

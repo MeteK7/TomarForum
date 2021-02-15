@@ -38,8 +38,9 @@ namespace TomarForumUI.Controllers
                 AuthorRating=post.User.Rating,
                 DateCreated=post.DateCreated,
                 PostContent=post.Content,//Try to correct this naming!!! One of them is PostContent and one of the is only content.
-                Replies =replies
-
+                Replies =replies,
+                ForumId=post.Forum.Id,
+                ForumTitle=post.Forum.Title
             };
             return View(model);
         }
