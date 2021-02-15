@@ -17,16 +17,12 @@ namespace TomarForum.Controllers
     public class HomeController : Controller
     {
         private readonly IPostService _postService;
-        public HomeController(IPostService postService)
-        {
-            _postService = postService;
-        }
-
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IPostService postService)
         {
             _logger = logger;
+            _postService = postService;
         }
 
         public IActionResult Index()

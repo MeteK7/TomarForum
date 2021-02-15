@@ -35,7 +35,11 @@ namespace TomarForumService
 
         public IEnumerable<Post> GetAll()
         {
-            throw new NotImplementedException();
+            return _applicationDbContext.Posts
+                .Include(post => post.User)
+                .Include(post => post.Replies)
+                    .ThenInclude(reply => reply.User)
+                .Include(post => post.Forum);
         }
 
         public Post GetById(int id)
