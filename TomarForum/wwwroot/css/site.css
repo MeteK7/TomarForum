@@ -96,9 +96,76 @@ body {
 .section-heading{
     color:white;
     font-size:1.3em;
-    font-family:"PlayFair";
+    font-family:"Playfair";
     padding: 16px 0 16px 0;
     border-bottom:1px solid #335;
+    margin-bottom:12px;
+}
+
+.post-heading {
+    color: white;
+    font-size: 1.1em;
+    font-family: "Playfair";
+    padding: 16px 0 16px 0;
+}
+
+.section-info{
+    height:400px;
+    background-color:white;
+}
+
+.front-page-splash{
+    background-image:url("../images/theme/front-splash.png");
+    background-repeat:no-repeat;
+    background-position:right;
+}
+
+.front-page-learn{
+    font-family:"Playfair";
+    padding:12px 0 0 32px;
+    height:360px;
+}
+
+.section-description{
+    color:#EEE;
+}
+
+.front-page-heading{
+    font-size:3.2em;
+    margin:16px 0;
+}
+
+.front-page-subheading{
+    font-size:2em;
+}
+
+.front-page-top-container{
+    padding:40px 80px 42px 40px;
+    border:1px solid #999;
+    background-color:#2569D5;
+    font-family:"Playfair";
+}
+
+.home-search{
+    width:100%;
+    margin-top:8px;
+    background:rgba(0,0,0,0.1);
+    padding:8px;
+    border:0px;
+    height:2.3em;
+    font-size:2.1em;
+    font-family:"Playfair";
+    font-weight:bold;
+    transition:ease-in 0.2s;
+}
+
+.home-search:focus{
+    border:none !important;
+    outline:none !important;
+    transition:ease-in 0.2s;
+    color:#03A9F4;
+    background-color:rgba(0,0,0,0.7);
+    box-shadow:0 5px 4px -6px #000;
 }
 
 .footer {
