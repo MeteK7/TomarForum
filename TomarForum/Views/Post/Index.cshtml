@@ -20,7 +20,7 @@
             @Model.AuthorName
         </a>
         <span class="post-data">@Model.DateCreated</span>
-        @if (Model.IsAdmin)
+        @if (Model.IsAuthorAdmin)
         {
             <span class="is-admin smaller">Admin</span>
         }
