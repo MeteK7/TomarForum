@@ -23,6 +23,7 @@ namespace TomarForumUI.Controllers
             _forumService = forumService;
             _userManager = userManager;
         }
+
         public IActionResult Index(int id)
         {
             var post = _postService.GetById(id);
@@ -40,7 +41,8 @@ namespace TomarForumUI.Controllers
                 PostContent=post.Content,//Try to correct this naming!!! One of them is PostContent and one of the is only content.
                 Replies =replies,
                 ForumId=post.Forum.Id,
-                ForumTitle=post.Forum.Title
+                ForumTitle=post.Forum.Title,
+                IsAuthorAdmin=CheckAuthorAuthorization(post.User)
             };
             return View(model);
         }
@@ -72,6 +74,11 @@ namespace TomarForumUI.Controllers
             return RedirectToAction("Index", "Post", new { id = post.Id });
         }
 
+        private bool CheckAuthorAuthorization(ApplicationUser user)
+        {
+            return _userManager.GetRolesAsync(user).Result.Contains("Admin");
+        }
+
         private Post BuildPost(NewPostViewModel newPostViewModel, ApplicationUser user)
         {
             var forum = _forumService.GetById(newPostViewModel.ForumId);
@@ -96,7 +103,8 @@ namespace TomarForumUI.Controllers
                 AuthorImageUrl = reply.User.ProfileImageUrl,
                 AuthorRating = reply.User.Rating,
                 DateCreated = reply.DateCreated,
-                ReplyContent = reply.Content//Try to correct this naming!!! One of them is ReplyContent and one of the is only content.
+                ReplyContent = reply.Content,//Try to correct this naming!!! One of them is ReplyContent and one of the is only content.
+                IsAuthorAdmin=CheckAuthorAuthorization(reply.User)
             });
         }
     }
