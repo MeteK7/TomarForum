@@ -11,87 +11,62 @@
             </span>
         </div>
     </div>
-</div>
 
-<div class="row" id="post-index-content">
-    <div class="col-md-3 post-author-container">
-        <div class="post-author-image" style="background-image:url(@Model.AuthorImageUrl);"></div>
-        <a asp-controller="Profile" asp-action="Detail" asp-route-id="@Model.AuthorId">
-            @Model.AuthorName
-        </a>
-        <span class="post-data">@Model.DateCreated</span>
-        @if (Model.IsAuthorAdmin)
-        {
-            <span class="is-admin smaller">Admin</span>
-        }
-    </div>
-    <div class="col-md-9 post-content-container">
-        <div class="post-content">
-            @Html.Raw(Model.PostContent)
+    <div class="row" id="post-index-content">
+        <div class="col-md-3 post-author-container">
+            <div class="post-author-image" style="background-image:url(@Model.AuthorImageUrl);"></div>
+            <a asp-controller="Profile" asp-action="Detail" asp-route-id="@Model.AuthorId">
+                @Model.AuthorName
+            </a>
+            <span class="post-data">@Model.DateCreated</span>
+            @if (Model.IsAuthorAdmin)
+            {
+                <span class="is-admin smaller">Admin</span>
+            }
+        </div>
+        <div class="col-md-9 post-content-container">
+            <div class="post-content">
+                @Html.Raw(Model.PostContent)
+            </div>
         </div>
     </div>
-</div>
-<div class="row" id="reply-divider"></div>
-@if (User.Identity.IsAuthenticated)
-{
-    <div class="row">
-        <span><a asp-controller="Reply" asp-action="Create" asp-route-id="@Model.Id" class="bi bi-reply">Post Reply</a></span>
-    </div>
-}
-
-@if (Model.Replies.Any())
-{
-    foreach (var reply in Model.Replies)
+    <div class="row" id="reply-divider"></div>
+    @if (User.Identity.IsAuthenticated)
     {
-        <div class="row reply-content">
-            <div class="col-md-3 reply-author-container">
-                <div class="post-author-image" style="background-image:url(@reply.AuthorImageUrl)"></div>
-                <a asp-controller="Profile" asp-action="Detail" asp-route-id="@reply.AuthorId">
-                    @reply.AuthorName
-                </a>
-                @if (reply.IsAuthorAdmin)
-                {
-                    <div vocab="is-admin smaller">Admin</div>
-                    <br />
-                }
-                <span>@reply.DateCreated</span>
-            </div>
-            <div class="col-md-9 reply-content-container">
-                <div class="post-content">
-                    @Html.Raw(reply.ReplyContent)
+        <div class="row">
+            <span><a asp-controller="Reply" asp-action="Create" asp-route-id="@Model.Id" class="bi bi-reply">Post Reply</a></span>
+        </div>
+    }
+
+    @if (Model.Replies.Any())
+    {
+        foreach (var reply in Model.Replies)
+        {
+            <div class="row reply-content">
+                <div class="col-md-3 reply-author-container">
+                    <div class="post-author-image" style="background-image:url(@reply.AuthorImageUrl)"></div>
+                    <a asp-controller="Profile" asp-action="Detail" asp-route-id="@reply.AuthorId">
+                        @reply.AuthorName
+                    </a>
+                    @if (reply.IsAuthorAdmin)
+                    {
+                        <div vocab="is-admin smaller">Admin</div>
+                        <br />
+                    }
+                    <span>@reply.DateCreated</span>
+                </div>
+                <div class="col-md-9 reply-content-container">
+                    <div class="post-content">
+                        @Html.Raw(reply.ReplyContent)
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     }
-}
-else
-{
-    <div class="no-post">
-        <h3>There is nothing here :/<br /></h3>
-    </div>
-}
-<!--<h1>@Model.Title</h1>
-
-<div>
-    Author: @Model.AuthorName (@Model.AuthorRating)
-    Created: @Model.DateCreated
-</div>
-<div>
-    @Model.PostContent
-</div>
-
-@if (Model.Replies.Any())
-{
-    foreach (var reply in Model.Replies)
+    else
     {
-        <div>
-            <div>
-                Reply Author: @reply.AuthorName
-                Reply Created: @reply.DateCreated
-            </div>
-            <div>
-                Reply: @reply.ReplyContent--> @*Fix the naming*@
-            <!--</div>
+        <div class="no-post">
+            <h3>There is nothing here :/<br /></h3>
         </div>
     }
-}-->
+</div>
