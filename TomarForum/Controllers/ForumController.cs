@@ -40,9 +40,9 @@ namespace TomarForumUI.Controllers
         public IActionResult Topic(int id, string searchQuery)
         {
             var forum = _forumService.GetById(id);
-            var posts=new List<Post>();
+            var posts = new List<Post>();
 
-            posts = _postService.GetFilteredPosts(id, searchQuery).ToList(); //forum.Posts;
+            posts = _postService.GetFilteredPosts(forum, searchQuery).ToList(); //forum.Posts;
 
             var postListings = posts.Select(post => new PostListViewModel
             {
