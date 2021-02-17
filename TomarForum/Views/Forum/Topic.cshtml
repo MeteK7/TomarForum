@@ -1,6 +1,96 @@
 ﻿@model TomarForumUI.ViewModels.ForumViewModels.ForumTopicViewModel
 
-<h1>Welcome to the @Model.Forum.Title Forum!</h1>
+<div class="container body-content">
+    <div class="row section-header">
+        <div class="section-heading">
+            <span>@Model.Forum.Title Forum</span>
+            @if (Context.User.Identity.IsAuthenticated)
+            {
+                <span id="btn-heading">
+                    <a asp-controller="Post" asp-action="Create" asp-route-id="@Model.Forum.Id" class="btn btn-new-post">Create Post</a>
+                </span>
+            }
+            <form asp-controller="Forum" asp-action="Search" method="post">
+                <div class="search-form">
+                    <input asp-for="SearchQuery" type="text" placeholder="Search..." class="search-bar" onfocus="clearThis(this)" />
+                    <button type="submit" class="btn btn-search">
+                        <i class="material-icons">Search</i>
+                    </button>
+                </div>
+                <input asp-for="Forum.Id" name="id" type="hidden" />
+            </form>
+        </div>
+        <div class="section-description">
+            <div class="forum-logo" style="background-image:url(@Model.Forum.ImageUrl)"></div>
+            <p>Welcome to our @Model.Forum.Title forum. Feel free to write anything.</p>
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <p>
+                    <span><a asp-controller="Register" asp-action="Register">Register</a> as a member to create wonderful posts!</span>
+                </p>
+            }
+        </div>
+    </div>
+    <div class="row forum-index-content">
+        @if (Model.Posts.Any())
+        {
+            <table class="table table-hover table-bordered" id="forum-index-table">
+                <tbody>
+                    @foreach (var post in Model.Posts)
+                    {
+                        <tr>
+                            <td>
+                                <div class="post-data">
+                                    <div class="post-title">
+                                        <a asp-controller="Post" asp-action="Index" asp-route-id="@post.Id">@post.Title</a>
+                                    </div>
+                                    <div class="forum-subtitle">
+                                        <div>
+                                            <span class="post-author">
+                                                <a asp-controller="Profile" asp-action="Detail" asp-route-id="@post.AuthorId">
+                                                    @post.AuthorName
+                                                </a>
+                                            </span>
+                                            (@post.AuthorRating)
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="forum-post-count">
+                                    Replies:@post.ReplyAmount
+                                </div>
+                            </td>
+                            <td>
+                                <div class="post-date">@post.DatePosted</div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div class="no-post">
+                <i class="material-icons md-72">question_answer</i>
+                <h3>
+                    It looks like there is no any posts yet :/
+                    Would you like to <a asp-controller="Post" asp-action="Create" asp-route-id="@Model.Forum.Id"><span>post?</span></a>
+                </h3>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        function clearThis(target) {
+            target.value = "";
+        }
+    </script>
+}
+
+@*<h1>Welcome to the @Model.Forum.Title Forum!</h1>
 
 <span id="btn-heading"><a asp-controller="Post" asp-action="Create" asp-route-id="@Model.Forum.Id" class="btn btn-newpost">Create Post</a></span>
 
@@ -37,4 +127,4 @@ else
             Want to <a asp-controller="Post" asp-action="Create" asp-route-id="@Model.Forum.Id"><span>create</span></a>?
         </h3>
     </div>
-}
+}*@

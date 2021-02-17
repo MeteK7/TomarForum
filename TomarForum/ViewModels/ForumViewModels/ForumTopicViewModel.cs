@@ -10,5 +10,6 @@ namespace TomarForumUI.ViewModels.ForumViewModels
     {
         public ForumListViewModel Forum { get; set; }
         public IEnumerable<PostListViewModel> Posts { get; set; }
+        public string SearchQuery { get; set; }
     }
 }
