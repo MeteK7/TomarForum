@@ -1,0 +1,79 @@
+﻿@model TomarForumUI.ViewModels.SearchViewModels.SearchResultViewModel
+
+<div class="container body-content">
+    <div class="row section-header">
+        <div class="section-heading">
+            <span>Results of @Model.SearchQuery</span>
+            <form asp-controller="Search" asp-action="Search" method="post">
+                <div class="search-form">
+                    <input asp-for="SearchQuery" type="text" placeholder="Search..." class="search-bar" onfocus="clearThis(this)" />
+                    <button type="submit" class="btn btn-forum-search">
+                        <i class="material-icons">Search</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row forum-index-content">
+        @if (!Model.EmptySearchResult)
+        {
+            <table class="table table-hover table-bordered" id="search-index-table">
+                <tbody>
+                    @foreach (var post in Model.Posts)
+                    {
+                        <tr>
+                            <td>
+                                <div class="forum-logo" style="background-image:url(@post.Forum.ImageUrl)"></div>
+                                <div class="post-data">
+                                    <div class="post-title">
+                                        <a asp-controller="Post" asp-action="Index" asp-route-id="@post.Id">@post.Title</a>
+                                    </div>
+                                    <div class="forum-subtitle">
+                                        <div>
+                                            by:
+                                            <span class="post-author">
+                                                <a asp-controller="Profile" asp-action="Detail" asp-route-id="@post.AuthorId">
+                                                    @post.AuthorName
+                                                </a>
+                                                (@post.AuthorRating)
+                                            </span>
+                                            in:
+                                            <span class="post-forum">
+                                                <a asp-controller="Forum" asp-action="Topic" asp-route-id="@post.Forum.Id">@post.Forum.Title</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="forum-post-count">
+                                    Replies:@post.ReplyAmount
+                                </div>
+                            </td>
+                            <td>
+                                <div class="post-date">@post.DatePosted</div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div class="no-post">
+                <i class="material-icons md-72">question_answer</i>
+                <h3>
+                    There is no any results for @Model.SearchQuery<br />
+                </h3>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        function clearThis(target) {
+            target.value = "";
+        }
+    </script>
+}
