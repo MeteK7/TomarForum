@@ -15,6 +15,7 @@ namespace TomarForumService.Interfaces
         Task EditPostContent(int id, string newContent);
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetFilteredPosts(Forum forum, string searchQuery);
+        IEnumerable<Post> GetFilteredPosts(string searchQuery);
         IEnumerable<Post> GetPostsByForum(int id);
         IEnumerable<Post> GetLatestPosts(int v);//Change the v!!!
     }

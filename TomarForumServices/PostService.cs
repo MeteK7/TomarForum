@@ -59,6 +59,11 @@ namespace TomarForumService
                 : forum.Posts.Where(post => post.Title.Contains(searchQuery) || post.Content.Contains(searchQuery));
         }
 
+        public IEnumerable<Post> GetFilteredPosts(string searchQuery)
+        {
+            return GetAll().Where(post => post.Title.Contains(searchQuery) || post.Content.Contains(searchQuery));
+        }
+
         public IEnumerable<Post> GetLatestPosts(int v)//Change the variable v!!!
         {
             return GetAll().OrderByDescending(post => post.DateCreated).Take(v);
