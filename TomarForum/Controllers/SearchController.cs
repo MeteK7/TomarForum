@@ -40,7 +40,7 @@ namespace TomarForumUI.Controllers
                 SearchQuery=searchQuery,
                 EmptySearchResult= isNoResult
             };
-
+            return View(model);
         }
 
         private ForumListViewModel BuildForumListing(Post post)
