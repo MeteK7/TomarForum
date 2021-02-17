@@ -13,9 +13,11 @@ namespace TomarForumUI.Controllers
     public class ForumController : Controller
     {
         private readonly IForumService _forumService;
-        public ForumController(IForumService forumService)
+        private readonly IPostService _postService;
+        public ForumController(IForumService forumService, IPostService postService)
         {
             _forumService = forumService;
+            _postService = postService;
         }
 
         public IActionResult Index()
@@ -35,10 +37,20 @@ namespace TomarForumUI.Controllers
             return View(model);
         }
 
-        public IActionResult Topic(int id)
+        public IActionResult Topic(int id, string searchQuery)
         {
             var forum = _forumService.GetById(id);
-            var posts = forum.Posts; //OR: _postService.GetPostsByForum(id);
+            var posts=new List<Post>();
+
+            if (!String.IsNullOrEmpty(searchQuery))
+            {
+                posts = _postService.GetFilteredPosts(id, searchQuery).ToList(); //forum.Posts;
+            }
+
+            //else
+            //{
+                posts = forum.Posts.ToList();
+            //}
 
             var postListings = posts.Select(post => new PostListViewModel
             {
@@ -59,6 +71,12 @@ namespace TomarForumUI.Controllers
             };
 
             return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Search(int id, string searchQuery)
+        {
+            return RedirectToAction("Topic", new { id, searchQuery });
         }
 
         private ForumListViewModel BuildForumListing(Post post)

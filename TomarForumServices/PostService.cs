@@ -52,9 +52,10 @@ namespace TomarForumService
                 .First();
         }
 
-        public IEnumerable<Post> GetFilteredPosts(string searchQuery)
+        public IEnumerable<Post> GetFilteredPosts(int id, string searchQuery)
         {
-            throw new NotImplementedException();
+            var forum = _applicationDbContext.Forums.Find(id);
+            return string.IsNullOrEmpty(searchQuery) ? forum.Posts : forum.Posts.Where(post => post.Title.Contains(searchQuery) || post.Content.Contains(searchQuery));
         }
 
         public IEnumerable<Post> GetLatestPosts(int v)//Change the variable v!!!

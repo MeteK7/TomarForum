@@ -180,6 +180,21 @@ body {
     margin:4px 0 16px 0;
 }
 
+.search-bar{
+    padding:3px 5px 2px 12px;
+    margin:8px;
+    background-color:#333;
+    width:10%;
+    transition:ease .3s;
+    border:none;
+}
+
+.search-bar:focus{
+    color:black;
+    width:60%;
+    background-color:#fff;
+}
+
 .post-title{
     font-family:"Playfair";
     font-weight:bold;
@@ -313,6 +328,13 @@ body {
     transition:ease-in 0.1s;
     background-color:#00897B !important;
     color:#fff !important;
+}
+
+.btn-forum-search{
+    background:none !important;
+    border:none;
+    padding:0 !important;
+    font:inherit;
 }
 
 #forum-index-table td{
