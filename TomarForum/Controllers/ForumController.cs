@@ -42,15 +42,7 @@ namespace TomarForumUI.Controllers
             var forum = _forumService.GetById(id);
             var posts=new List<Post>();
 
-            if (!String.IsNullOrEmpty(searchQuery))
-            {
-                posts = _postService.GetFilteredPosts(id, searchQuery).ToList(); //forum.Posts;
-            }
-
-            //else
-            //{
-                posts = forum.Posts.ToList();
-            //}
+            posts = _postService.GetFilteredPosts(id, searchQuery).ToList(); //forum.Posts;
 
             var postListings = posts.Select(post => new PostListViewModel
             {
