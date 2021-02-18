@@ -18,7 +18,7 @@ namespace TomarForumData
             _applicationDbContext = applicationDbContext;
         }
 
-        public async Task SeedSuperUser()
+        public Task SeedSuperUser()
         {
             var roleStore = new RoleStore<IdentityRole>(_applicationDbContext);
             var userStore = new UserStore<ApplicationUser>(_applicationDbContext);
@@ -42,7 +42,7 @@ namespace TomarForumData
 
             if (!hasAdminRole)
             {
-                await roleStore.CreateAsync(new IdentityRole 
+                roleStore.CreateAsync(new IdentityRole 
                 { 
                     Name = "Admin", 
                     NormalizedName = "admin" 
@@ -52,11 +52,13 @@ namespace TomarForumData
 
             if (!hasSuperUser)
             {
-                await userStore.CreateAsync(user);
-                await userStore.AddToRoleAsync(user, "Admin");
+                userStore.CreateAsync(user);
+                userStore.AddToRoleAsync(user, "Admin");
             }
 
-            await _applicationDbContext.SaveChangesAsync();
+            _applicationDbContext.SaveChangesAsync();
+
+            return Task.CompletedTask;
         }
     }
 }
