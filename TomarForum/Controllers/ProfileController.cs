@@ -5,22 +5,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TomarForumData.EntityModels;
+using TomarForumService.Interfaces;
+using TomarForumUI.ViewModels.ApplicationUserViewModel;
 
 namespace TomarForumUI.Controllers
 {
     public class ProfileController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
-        private readonly IApplicationUser _userService;
-        private readonly IUpload _uploadService;
-        public ProfileController(UserManager<ApplicationUser> userManager, IApplicationUser userService, IUpload uploadService)
+        private readonly IApplicationUserService _applicationUserService;
+        private readonly IUploadService _uploadService;
+        public ProfileController(UserManager<ApplicationUser> userManager, IApplicationUserService applicationUserService, IUploadService uploadService)
         {
             _userManager = userManager;
-            _userService = userService;
+            _applicationUserService = applicationUserService;
             _uploadService = uploadService;
         }
         public IActionResult Detail(string id)
         {
+            var model = new ProfileViewModel()
+            {
+
+            };
             return View();
         }
     }
