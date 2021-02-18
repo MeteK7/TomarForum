@@ -177,3 +177,5 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\R
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Post\Index.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Post\Create.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Search\Result.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Profile\Detail.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Profile\Index.cshtml.g.cs
