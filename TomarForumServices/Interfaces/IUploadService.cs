@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TomarForumService.Interfaces;
 
-namespace TomarForumService
+namespace TomarForumService.Interfaces
 {
-    public class ApplicationUserService:IApplicationUserService
+    public interface IUploadService
     {
     }
 }

@@ -7,7 +7,7 @@ using TomarForumService.Interfaces;
 
 namespace TomarForumService
 {
-    public class ApplicationUserService:IApplicationUserService
+    public class UploadService: IUploadService
     {
     }
 }
