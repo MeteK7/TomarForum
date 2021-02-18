@@ -57,7 +57,7 @@
                     {
                         <ul class="nav navbar-nav navbar-right">
                             <li><a asp-controller="Login" asp-action="Login">Sign In</a></li>
-                            <li class="active"><a asp-controller="Account" asp-action="Register">Register</a></li>
+                            <li class="active"><a asp-controller="Register" asp-action="Register">Register</a></li>
                         </ul>
                     }
                     @if (SignInManager.IsSignedIn(User))//Where is elseif???
@@ -65,7 +65,7 @@
                         <form asp-controller="Logout" asp-action="Logout" method="post" id="form-logout" class="navbar">
                             <ul class="nav navbar-nav navbar-right">
                                 <li>Hello, @UserManager.GetUserName(User)</li>
-                                <li><a asp-controller="Logout" asp-action="Logout">Sign Out</a></li>
+                                <li><button type="submit" class="btn btn-link btn-navbar navbar-link">Sign Out</button></li>
                             </ul>
                         </form>
                     }
