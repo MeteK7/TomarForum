@@ -7,5 +7,6 @@ namespace TomarForumUI.ViewModels.ApplicationUserViewModel
 {
     public class ProfileListViewModel
     {
+        public IEnumerable<ProfileViewModel> Profiles { get; set; }
     }
 }

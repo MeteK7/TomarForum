@@ -21,6 +21,12 @@ namespace TomarForumUI.Controllers
             _applicationUserService = applicationUserService;
             _uploadService = uploadService;
         }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public IActionResult Detail(string id)
         {
             var model = new ProfileViewModel()

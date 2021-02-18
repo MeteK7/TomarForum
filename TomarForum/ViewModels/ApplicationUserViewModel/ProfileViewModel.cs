@@ -12,7 +12,7 @@ namespace TomarForumUI.ViewModels.ApplicationUserViewModel
         public string Email { get; set; }
         public string UserName { get; set; }
         public string UserRating { get; set; }
-        public string profileImageUrl { get; set; }
+        public string ProfileImageUrl { get; set; }
         public DateTime MembershipCreatedOn { get; set; }
         public IFormFile ImageUpload { get; set; }
     }
