@@ -179,3 +179,4 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\bin\Debug\net5.0\T
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\TomarForumUI.Views.pdb
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\TomarForumUI.csproj.CopyComplete
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\TomarForumUI.genruntimeconfig.cache
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\_IdentityLayout.cshtml.g.cs
