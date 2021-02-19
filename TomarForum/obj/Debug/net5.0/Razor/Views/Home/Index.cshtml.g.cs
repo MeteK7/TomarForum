@@ -14,20 +14,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\_ViewImports.cshtml"
-using TomarForum;
+using TomarForumUI;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\_ViewImports.cshtml"
-using TomarForum.Models;
+using TomarForumUI.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"18aa8e4338ff75a2b51b7fc5e7bfcfd81000624e", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d15f68a43f71f435fdbacb01ddbecacb59a8ce41", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b7060f3dc926a52f2b25893c97588eb6f679d159", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<TomarForumUI.ViewModels.HomeViewModels.HomeIndexViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("type", "text", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -75,9 +75,9 @@ using TomarForum.Models;
             <p class=""front-page-subheading"">Hello There!</p>
             <div>
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18aa8e4338ff75a2b51b7fc5e7bfcfd81000624e6950", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18aa8e4338ff75a2b51b7fc5e7bfcfd81000624e6958", async() => {
                 WriteLiteral("\r\n                    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "18aa8e4338ff75a2b51b7fc5e7bfcfd81000624e7228", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "18aa8e4338ff75a2b51b7fc5e7bfcfd81000624e7236", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -153,7 +153,7 @@ WriteAttributeValue("", 1028, post.Forum.ImageUrl, 1028, 20, false);
             WriteAttributeValue("", 1048, ");", 1048, 2, true);
             EndWriteAttribute();
             WriteLiteral("></div>\r\n                            <div class=\"post-title\">\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18aa8e4338ff75a2b51b7fc5e7bfcfd81000624e12060", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18aa8e4338ff75a2b51b7fc5e7bfcfd81000624e12068", async() => {
 #nullable restore
 #line 26 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\Home\Index.cshtml"
                                                                                                Write(post.Title);
@@ -251,7 +251,7 @@ WriteAttributeValue("", 1028, post.Forum.ImageUrl, 1028, 20, false);
 #line hidden
 #nullable disable
             WriteLiteral("                                <span class=\"post-user\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18aa8e4338ff75a2b51b7fc5e7bfcfd81000624e16931", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18aa8e4338ff75a2b51b7fc5e7bfcfd81000624e16939", async() => {
 #nullable restore
 #line 41 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\Home\Index.cshtml"
                                                                                                                                  Write(post.AuthorName);

@@ -31,45 +31,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Forum" asp-action="Index">Forums</a>
                         </li>
-                        @if (SignInManager.IsSignedIn(User))
-                        {
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">Profile</li>
-                                    <li><a asp-controller="Profile" asp-action="Detail" asp-route-id="@UserManager.GetUserId(User)">My Profile</a></li>
-                                    @if (User.IsInRole("Admin"))
-                                    {
-                                        <li role="separator" class="divider"></li>
-                                        <li class="dropdown-header">Admin</li>
-                                        <li><a asp-controller="Forum" asp-action="Create">Create Forum</a></li>
-                                        <li><a asp-controller="Profile" asp-action="Index">View Users</a></li>
-                                    }
-                                </ul>
-                            </li>
-                        }
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
-                    @if (!SignInManager.IsSignedIn(User))//THIS PART IS ALREADY IN THE _LoginPartial view!!!
-                    {
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a asp-controller="Login" asp-action="Login">Sign In</a></li>
-                            <li class="active"><a asp-controller="Register" asp-action="Register">Register</a></li>
-                        </ul>
-                    }
-                    @if (SignInManager.IsSignedIn(User))//Where is elseif???
-                    {
-                        <form asp-controller="Logout" asp-action="Logout" method="post" id="form-logout" class="navbar">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>Hello, @UserManager.GetUserName(User)</li>
-                                <li><button type="submit" class="btn btn-link btn-navbar navbar-link">Sign Out</button></li>
-                            </ul>
-                        </form>
-                    }
-
                     <partial name="_LoginPartial" />
                 </div>
             </div>
@@ -83,7 +48,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - TomarForum - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; @DateTime.Now.Year - TomarForum - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

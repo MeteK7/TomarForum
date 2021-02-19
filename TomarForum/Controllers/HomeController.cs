@@ -1,27 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
-using TomarForum.Models;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
+using TomarForumUI.ViewModels;
 using TomarForumUI.ViewModels.ForumViewModels;
 using TomarForumUI.ViewModels.HomeViewModels;
 using TomarForumUI.ViewModels.PostViewModels;
 
-namespace TomarForum.Controllers
+namespace TomarForumUI.Controllers
 {
     public class HomeController : Controller
     {
         private readonly IPostService _postService;
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger, IPostService postService)
+        public HomeController(IPostService postService)
         {
-            _logger = logger;
             _postService = postService;
         }
 

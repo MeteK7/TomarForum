@@ -14,20 +14,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\_ViewImports.cshtml"
-using TomarForum;
+using TomarForumUI;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\_ViewImports.cshtml"
-using TomarForum.Models;
+using TomarForumUI.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f02", @"/Views/Forum/Topic.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d15f68a43f71f435fdbacb01ddbecacb59a8ce41", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b7060f3dc926a52f2b25893c97588eb6f679d159", @"/Views/_ViewImports.cshtml")]
     public class Views_Forum_Topic : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<TomarForumUI.ViewModels.ForumViewModels.ForumTopicViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -92,7 +92,7 @@ using TomarForum.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                <span id=\"btn-heading\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f029614", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f029622", async() => {
                 WriteLiteral("Create Post");
             }
             );
@@ -134,9 +134,9 @@ using TomarForum.Models;
 #line hidden
 #nullable disable
             WriteLiteral("            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0212352", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0212360", async() => {
                 WriteLiteral("\r\n                <div class=\"search-form\">\r\n                    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0212678", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0212686", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -162,7 +162,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                    <button type=\"submit\" class=\"btn btn-forum-search\">\r\n                        <i class=\"material-icons\">Search</i>\r\n                    </button>\r\n                </div>\r\n                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0214873", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0214881", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -236,7 +236,7 @@ WriteAttributeValue("", 1185, Model.Forum.ImageUrl, 1185, 21, false);
 #line hidden
 #nullable disable
             WriteLiteral("                <p>\r\n                    <span>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0219665", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0219673", async() => {
                 WriteLiteral("Register");
             }
             );
@@ -280,7 +280,7 @@ WriteAttributeValue("", 1185, Model.Forum.ImageUrl, 1185, 21, false);
 #line hidden
 #nullable disable
             WriteLiteral("                        <tr>\r\n                            <td>\r\n                                <div class=\"post-data\">\r\n                                    <div class=\"post-title\">\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0222270", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0222278", async() => {
 #nullable restore
 #line 45 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\Forum\Topic.cshtml"
                                                                                                        Write(post.Title);
@@ -324,7 +324,7 @@ WriteAttributeValue("", 1185, Model.Forum.ImageUrl, 1185, 21, false);
                                         <div>
                                             <span class=""post-author"">
                                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0225212", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0225220", async() => {
                 WriteLiteral("\r\n                                                    ");
 #nullable restore
 #line 51 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\Forum\Topic.cshtml"
@@ -414,7 +414,7 @@ WriteAttributeValue("", 1185, Model.Forum.ImageUrl, 1185, 21, false);
 #line hidden
 #nullable disable
             WriteLiteral("            <div class=\"no-post\">\r\n                <i class=\"material-icons md-72\">question_answer</i>\r\n                <h3>\r\n                    It looks like there is no any posts yet :/\r\n                    Would you like to ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0230245", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0c65ddf1f3f57b2c7c14a3092b6fcec15c0f0230253", async() => {
                 WriteLiteral("<span>post?</span>");
             }
             );

@@ -1,6 +1,6 @@
 using System;
 
-namespace TomarForum.Models
+namespace TomarForumUI.ViewModels
 {
     public class ErrorViewModel
     {

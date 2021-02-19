@@ -10,7 +10,7 @@ using TomarForumData.EntityModels;
 using TomarForumService;
 using TomarForumService.Interfaces;
 
-namespace TomarForum
+namespace TomarForumUI
 {
     public class Startup
     {
@@ -34,6 +34,7 @@ namespace TomarForum
             services.AddControllersWithViews();
 
             services.AddTransient<IEmailSender, EmailSender>();
+
             services.AddScoped<IForumService, ForumService>();
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<IUploadService, UploadService>();
