@@ -406,6 +406,25 @@ body {
     font-family: "Playfair";
 }
 
+.user-profile{
+    padding:32px 0 64px 24px;
+    background-color:#fff;
+}
+
+.lbl-user-email, #lbl-user-boi, #lbl-user-created, #lbl-user-rating, #lbl-user-active {
+    display: block;
+    color: #444;
+    font-family: "Playfair";
+    padding-top:3px;
+}
+
+#user-name {
+    display: block;
+    color: #2569d5;
+    font-family: "Playfair";
+    font-size:1.7em;
+}
+
 .create-post-section{
     background-color:#fff;
     padding:24px;
