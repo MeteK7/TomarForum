@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -43,6 +44,14 @@ namespace TomarForumUI.Controllers
                 IsAdmin=userRoles.Contains("Admin")
             };
             return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UploadProfileImage(IFormFile formFile)
+        {
+            var userId = _userManager.GetUserId(User);
+
+            return View();
         }
     }
 }
