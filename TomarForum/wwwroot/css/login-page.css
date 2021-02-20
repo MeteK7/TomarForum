@@ -4,10 +4,6 @@
     padding-top: 6px;
     padding-bottom: 6px;
     width: 80%;
-    border-style: solid;
-    border-color: springgreen;
-    border-radius: 12px;
-    border: 4px inset #30cbf2;
 }
 
 #label-login {
@@ -44,21 +40,17 @@
     height: 60%;
     padding-top: 6%;
     padding-bottom: 6%;
-    border-style: solid;
-    border-color: paleturquoise;
-    border-radius: 12px;
+    border-radius: 5px;
     box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.57);
-    border-radius: 14px 14px 14px 14px;
-    -moz-border-radius: 14px 14px 14px 14px;
-    -webkit-border-radius: 14px 14px 14px 14px;
-    border: 4px outset #45e0d8;
-    background: rgba(217, 237, 247,0.4);
+    background-color: rgba(217, 237, 247,0.4);
+    /*-webkit-filter: blur(5px);  Blurres all the content including words in the div.*/
+    backdrop-filter: blur(5px); /*Blurres only the background*/
 }
 
-    .div-login-main:hover {
-        background: rgba(217, 237, 247,0.8);
-        transition: background-color 1s linear;
-    }
+.div-login-main:hover {
+    background: rgba(217, 237, 247,0.8);
+    transition: background-color 1s linear;
+}
 
 .p-footer {
     color: darkgray;
