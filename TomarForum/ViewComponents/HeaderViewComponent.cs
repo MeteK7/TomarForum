@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TomarForumUI.ViewComponents
 {
-    public class HeaderViewComponent:ViewComponent
+    public class HeaderViewComponent : ViewComponent
     {
         public async Task<IViewComponentResult> InvokeAsync()
         {

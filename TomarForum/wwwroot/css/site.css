@@ -59,19 +59,18 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  padding: 50px 0 20px 0;
-  background-color:#EEE;
-  background-image:url("/image/theme/black-hexagonal.jpg");
-  background-size:100%;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  background-position:center;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url("../../images/theme/holi-color-background-white-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .navbar {
     box-shadow: 0 5px 4px -6px #000;
+    background-color: ghostwhite;
 }
 
 .navlogo {

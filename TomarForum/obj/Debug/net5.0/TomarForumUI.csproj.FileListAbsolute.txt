@@ -180,4 +180,5 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\T
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\TomarForumUI.csproj.CopyComplete
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\TomarForumUI.genruntimeconfig.cache
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\_IdentityLayout.cshtml.g.cs
-C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\Components\HeaderComponent\Default.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
