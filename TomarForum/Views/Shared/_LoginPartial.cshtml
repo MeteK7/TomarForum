@@ -1,8 +1,10 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using TomarForumData.EntityModels
-
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["URL"] = ViewContext.HttpContext.Request.Path;
+}
 
 <ul class="navbar-nav">
     @if (SignInManager.IsSignedIn(User))
@@ -31,13 +33,28 @@
             </form>
         </li>
     }
-    else
+    else /*TRY TO IMPROVE THIS ELSE SECTION BY COMBINING THE SIMILARITIES.*/
     {
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
-        </li>
+        @if (@ViewData["URL"].ToString() == "/Identity/Account/Login")
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            </li>
+        }
+        else if (@ViewData["URL"].ToString() == "/Identity/Account/Register")
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            </li>
+        }
     }
 </ul>
