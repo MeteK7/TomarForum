@@ -3,7 +3,9 @@
 @{
     ViewData["Title"] = "Register";
 }
-
+@{
+    ViewData["URL"] = ViewContext.HttpContext.Request.Path;
+}
 <h1>@ViewData["Title"]</h1>
 
 <div class="row">

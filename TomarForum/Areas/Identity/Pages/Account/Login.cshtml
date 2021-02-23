@@ -2,11 +2,12 @@
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<TomarForumData.EntityModels.ApplicationUser> SignInManager
 @model LoginModel
-
 @{
     ViewData["Title"] = "Log in";
 }
-
+@{ 
+    ViewData["URL"] = ViewContext.HttpContext.Request.Path;
+}
 @section Head{
     <style type="text/css">
         body {
@@ -17,9 +18,10 @@
         }
     </style>
 }
+
 <center>
     <div class="div-login-logo">
-        <img class="img-login-logo" src="~/images/icons/login-icon.png"/>
+        <img class="img-login-logo" src="~/images/icons/login-icon.png" />
     </div>
 
     <h1>@ViewData["Title"]</h1>
