@@ -22,10 +22,10 @@
                     <tr>
                         <td>
                             <div class="forum-logo" style="background-image: url(@post.Forum.ImageUrl);"></div>
-                            <div class="post-title">
+                            <div class="div-post-title">
                                 <a asp-controller="Post" asp-action="Index" asp-route-id="@post.Id">@post.Title</a>
                             </div>
-                            <div class="post-subtitle"> <!--IMPROVE THE IF STATEMENTS BELOW!!!-->
+                            <div class="div-post-subtitle"> <!--IMPROVE THE IF STATEMENTS BELOW!!!-->
                                 @if (post.ReplyAmount==1)
                                 {
                                     <span>@post.ReplyAmount Reply</span>

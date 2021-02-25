@@ -24,8 +24,8 @@
                         <tr>
                             <td>
                                 <div class="forum-logo" style="background-image:url(@post.Forum.ImageUrl)"></div>
-                                <div class="post-data">
-                                    <div class="post-title">
+                                <div class="div-post-data">
+                                    <div class="div-post-title">
                                         <a asp-controller="Post" asp-action="Index" asp-route-id="@post.Id">@post.Title</a>
                                     </div>
                                     <div class="forum-subtitle">
@@ -51,7 +51,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="post-date">@post.DatePosted</div>
+                                <div class="div-post-date">@post.DatePosted</div>
                             </td>
                         </tr>
                     }

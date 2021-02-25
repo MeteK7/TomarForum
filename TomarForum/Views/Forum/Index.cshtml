@@ -2,11 +2,14 @@
 
 <h1>Forums</h1>
 
-<table class="table table-hover" id="forum-index-table">
+<table class="table table-hover" id="table-forum-index">
     <tbody>
         @foreach (var forum in Model.ForumList)
         {
             <tr>
+                <td class="td-logo">
+                    <div class="forum-logo" style="background-image: url(@forum.ImageUrl); background-size:100%"></div>
+                </td>
                 <td>
                     <a asp-controller="Forum" asp-action="Topic" asp-route-id="@forum.Id">
                         @forum.Title

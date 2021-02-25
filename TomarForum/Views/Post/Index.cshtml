@@ -1,9 +1,9 @@
 ﻿@model TomarForumUI.ViewModels.PostViewModels.PostIndexViewModel
 
 <div class="container body-content">
-    <div class="row post-header">
+    <div class="row div-post-header">
         <div class="post-heading">
-            <span class="post-index-title">
+            <span class="span-post-index-title">
                 @Model.Title
             </span>
             <span id="btn-heading">
@@ -12,19 +12,19 @@
         </div>
     </div>
 
-    <div class="row" id="post-index-content">
-        <div class="col-md-3 post-author-container">
-            <div class="post-author-image" style="background-image:url(@Model.AuthorImageUrl);"></div>
+    <div class="row" id="div-post-index-content">
+        <div class="col-md-3 div-post-author-container">
+            <div class="div-post-author-image" style="background-image:url(@Model.AuthorImageUrl);"></div>
             <a asp-controller="Profile" asp-action="Detail" asp-route-id="@Model.AuthorId">
                 @Model.AuthorName
             </a>
-            <span class="post-data">@Model.DateCreated</span>
+            <span>@Model.DateCreated</span>
             @if (Model.IsAuthorAdmin)
             {
                 <span class="is-admin smaller">Admin</span>
             }
         </div>
-        <div class="col-md-9 post-content-container">
+        <div class="col-md-9 div-post-content">
             <div class="post-content">
                 @Html.Raw(Model.PostContent)
             </div>
@@ -44,7 +44,7 @@
         {
             <div class="row reply-content">
                 <div class="col-md-3 reply-author-container">
-                    <div class="post-author-image" style="background-image:url(@reply.AuthorImageUrl)"></div>
+                    <div class="div-post-author-image" style="background-image:url(@reply.AuthorImageUrl)"></div>
                     <a asp-controller="Profile" asp-action="Detail" asp-route-id="@reply.AuthorId">
                         @reply.AuthorName
                     </a>

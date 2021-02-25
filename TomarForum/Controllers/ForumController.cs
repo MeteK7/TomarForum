@@ -26,7 +26,8 @@ namespace TomarForumUI.Controllers
                 .Select(forum=>new ForumListViewModel {
                     Id=forum.Id,
                     Title=forum.Title,
-                    Description=forum.Description
+                    Description=forum.Description,
+                    ImageUrl=forum.ImageUrl
                 });
 
             var model = new ForumIndexViewModel

@@ -1,5 +1,64 @@
-﻿.div-post-create {
+﻿.div-entrance {
+    font-size: 1.1em;
+    font-family: "Playfair";
+    padding: 16px 0 16px 0;
+}
+
+.div-post-create {
     background-color: #fff;
     padding: 24px;
     margin-top: 1%;
+}
+
+.div-post-title {
+    font-family: "Playfair";
+    font-weight: bold;
+}
+
+.div-post-subtitle {
+    color: #888;
+    font-family: "Playfair";
+    font-size: 0.8em;
+}
+
+.div-post-data {
+    display: inline-block;
+}
+
+.div-post-date {
+    display: inline-block;
+}
+
+.div-post-author-image {
+    height: 80px;
+    width: 80px;
+    background-size: 100%;
+}
+
+.div-post-author-container {
+    padding: 12px;
+    color: #444;
+    font-family: "Playfair";
+    width: 190px;
+}
+
+.span-post-index-title {
+    font-size: 1.4em;
+}
+
+.div-post-content {
+    font-family: "Playfair";
+    color: #222;
+    padding: 22px;
+    border-left: 1px solid #ddd;
+}
+
+#div-post-index-content {
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.3);
+}
+
+.div-post-header {
+    background-color: #212121;
+    padding: 8px 0px 24px 24px;
 }

@@ -102,13 +102,6 @@ body {
     margin-bottom:12px;
 }
 
-.div-entrance {
-    color: white;
-    font-size: 1.1em;
-    font-family: "Playfair";
-    padding: 16px 0 16px 0;
-}
-
 .section-info{
     height:400px;
     background-color:white;
@@ -196,74 +189,6 @@ body {
     background-color:#fff;
 }
 
-.post-title{
-    font-family:"Playfair";
-    font-weight:bold;
-}
-
-.post-sub-title{
-    color:#888;
-    font-family:"Playfair";
-    font-size:0.8em;
-}
-
-.post-data{
-    display:inline-block;
-}
-
-.post-date{
-    display:inline-block;
-}
-
-.post-logo{
-    display:inline-block;
-    border-radius:3px;
-    margin-right:20px;
-    height:40px;
-    width:40px;
-    background-color:#ddd;
-}
-
-.post-author-image{
-    height:80px;
-    width:80px;
-    background-size:100%;
-}
-
-.post-author-container {
-    padding: 12px;
-    color: #444;
-    font-family: "Playfair";
-    width:190px;
-}
-
-.post-index-title{
-    font-size:1.4em;
-}
-
-.post-content-container {
-    font-family: "Playfair";
-    color:#222;
-    padding:22px;
-    border-left:1px solid #ddd;
-}
-
-.post-author-rating {
-    font-size: 0.9em;
-    color: #159;
-    font-family: "Playfair";
-}
-
-#post-index-content{
-    background-color:white;
-    box-shadow:0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.3);
-}
-
-.post-header{
-    background-color:#212121;
-    padding:8px 0px 24px 24px;
-}
-
 #span-btn {
     float: right;
     margin-right: 20px;
@@ -340,12 +265,18 @@ body {
     font:inherit;
 }
 
-#forum-index-table td{
+#table-forum-index td{
     background-color:rgba(255,255,255,0.9);
 }
 
-#forum-index-table tr:hover{
+
+#table-forum-index tr:hover{
     background-color:rgba(0,116,238,1);
+}
+
+#table-forum-index td.td-logo {
+    width: 1%;
+    border-radius: 11px;
 }
 
 .forum-data{
@@ -371,10 +302,8 @@ body {
 
 .forum-logo{
     border-radius:3px;
-    float:left;
-    margin-right:20px;
-    height:40px;
-    width:40px;
+    height:50px;
+    width:50px;
     background-color:#ddd;
     border:1px solid #555;
     background-size:100%;
