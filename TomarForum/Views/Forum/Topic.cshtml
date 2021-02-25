@@ -1,12 +1,12 @@
 ﻿@model TomarForumUI.ViewModels.ForumViewModels.ForumTopicViewModel
 
 <div class="container body-content">
-    <div class="section-header">
-        <div class="section-heading">
+    <div class="div-header">
+        <div class="div-heading">
             <span>@Model.Forum.Title Forum</span>
             @if (Context.User.Identity.IsAuthenticated)
             {
-                <span id="btn-heading">
+                <span id="span-btn">
                     <a asp-controller="Post" asp-action="Create" asp-route-id="@Model.Forum.Id" class="btn btn-new-post">Create Post</a>
                 </span>
             }
@@ -31,7 +31,7 @@
             }
         </div>
     </div>
-    <div class="row forum-index-content">
+    <div class="forum-index-content">
         @if (Model.Posts.Any())
         {
             <table class="table table-hover table-bordered" id="forum-index-table">

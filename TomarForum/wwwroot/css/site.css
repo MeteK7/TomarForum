@@ -87,12 +87,13 @@ body {
     font-weight:bold;
 }
 
-.section-header{
+.div-header{
     background-color:rgba(0,0,0,0.9);
     padding:8px 0 24px 24px;
+    border-radius:1%;
 }
 
-.section-heading{
+.div-heading{
     color:white;
     font-size:1.3em;
     font-family:"Playfair";
@@ -101,7 +102,7 @@ body {
     margin-bottom:12px;
 }
 
-.post-heading {
+.div-entrance {
     color: white;
     font-size: 1.1em;
     font-family: "Playfair";
@@ -263,22 +264,24 @@ body {
     padding:8px 0px 24px 24px;
 }
 
-#btn-heading{
-    float:right;
-    margin-right:20px;
+#span-btn {
+    float: right;
+    margin-right: 20px;
 }
 
-.btn-back{
-    background-color:#555;
-    color:#fff !important;
-    transition:ease-in 0.1s;
-    border-radius:0px !important;
+.btn-back {
+    background-color: #555;
+    color: #fff !important;
+    transition: ease-in 0.1s;
+    border-radius: 4px;
+    border: 2px solid darkred;
 }
 
-.btn-back:hover{
-    transition:ease-in 0.1s;
-    background-color:#1E88E5 !important;
-}
+    .btn-back:hover {
+        transition: ease-in 0.1s;
+        background-color: darkred !important;
+        border: 2px solid #008CBA;
+    }
 
 .btn-new-reply{
     background-color:#5C6BC0 !important;
