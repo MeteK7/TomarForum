@@ -72,6 +72,10 @@ namespace TomarForumUI.Controllers
             return RedirectToAction("Topic", new { id, searchQuery });
         }
 
+        public IActionResult Create()
+        {
+            return View();
+        }
         private ForumListViewModel BuildForumListing(Post post)
         {
             var forum = post.Forum;
