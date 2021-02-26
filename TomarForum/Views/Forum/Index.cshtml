@@ -2,35 +2,44 @@
 
 <h1>Forums</h1>
 
-@if (Context.User.Identity.IsAuthenticated)
-{
-    <span id="span-btn">
-        <a asp-controller="Forum" asp-action="Create" class="btn btn-new">Create Forum</a>
-    </span>
-}
-<table class="table table-hover" id="table-forum-index">
-    <tbody>
-        @foreach (var forum in Model.ForumList)
-        {
-            <tr>
-                <td class="td-logo">
-                    <div class="forum-logo" style="background-image: url(@forum.ImageUrl); background-size:100%"></div>
-                </td>
-                <td>
-                    <a asp-controller="Forum" asp-action="Topic" asp-route-id="@forum.Id">
-                        @forum.Title
-                    </a>
-                </td>
-                <td>
-                    @forum.Description
-                </td>
-                <td>
-                    @forum.TotalPostAmount Posts
-                </td>
-                <td>
-                    @forum.TotalUserAmount Users
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="container body-content">
+    <div class="div-header">
+        <div class="div-heading">
+            <span>Forums</span>
+            @if (Context.User.Identity.IsAuthenticated)
+            {
+                <span id="span-btn">
+                    <a asp-controller="Forum" asp-action="Create" class="btn btn-new">Create Forum</a>
+                </span>
+            }
+        </div>
+    </div>
+    <div class="div-input">
+        <table class="table table-hover" id="table-forum-index">
+            <tbody>
+                @foreach (var forum in Model.ForumList)
+                {
+                    <tr>
+                        <td class="td-logo">
+                            <div class="forum-logo" style="background-image: url(@forum.ImageUrl); background-size:100%"></div>
+                        </td>
+                        <td>
+                            <a asp-controller="Forum" asp-action="Topic" asp-route-id="@forum.Id">
+                                @forum.Title
+                            </a>
+                        </td>
+                        <td>
+                            @forum.Description
+                        </td>
+                        <td>
+                            @forum.TotalPostAmount Posts
+                        </td>
+                        <td>
+                            @forum.TotalUserAmount Users
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
