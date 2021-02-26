@@ -2,6 +2,12 @@
 
 <h1>Forums</h1>
 
+@if (Context.User.Identity.IsAuthenticated)
+{
+    <span id="span-btn">
+        <a asp-controller="Forum" asp-action="Create" class="btn btn-new">Create Forum</a>
+    </span>
+}
 <table class="table table-hover" id="table-forum-index">
     <tbody>
         @foreach (var forum in Model.ForumList)

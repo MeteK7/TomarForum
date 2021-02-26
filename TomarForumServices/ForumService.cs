@@ -57,5 +57,11 @@ namespace TomarForumService
         {
             throw new NotImplementedException();
         }
+
+        public async Task Add(Forum forum)
+        {
+            _applicationDbContext.Add(forum);
+            await _applicationDbContext.SaveChangesAsync();
+        }
     }
 }

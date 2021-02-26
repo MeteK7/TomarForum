@@ -74,8 +74,26 @@ namespace TomarForumUI.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            return View(new ForumCreateViewModel());
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(ForumCreateViewModel forumCreateViewModel)
+        {
+            var forum = new TomarForumData.EntityModels.Forum()
+            {
+                Title = forumCreateViewModel.Title,
+                Description = forumCreateViewModel.Description,
+                Created = DateTime.Now,
+                ImageUrl = forumCreateViewModel.ImageUrl
+            };
+
+            await _forumService.Add(forum);
+
+            return View("Index","Forum");
+        }
+
+
         private ForumListViewModel BuildForumListing(Post post)
         {
             var forum = post.Forum;

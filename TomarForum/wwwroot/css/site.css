@@ -232,14 +232,14 @@ body {
     transition:ease 0.3s;
 }
 
-.btn-new-post{
+.btn-new{
     background-color:#c62828 !important;
     color:#fff !important;
     transition:ease-in 0.1s;
     border-radius:0px !important;
 }
 
-.btn-new-post:hover{
+.btn-new:hover{
     transition:ease-in 0.1s;
     background-color:#e53935 !important;
     color:#fff !important;
