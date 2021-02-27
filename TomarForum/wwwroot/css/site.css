@@ -89,7 +89,7 @@ body {
 
 .div-header{
     background-color:rgba(0,0,0,0.9);
-    padding:8px 0 24px 24px;
+    padding:8px 0 1px 24px;
     border-radius:1%;
 }
 
@@ -98,7 +98,6 @@ body {
     font-size:1.3em;
     font-family:"Playfair";
     padding: 16px 0 16px 0;
-    border-bottom:1px solid #335;
     margin-bottom:12px;
 }
 
@@ -283,16 +282,24 @@ body {
     display:inline-block;
 }
 
-.forum-title {
+.div-forum-title {
     font-family: "Playfair";
-    font-weight:bold;
-    font-size:1.1em;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 10%;
+    margin-left: 2%;
+    float: left;
+}
+
+.div-forum-create {
+    margin-right: 2%;
+    float: right;
 }
 
 .forum-subtitle {
     color: #888;
     font-family: "Playfair";
-    font-size:0.8em;
+    font-size: 0.8em;
 }
 
 .forum-description {
@@ -300,13 +307,14 @@ body {
     font-family: "Playfair";
 }
 
-.forum-logo{
-    border-radius:3px;
-    height:50px;
-    width:50px;
-    background-color:#ddd;
-    border:1px solid #555;
-    background-size:100%;
+.div-forum-logo {
+    border-radius: 3px;
+    height: 50px;
+    width: 50px;
+    background-color: #ddd;
+    border: 1px solid #555;
+    background-size: 100%;
+    float: left;
 }
 
 .forum-post-count {
@@ -363,4 +371,9 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+.div-forum-header {
+    width: 100%;
+    overflow: hidden;
 }
