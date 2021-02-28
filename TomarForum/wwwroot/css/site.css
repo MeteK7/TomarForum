@@ -292,10 +292,7 @@ body {
     float: left;
 }
 
-.div-forum-create {
-    margin-right: 2%;
-    float: right;
-}
+
 
 .forum-subtitle {
     color: #888;
@@ -378,4 +375,16 @@ body {
 .div-forum-header {
     width: 100%;
     overflow: hidden;
+}
+
+.div-forum-create {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.div-input {
+    font-size: 1.1em;
+    font-family: "Playfair";
+    padding: 16px 0 16px 0;
+    background-color:aliceblue;
 }

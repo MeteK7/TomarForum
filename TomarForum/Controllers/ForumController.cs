@@ -87,12 +87,14 @@ namespace TomarForumUI.Controllers
                 Title = forumCreateViewModel.Title,
                 Description = forumCreateViewModel.Description,
                 Created = DateTime.Now,
-                ImageUrl = forumCreateViewModel.ImageUrl
+                ImageUrl = forumCreateViewModel.ImageUrl,
+                AmountTotalPost=forumCreateViewModel.AmountTotalPost,
+                AmountTotalUser=forumCreateViewModel.AmountTotalUser
             };
 
             await _forumService.Add(forum);
 
-            return View("Index","Forum");
+            return RedirectToAction("Index","Forum");
         }
 
 

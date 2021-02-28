@@ -12,5 +12,7 @@ namespace TomarForumUI.ViewModels.ForumViewModels
         public string Description { get; set; }
         public string ImageUrl { get; set; }
         public IFormFile ImageUpload { get; set; }
+        public int AmountTotalPost { get; set; }
+        public int AmountTotalUser { get; set; }
     }
 }
