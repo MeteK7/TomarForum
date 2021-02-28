@@ -65,11 +65,19 @@ namespace TomarForumUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(NewPostViewModel newPostViewModel)
         {
+            #region Creating a new Post
             var userId = _userManager.GetUserId(User);
             var user = _userManager.FindByIdAsync(userId).Result;
             var post = BuildPost(newPostViewModel, user);
 
             await _postService.Add(post);
+            #endregion
+
+            #region Increasing the Total Post Amount in Forum
+            var forum = _forumService.GetById(newPostViewModel.ForumId);
+            forum.AmountTotalPost += 1;
+            await _forumService.Update(forum);
+            #endregion
 
             return RedirectToAction("Index", "Post", new { id = post.Id });
         }

@@ -63,5 +63,12 @@ namespace TomarForumService
             _applicationDbContext.Add(forum);
             await _applicationDbContext.SaveChangesAsync();
         }
+
+        public async Task<Forum> Update(Forum forum)
+        {
+            _applicationDbContext.Update(forum);
+            await _applicationDbContext.SaveChangesAsync();
+            return forum;
+        }
     }
 }
