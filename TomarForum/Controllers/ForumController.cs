@@ -27,7 +27,9 @@ namespace TomarForumUI.Controllers
                     Id=forum.Id,
                     Title=forum.Title,
                     Description=forum.Description,
-                    ImageUrl=forum.ImageUrl
+                    ImageUrl=forum.ImageUrl,
+                    AmountTotalPost=forum.AmountTotalPost,
+                    AmountTotalUser=forum.AmountTotalUser
                 });
 
             var model = new ForumIndexViewModel

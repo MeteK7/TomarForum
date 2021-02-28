@@ -63,7 +63,7 @@ namespace TomarForumUI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddPost(NewPostViewModel newPostViewModel)
+        public async Task<IActionResult> Create(NewPostViewModel newPostViewModel)
         {
             var userId = _userManager.GetUserId(User);
             var user = _userManager.FindByIdAsync(userId).Result;

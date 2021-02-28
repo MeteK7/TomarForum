@@ -1,7 +1,5 @@
 ﻿@model TomarForumUI.ViewModels.ForumViewModels.ForumIndexViewModel
 
-<h1>Forums</h1>
-
 <div class="container body-content">
     <div class="div-header">
         <div class="div-heading">
@@ -21,7 +19,7 @@
                 {
                     <tr>
                         <td class="td-logo">
-                            <div class="forum-logo" style="background-image: url(@forum.ImageUrl); background-size:100%"></div>
+                            <div class="div-forum-logo" style="background-image: url(@forum.ImageUrl); background-size:100%"></div>
                         </td>
                         <td>
                             <a asp-controller="Forum" asp-action="Topic" asp-route-id="@forum.Id">
@@ -32,10 +30,10 @@
                             @forum.Description
                         </td>
                         <td>
-                            @forum.TotalPostAmount Posts
+                            @forum.AmountTotalPost Post(s)
                         </td>
                         <td>
-                            @forum.TotalUserAmount Users
+                            @forum.AmountTotalUser User(s)
                         </td>
                     </tr>
                 }

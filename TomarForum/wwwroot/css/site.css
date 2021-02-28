@@ -99,6 +99,7 @@ body {
     font-family:"Playfair";
     padding: 16px 0 16px 0;
     margin-bottom:12px;
+    overflow:hidden;
 }
 
 .section-info{
@@ -273,7 +274,7 @@ body {
     background-color:rgba(0,116,238,1);
 }
 
-#table-forum-index td.td-logo {
+.td-logo {
     width: 1%;
     border-radius: 11px;
 }
@@ -315,6 +316,7 @@ body {
     border: 1px solid #555;
     background-size: 100%;
     float: left;
+    margin-right: 2%;
 }
 
 .forum-post-count {

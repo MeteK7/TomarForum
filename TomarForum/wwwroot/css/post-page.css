@@ -44,7 +44,6 @@
 
 .span-post-index-title {
     font-size: 1.4em;
-    background-color:white;
 }
 
 .div-post-content {
@@ -52,14 +51,24 @@
     color: #222;
     padding: 22px;
     border-left: 1px solid #ddd;
+    float: right;
 }
 
 #div-post-index-content {
     background-color: white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.3);
+    overflow: hidden;
 }
 
 .div-post-header {
     background-color: #212121;
     padding: 8px 0px 24px 24px;
+}
+.div-post-heading {
+    color: white;
+    font-size: 1.3em;
+    font-family: "Playfair";
+    padding: 16px 0 16px 0;
+    margin-bottom: 12px;
+    overflow: hidden;
 }

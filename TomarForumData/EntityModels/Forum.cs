@@ -10,6 +10,8 @@ namespace TomarForumData.EntityModels
         public string Description { get; set; }
         public DateTime Created { get; set; }
         public string ImageUrl { get; set; }
+        public int AmountTotalPost { get; set; }
+        public int AmountTotalUser { get; set; }
         public virtual IEnumerable<Post> Posts { get; set; }
 
     }

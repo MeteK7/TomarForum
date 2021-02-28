@@ -2,7 +2,7 @@
 
 <div class="container body-content">
     <div class="div-post-header">
-        <div class="post-heading">
+        <div class="div-post-heading">
             <span class="span-post-index-title">
                 @Model.Title
             </span>
@@ -12,8 +12,8 @@
         </div>
     </div>
 
-    <div class="row" id="div-post-index-content">
-        <div class="col-md-3 div-post-author-container">
+    <div id="div-post-index-content">
+        <div class="div-post-author-container">
             <div class="div-post-author-image" style="background-image:url(@Model.AuthorImageUrl);"></div>
             <a asp-controller="Profile" asp-action="Detail" asp-route-id="@Model.AuthorId">
                 @Model.AuthorName
@@ -24,7 +24,7 @@
                 <span class="is-admin smaller">Admin</span>
             }
         </div>
-        <div class="col-md-9 div-post-content">
+        <div class="div-post-content">
             <div class="post-content">
                 @Html.Raw(Model.PostContent)
             </div>
