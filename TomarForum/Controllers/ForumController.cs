@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using TomarForumData.EntityModels;
@@ -12,12 +15,14 @@ namespace TomarForumUI.Controllers
 {
     public class ForumController : Controller
     {
+        private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IForumService _forumService;
         private readonly IPostService _postService;
-        public ForumController(IForumService forumService, IPostService postService)
+        public ForumController(IForumService forumService, IPostService postService, IWebHostEnvironment webHostEnvironment)
         {
             _forumService = forumService;
             _postService = postService;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public IActionResult Index()
@@ -82,21 +87,38 @@ namespace TomarForumUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(ForumCreateViewModel forumCreateViewModel)
         {
+            string imageUrl = UploadFile(forumCreateViewModel);
+
             var forum = new TomarForumData.EntityModels.Forum()
             {
                 Title = forumCreateViewModel.Title,
                 Description = forumCreateViewModel.Description,
                 Created = DateTime.Now,
-                ImageUrl = forumCreateViewModel.ImageUrl,
+                ImageUrl = imageUrl,
                 AmountTotalPost=forumCreateViewModel.AmountTotalPost,
                 AmountTotalUser=forumCreateViewModel.AmountTotalUser
             };
 
             await _forumService.Add(forum);
-
             return RedirectToAction("Index","Forum");
         }
 
+        private string UploadFile(ForumCreateViewModel forumCreateViewModel)
+        {
+            string filePath = "", dataBasePath="";
+            if (forumCreateViewModel!=null)
+            {
+                string mainPath=Path.Combine(_webHostEnvironment.WebRootPath,@"images\posts");
+                string fileName = Guid.NewGuid().ToString() + "-" + forumCreateViewModel.ImageUpload.FileName;
+                filePath = Path.Combine(mainPath, fileName);
+                using (var fileStream=new FileStream(filePath,FileMode.Create))
+                {
+                    forumCreateViewModel.ImageUpload.CopyTo(fileStream);
+                }
+                dataBasePath= $@"../../images/posts/{fileName}";
+            }
+            return dataBasePath;
+        }
 
         private ForumListViewModel BuildForumListing(Post post)
         {
