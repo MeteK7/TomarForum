@@ -108,14 +108,14 @@ namespace TomarForumUI.Controllers
             string filePath = "", dataBasePath="";
             if (forumCreateViewModel!=null)
             {
-                string mainPath=Path.Combine(_webHostEnvironment.WebRootPath,@"images\posts");
+                string mainPath=Path.Combine(_webHostEnvironment.WebRootPath,@"images\forums");
                 string fileName = Guid.NewGuid().ToString() + "-" + forumCreateViewModel.ImageUpload.FileName;
                 filePath = Path.Combine(mainPath, fileName);
                 using (var fileStream=new FileStream(filePath,FileMode.Create))
                 {
                     forumCreateViewModel.ImageUpload.CopyTo(fileStream);
                 }
-                dataBasePath= $@"../../images/posts/{fileName}";
+                dataBasePath= $@"../../images/forums/{fileName}";
             }
             return dataBasePath;
         }

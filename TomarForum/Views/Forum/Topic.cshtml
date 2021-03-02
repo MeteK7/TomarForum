@@ -9,7 +9,7 @@
                 @if (Context.User.Identity.IsAuthenticated)
                 {
                     <div class="div-forum-create">
-                        <span>
+                        <span id="span-btn">
                             <a asp-controller="Post" asp-action="Create" asp-route-id="@Model.Forum.Id" class="btn btn-new">Create Post</a>
                         </span>
                     </div>
