@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TomarForumData;
 using TomarForumData.EntityModels;
+using TomarForumService;
 using TomarForumService.Interfaces;
 using TomarForumUI.ViewModels.PostViewModels;
 using TomarForumUI.ViewModels.ReplyViewModels;
@@ -16,11 +17,13 @@ namespace TomarForumUI.Controllers
     {
         private readonly IPostService _postService;
         private readonly IForumService _forumService;
+        private readonly IForumUserService _forumUserService;
         private static UserManager<ApplicationUser> _userManager;
-        public PostController(IPostService postService, IForumService forumService, UserManager<ApplicationUser> userManager)
+        public PostController(IPostService postService, IForumService forumService, IForumUserService forumUserService, UserManager<ApplicationUser> userManager)
         {
             _postService = postService;
             _forumService = forumService;
+            _forumUserService = forumUserService;
             _userManager = userManager;
         }
 
@@ -65,7 +68,7 @@ namespace TomarForumUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(NewPostViewModel newPostViewModel)
         {
-            #region Creating a new Post
+            #region CREATING A NEW POST
             var userId = _userManager.GetUserId(User);
             var user = _userManager.FindByIdAsync(userId).Result;
             var post = BuildPost(newPostViewModel, user);
@@ -73,7 +76,7 @@ namespace TomarForumUI.Controllers
             await _postService.Add(post);
             #endregion
 
-            #region Increasing the Total Post Amount in Forum
+            #region INCREASING THE TOTAL POST AMOUNT IN FORUM
             var forum = _forumService.GetById(newPostViewModel.ForumId);
             forum.AmountTotalPost += 1;
             
@@ -81,10 +84,21 @@ namespace TomarForumUI.Controllers
 
             bool userFirstPostByForum = _forumService.CheckUserFirstPostByForum(userId.ToString(), newPostViewModel.ForumId);
 
-            if (userFirstPostByForum==true)
+            if (userFirstPostByForum==true)//If it is the first time that the user is creating a post related with the forum, then increase one user of the forum.
             {
                 forum.AmountTotalUser += 1;
+
+                #region INSERTING FORUM ENTRANCE BY USER
+                var model = new ForumUser
+                {
+                    User = user,
+                    Forum = forum
+                };
+
+                await _forumUserService.Add(model);
+                #endregion
             }
+
             await _forumService.Update(forum);
 
             return RedirectToAction("Index", "Post", new { id = post.Id });
