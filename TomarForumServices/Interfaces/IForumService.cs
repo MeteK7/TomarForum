@@ -12,7 +12,7 @@ namespace TomarForumService.Interfaces
         Forum GetById(int id);
         IEnumerable<Forum> GetAll();
         IEnumerable<ApplicationUser> GetAllActiveUsers();
-
+        bool CheckUserFirstPostByForum(string userId, int forumId);
         Task Create(Forum forum);
         Task Delete(int forumId);
         Task UpdateForumTitle(int forumId, string newTitle);

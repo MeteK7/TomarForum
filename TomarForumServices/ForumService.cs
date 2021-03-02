@@ -48,11 +48,16 @@ namespace TomarForumService
             return forum;
         }
 
-        public bool CheckUserFirstPostByForum(int userId, int forumId)
+        public bool CheckUserFirstPostByForum(string userId, int forumId)
         {
-            var userForumRecord = _applicationDbContext.ForumUsers.Where(fUser => fUser.Id == userId && fUser.Forum.Id == forumId);
+            var userForumRecord = _applicationDbContext.ForumUsers
+                .Where(fUser => fUser.User.Id == userId && fUser.Forum.Id == forumId)
+                .Include(fUser=>fUser.Forum)
+                .Include(fUser=>fUser.User)
+                .FirstOrDefault();
             bool result;
-            if (userForumRecord != null)
+
+            if (userForumRecord!=null && userForumRecord.Id != null)//A user ID cannot be 0 so that it indicates that if a user exists.
             {
                 result = false;//If user has a post for a specific forum, then no need to increase the total forum amount.
             }

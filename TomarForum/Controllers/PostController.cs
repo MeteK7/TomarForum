@@ -76,8 +76,16 @@ namespace TomarForumUI.Controllers
             #region Increasing the Total Post Amount in Forum
             var forum = _forumService.GetById(newPostViewModel.ForumId);
             forum.AmountTotalPost += 1;
-            await _forumService.Update(forum);
+            
             #endregion
+
+            bool userFirstPostByForum = _forumService.CheckUserFirstPostByForum(userId.ToString(), newPostViewModel.ForumId);
+
+            if (userFirstPostByForum==true)
+            {
+                forum.AmountTotalUser += 1;
+            }
+            await _forumService.Update(forum);
 
             return RedirectToAction("Index", "Post", new { id = post.Id });
         }

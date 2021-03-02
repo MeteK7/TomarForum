@@ -267,6 +267,28 @@ namespace TomarForumData.Migrations
                     b.ToTable("Forums");
                 });
 
+            modelBuilder.Entity("TomarForumData.EntityModels.ForumUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("ForumId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ForumId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ForumUsers");
+                });
+
             modelBuilder.Entity("TomarForumData.EntityModels.Post", b =>
                 {
                     b.Property<int>("Id")
@@ -375,6 +397,21 @@ namespace TomarForumData.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("TomarForumData.EntityModels.ForumUser", b =>
+                {
+                    b.HasOne("TomarForumData.EntityModels.Forum", "Forum")
+                        .WithMany()
+                        .HasForeignKey("ForumId");
+
+                    b.HasOne("TomarForumData.EntityModels.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Forum");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("TomarForumData.EntityModels.Post", b =>
