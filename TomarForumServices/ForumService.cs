@@ -48,6 +48,22 @@ namespace TomarForumService
             return forum;
         }
 
+        public bool CheckUserFirstPostByForum(int userId, int forumId)
+        {
+            var userForumRecord = _applicationDbContext.ForumUsers.Where(fUser => fUser.Id == userId && fUser.Forum.Id == forumId);
+            bool result;
+            if (userForumRecord != null)
+            {
+                result = false;//If user has a post for a specific forum, then no need to increase the total forum amount.
+            }
+            else//Do you really need an else statement??
+            {
+                result = true;
+            }
+
+            return result;
+        }
+
         public Task UpdateForumDescription(int forumId, string newDescription)
         {
             throw new NotImplementedException();
