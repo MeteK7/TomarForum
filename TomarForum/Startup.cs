@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TomarForumBLL;
+using TomarForumBLL.Interfaces;
 using TomarForumData;
 using TomarForumData.EntityModels;
 using TomarForumService;
@@ -34,6 +36,8 @@ namespace TomarForumUI
             services.AddControllersWithViews();
 
             services.AddTransient<IEmailSender, EmailSender>();
+
+            services.AddScoped<IAdminBLL, AdminBLL>();
 
             services.AddScoped<IForumService, ForumService>();
             services.AddScoped<IForumUserService, ForumUserService>();
