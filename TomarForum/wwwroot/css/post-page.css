@@ -33,7 +33,8 @@
     padding: 12px;
     color: #444;
     font-family: "Playfair";
-    width: 190px;
+    width: 20%;
+    float: left;
 }
 
 .span-post-index-title {
@@ -45,7 +46,7 @@
     color: #222;
     padding: 22px;
     border-left: 1px solid #ddd;
-    float: right;
+    margin-left: 20%;
 }
 
 #div-post-index-content {
