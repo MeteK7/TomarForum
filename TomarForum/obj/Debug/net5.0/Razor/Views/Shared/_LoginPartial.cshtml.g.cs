@@ -21,7 +21,7 @@ using TomarForumUI;
 #nullable disable
 #nullable restore
 #line 2 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\_ViewImports.cshtml"
-using TomarForumUI.ViewModels;
+using TomarForumViewModel;
 
 #line default
 #line hidden
@@ -41,7 +41,7 @@ using TomarForumData.EntityModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c443d68e376024ac379c9e673f5aa0cd76d8d3e9", @"/Views/Shared/_LoginPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0eae1a8d66d5c4620e4bdcfd36ce5acc3bffa792", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d988ba2840277484357ab5c2e27c566601ba0513", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__LoginPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Profile", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -106,7 +106,7 @@ using TomarForumData.EntityModels;
                 <li role=""separator"" class=""divider""></li>
                 <li class=""dropdown-header"">Profile</li>
                 <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e98891", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e98887", async() => {
                 WriteLiteral("My Profile");
             }
             );
@@ -148,7 +148,7 @@ using TomarForumData.EntityModels;
 #line hidden
 #nullable disable
             WriteLiteral("                    <li role=\"separator\" class=\"divider\"></li>\r\n                    <li class=\"dropdown-header\">Admin</li>\r\n                    <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e911753", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e911749", async() => {
                 WriteLiteral("Create Forum");
             }
             );
@@ -166,7 +166,7 @@ using TomarForumData.EntityModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n                    <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e913150", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e913146", async() => {
                 WriteLiteral("View Users");
             }
             );
@@ -192,7 +192,7 @@ using TomarForumData.EntityModels;
 #line hidden
 #nullable disable
             WriteLiteral("            </ul>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e914833", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e914829", async() => {
                 WriteLiteral("Hello ");
 #nullable restore
 #line 28 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\Shared\_LoginPartial.cshtml"
@@ -220,7 +220,7 @@ using TomarForumData.EntityModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e916769", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e916765", async() => {
                 WriteLiteral("\r\n                <button type=\"submit\" class=\"nav-link btn btn-link text-dark\">Logout</button>\r\n            ");
             }
             );
@@ -275,7 +275,7 @@ using TomarForumData.EntityModels;
 #line hidden
 #nullable disable
             WriteLiteral("            <li class=\"nav-item\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e920361", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e920357", async() => {
                 WriteLiteral("Register");
             }
             );
@@ -304,7 +304,7 @@ using TomarForumData.EntityModels;
 #line hidden
 #nullable disable
             WriteLiteral("            <li class=\"nav-item\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e922187", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e922183", async() => {
                 WriteLiteral("Login");
             }
             );
@@ -333,7 +333,7 @@ using TomarForumData.EntityModels;
 #line hidden
 #nullable disable
             WriteLiteral("            <li class=\"nav-item\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e923945", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e923941", async() => {
                 WriteLiteral("Register");
             }
             );
@@ -352,7 +352,7 @@ using TomarForumData.EntityModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e925462", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c443d68e376024ac379c9e673f5aa0cd76d8d3e925458", async() => {
                 WriteLiteral("Login");
             }
             );

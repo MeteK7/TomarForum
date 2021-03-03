@@ -21,14 +21,14 @@ using TomarForumUI;
 #nullable disable
 #nullable restore
 #line 2 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\_ViewImports.cshtml"
-using TomarForumUI.ViewModels;
+using TomarForumViewModel;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c", @"/Views/Search/Result.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0eae1a8d66d5c4620e4bdcfd36ce5acc3bffa792", @"/Views/_ViewImports.cshtml")]
-    public class Views_Search_Result : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<TomarForumUI.ViewModels.SearchViewModels.SearchResultViewModel>
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d988ba2840277484357ab5c2e27c566601ba0513", @"/Views/_ViewImports.cshtml")]
+    public class Views_Search_Result : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<TomarForumViewModel.SearchViewModels.SearchResultViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("type", "text", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("placeholder", new global::Microsoft.AspNetCore.Html.HtmlString("Search..."), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -79,9 +79,9 @@ using TomarForumUI.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("</span>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c8070", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c8066", async() => {
                 WriteLiteral("\r\n                <div class=\"search-form\">\r\n                    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c8395", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c8391", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -157,7 +157,7 @@ WriteAttributeValue("", 1162, post.Forum.ImageUrl, 1162, 20, false);
             WriteAttributeValue("", 1182, ")", 1182, 1, true);
             EndWriteAttribute();
             WriteLiteral("></div>\r\n                                <div class=\"div-post-data\">\r\n                                    <div class=\"div-post-title\">\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c13735", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c13731", async() => {
 #nullable restore
 #line 29 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\Search\Result.cshtml"
                                                                                                        Write(post.Title);
@@ -202,7 +202,7 @@ WriteAttributeValue("", 1162, post.Forum.ImageUrl, 1162, 20, false);
                                             by:
                                             <span class=""post-author"">
                                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c16728", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c16724", async() => {
                 WriteLiteral("\r\n                                                    ");
 #nullable restore
 #line 36 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\Search\Result.cshtml"
@@ -251,7 +251,7 @@ WriteAttributeValue("", 1162, post.Forum.ImageUrl, 1162, 20, false);
 #line hidden
 #nullable disable
             WriteLiteral(")\r\n                                            </span>\r\n                                            in:\r\n                                            <span class=\"post-forum\">\r\n                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c20094", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a5a01fab4a167e23977fa7d7bfa8dc17342e2c20090", async() => {
 #nullable restore
 #line 42 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\Search\Result.cshtml"
                                                                                                                       Write(post.Forum.Title);
@@ -363,7 +363,7 @@ WriteAttributeValue("", 1162, post.Forum.ImageUrl, 1162, 20, false);
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<TomarForumUI.ViewModels.SearchViewModels.SearchResultViewModel> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<TomarForumViewModel.SearchViewModels.SearchResultViewModel> Html { get; private set; }
     }
 }
 #pragma warning restore 1591

@@ -21,14 +21,14 @@ using TomarForumUI;
 #nullable disable
 #nullable restore
 #line 2 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\_ViewImports.cshtml"
-using TomarForumUI.ViewModels;
+using TomarForumViewModel;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c57ca03a2b16eeeb3b56918fc63d4d755e6e6c56", @"/Views/Forum/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0eae1a8d66d5c4620e4bdcfd36ce5acc3bffa792", @"/Views/_ViewImports.cshtml")]
-    public class Views_Forum_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<TomarForumUI.ViewModels.ForumViewModels.ForumIndexViewModel>
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d988ba2840277484357ab5c2e27c566601ba0513", @"/Views/_ViewImports.cshtml")]
+    public class Views_Forum_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<TomarForumViewModel.ForumViewModels.ForumIndexViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Forum", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Create", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -68,7 +68,7 @@ using TomarForumUI.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("                <span id=\"span-btn\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c57ca03a2b16eeeb3b56918fc63d4d755e6e6c564888", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c57ca03a2b16eeeb3b56918fc63d4d755e6e6c564884", async() => {
                 WriteLiteral("Create Forum");
             }
             );
@@ -118,7 +118,7 @@ WriteAttributeValue("", 837, forum.ImageUrl, 837, 15, false);
             WriteAttributeValue(" ", 854, "background-size:100%", 855, 21, true);
             EndWriteAttribute();
             WriteLiteral("></div>\r\n                        </td>\r\n                        <td>\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c57ca03a2b16eeeb3b56918fc63d4d755e6e6c567915", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c57ca03a2b16eeeb3b56918fc63d4d755e6e6c567911", async() => {
                 WriteLiteral("\r\n                                ");
 #nullable restore
 #line 26 "C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\Views\Forum\Index.cshtml"
@@ -202,7 +202,7 @@ WriteAttributeValue("", 837, forum.ImageUrl, 837, 15, false);
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<TomarForumUI.ViewModels.ForumViewModels.ForumIndexViewModel> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<TomarForumViewModel.ForumViewModels.ForumIndexViewModel> Html { get; private set; }
     }
 }
 #pragma warning restore 1591

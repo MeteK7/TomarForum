@@ -8,8 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
-using TomarForumUI.ViewModels.ForumViewModels;
-using TomarForumUI.ViewModels.PostViewModels;
+using TomarForumViewModel.ForumViewModels;
+using TomarForumViewModel.PostViewModels;
 
 namespace TomarForumUI.Controllers
 {

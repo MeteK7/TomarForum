@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
-using TomarForumUI.ViewModels.ForumViewModels;
-using TomarForumUI.ViewModels.PostViewModels;
-using TomarForumUI.ViewModels.SearchViewModels;
+using TomarForumViewModel.ForumViewModels;
+using TomarForumViewModel.PostViewModels;
+using TomarForumViewModel.SearchViewModels;
 
 namespace TomarForumUI.Controllers
 {

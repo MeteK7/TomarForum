@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
-using TomarForumUI.ViewModels.ApplicationUserViewModel;
+using TomarForumViewModel.ApplicationUserViewModel;
 
 namespace TomarForumUI.Controllers
 {

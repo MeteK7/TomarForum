@@ -1,8 +1,3 @@
-C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.csprojAssemblyReference.cache
-C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.GeneratedMSBuildEditorConfig.editorconfig
-C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.AssemblyInfoInputs.cache
-C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.AssemblyInfo.cs
-C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.csproj.CoreCompileInputs.cache
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\bin\Debug\net5.0\TomarForumBLL.deps.json
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\bin\Debug\net5.0\TomarForumBLL.dll
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\bin\Debug\net5.0\ref\TomarForumBLL.dll
@@ -13,6 +8,11 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\bin\Debug\net5.
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\bin\Debug\net5.0\TomarForumViewModel.pdb
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\bin\Debug\net5.0\TomarForumService.pdb
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\bin\Debug\net5.0\TomarForumData.pdb
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.csprojAssemblyReference.cache
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.AssemblyInfoInputs.cache
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.AssemblyInfo.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.csproj.CoreCompileInputs.cache
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.csproj.CopyComplete
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.dll
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\ref\TomarForumBLL.dll

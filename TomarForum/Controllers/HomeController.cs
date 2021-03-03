@@ -3,10 +3,10 @@ using System.Diagnostics;
 using System.Linq;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
-using TomarForumUI.ViewModels;
-using TomarForumUI.ViewModels.ForumViewModels;
-using TomarForumUI.ViewModels.HomeViewModels;
-using TomarForumUI.ViewModels.PostViewModels;
+using TomarForumViewModel;
+using TomarForumViewModel.ForumViewModels;
+using TomarForumViewModel.HomeViewModels;
+using TomarForumViewModel.PostViewModels;
 
 namespace TomarForumUI.Controllers
 {
