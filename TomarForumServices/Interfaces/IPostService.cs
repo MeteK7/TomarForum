@@ -14,6 +14,7 @@ namespace TomarForumService.Interfaces
         Task Delete(int id);
         Task EditPostContent(int id, string newContent);
         IEnumerable<Post> GetAll();
+        IEnumerable<Post> GetPostsByUser(ApplicationUser applicationUser);
         IEnumerable<Post> GetFilteredPosts(Forum forum, string searchQuery);
         IEnumerable<Post> GetFilteredPosts(string searchQuery);
         IEnumerable<Post> GetPostsByForum(int id);

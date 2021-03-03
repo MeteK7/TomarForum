@@ -100,6 +100,9 @@
             "projectReferences": {
               "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForumViewModel\\TomarForumViewModel.csproj": {
                 "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForumViewModel\\TomarForumViewModel.csproj"
+              },
+              "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumServices\\TomarForumService.csproj": {
+                "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumServices\\TomarForumService.csproj"
               }
             }
           }

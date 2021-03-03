@@ -2170,6 +2170,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "TomarForumService": "1.0.0",
           "TomarForumViewModel": "1.0.0"
         },
         "compile": {

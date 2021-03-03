@@ -42,6 +42,15 @@ namespace TomarForumService
                 .Include(post => post.Forum);
         }
 
+        public IEnumerable<Post> GetPostsByUser(ApplicationUser applicationUser)
+        {
+            return _applicationDbContext.Posts
+                //.Include(post => post.User)
+                .Include(post => post.Title)
+                .Include(post => post.Replies)
+                .Where(post => post.User == applicationUser);
+        }
+
         public Post GetById(int id)
         {
             return _applicationDbContext.Posts.Where(post => post.Id == id)

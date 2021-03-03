@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\TomarForumViewModel\TomarForumViewModel.csproj" />
+    <ProjectReference Include="..\TomarForumServices\TomarForumService.csproj" />
   </ItemGroup>
 
 </Project>

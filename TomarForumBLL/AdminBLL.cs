@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TomarForumBLL.Interfaces;
 using TomarForumData.EntityModels;
+using TomarForumService.Interfaces;
 using TomarForumViewModel.AdminViewModels;
 
 namespace TomarForumBLL
@@ -14,16 +15,18 @@ namespace TomarForumBLL
     public class AdminBLL:IAdminBLL
     {
         private readonly UserManager<ApplicationUser> _userManager;
-        public AdminBLL(UserManager<ApplicationUser> userManager)
+        private readonly IPostService _postService;
+        public AdminBLL(UserManager<ApplicationUser> userManager, IPostService postService)
         {
             _userManager = userManager;
+            _postService = postService;
         }
         public async Task<AdminIndexViewModel> GetAdminDashboard(ClaimsPrincipal claimsPrincipal)
         {
             var applicationUser = await _userManager.GetUserAsync(claimsPrincipal);
             return new AdminIndexViewModel
             {
-                Posts = postService.GetPosts(applicationUser)
+                Posts = _postService.GetPostsByUser(applicationUser)
             };
         }
     }

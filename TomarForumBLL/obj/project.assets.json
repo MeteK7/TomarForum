@@ -1580,6 +1580,19 @@
           "bin/placeholder/TomarForumData.dll": {}
         }
       },
+      "TomarForumService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "TomarForumData": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TomarForumService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TomarForumService.dll": {}
+        }
+      },
       "TomarForumViewModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5900,6 +5913,11 @@
       "path": "../TomarForumData/TomarForumData.csproj",
       "msbuildProject": "../TomarForumData/TomarForumData.csproj"
     },
+    "TomarForumService/1.0.0": {
+      "type": "project",
+      "path": "../TomarForumServices/TomarForumService.csproj",
+      "msbuildProject": "../TomarForumServices/TomarForumService.csproj"
+    },
     "TomarForumViewModel/1.0.0": {
       "type": "project",
       "path": "../../TomarForumViewModel/TomarForumViewModel.csproj",
@@ -5908,6 +5926,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "TomarForumService >= 1.0.0",
       "TomarForumViewModel >= 1.0.0"
     ]
   },
@@ -5944,6 +5963,9 @@
           "projectReferences": {
             "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForumViewModel\\TomarForumViewModel.csproj": {
               "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForumViewModel\\TomarForumViewModel.csproj"
+            },
+            "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumServices\\TomarForumService.csproj": {
+              "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumServices\\TomarForumService.csproj"
             }
           }
         }
