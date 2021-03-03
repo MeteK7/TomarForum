@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TomarForumBLL\TomarForumBLL.csproj" />
     <ProjectReference Include="..\TomarForumData\TomarForumData.csproj" />
     <ProjectReference Include="..\TomarForumServices\TomarForumService.csproj" />
   </ItemGroup>

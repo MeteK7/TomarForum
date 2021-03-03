@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomarForumData", "TomarForu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomarForumBLL", "TomarForumBLL\TomarForumBLL.csproj", "{D0DC9FEE-98AA-426C-942F-E694CDDCCC3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomarForumViewModel", "..\TomarForumViewModel\TomarForumViewModel.csproj", "{538E3647-B48D-4661-9FAC-ACB08F3A4A76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D0DC9FEE-98AA-426C-942F-E694CDDCCC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0DC9FEE-98AA-426C-942F-E694CDDCCC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0DC9FEE-98AA-426C-942F-E694CDDCCC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538E3647-B48D-4661-9FAC-ACB08F3A4A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538E3647-B48D-4661-9FAC-ACB08F3A4A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538E3647-B48D-4661-9FAC-ACB08F3A4A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538E3647-B48D-4661-9FAC-ACB08F3A4A76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

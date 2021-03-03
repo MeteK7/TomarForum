@@ -1,0 +1,5 @@
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.csprojAssemblyReference.cache
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.AssemblyInfoInputs.cache
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.AssemblyInfo.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumBLL\obj\Debug\net5.0\TomarForumBLL.csproj.CoreCompileInputs.cache

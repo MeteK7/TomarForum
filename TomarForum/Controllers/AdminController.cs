@@ -4,15 +4,21 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TomarForumBLL.Interfaces;
 
 namespace TomarForumUI.Controllers
 {
     [Authorize]
     public class AdminController : Controller
     {
-        public IActionResult Index()
+        private readonly IAdminBLL _adminBLL;
+        public AdminController(IAdminBLL adminBLL)
         {
-            return View();
+            _adminBLL = adminBLL;
+        }
+        public async Task<IActionResult> Index()
+        {
+            return View(await _adminBLL.GetAdminDashboard(User));
         }
     }
 }
