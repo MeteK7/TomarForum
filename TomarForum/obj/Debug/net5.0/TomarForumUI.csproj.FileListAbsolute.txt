@@ -189,3 +189,8 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\bin\Debug\net5.0\T
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\TomarForumUI.Views.pdb
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\TomarForumUI.csproj.CopyComplete
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\TomarForumUI.genruntimeconfig.cache
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\Components\AdminFooter\Default.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\Components\AdminSideNav\Default.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\Components\AdminTopNav\Default.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
