@@ -48,6 +48,7 @@ namespace TomarForumService
                 //.Include(post => post.User)
                 //.Include(post => post.Title)
                 //.Include(post=>post.Content)
+                .Include(post=>post.Forum)
                 .Include(post => post.Replies)
                 .Where(post => post.User == applicationUser);
         }
