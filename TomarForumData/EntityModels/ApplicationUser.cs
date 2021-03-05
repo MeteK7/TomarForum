@@ -9,6 +9,10 @@ namespace TomarForumData.EntityModels
 {
     public class ApplicationUser:IdentityUser
     {
+        [PersonalData]
+        public string FirstName { get; set; }
+        [PersonalData]
+        public string LastName { get; set; }
         public string UserDescription { get; set; } //Change the order of the properties later in order to be organized.
         public string ProfileImageUrl { get; set; }
         public int Rating { get; set; }

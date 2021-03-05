@@ -12,3 +12,4 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumData\obj\Debug\net5
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumData\obj\Debug\net5.0\ref\TomarForumData.dll
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.pdb
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.genruntimeconfig.cache
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.csprojAssemblyReference.cache
