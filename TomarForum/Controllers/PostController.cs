@@ -104,9 +104,17 @@ namespace TomarForumUI.Controllers
             return RedirectToAction("Index", "Post", new { id = post.Id });
         }
 
-        public async Task<IActionResult> Edit (int? id)
+        public IActionResult Edit(int id)
         {
-            var actionResult=await
+            var post = _postService.GetById(id);
+
+            var model = new PostEditViewModel
+            {
+                Title = post.Title,
+                Content = post.Content
+            };
+
+            return View(model);
         }
 
         private bool CheckAuthorAuthorization(ApplicationUser user)

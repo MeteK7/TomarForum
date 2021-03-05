@@ -194,3 +194,5 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\R
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\Components\AdminSideNav\Default.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\Components\AdminTopNav\Default.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
