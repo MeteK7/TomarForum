@@ -104,6 +104,11 @@ namespace TomarForumUI.Controllers
             return RedirectToAction("Index", "Post", new { id = post.Id });
         }
 
+        public async Task<IActionResult> Edit (int? id)
+        {
+            var actionResult=await
+        }
+
         private bool CheckAuthorAuthorization(ApplicationUser user)
         {
             return _userManager.GetRolesAsync(user).Result.Contains("Admin");
