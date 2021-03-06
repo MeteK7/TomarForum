@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TomarForumBLL.Interfaces;
 using TomarForumData;
 using TomarForumData.EntityModels;
 using TomarForumService;
@@ -18,12 +19,14 @@ namespace TomarForumUI.Controllers
         private readonly IPostService _postService;
         private readonly IForumService _forumService;
         private readonly IForumUserService _forumUserService;
+        private readonly IPostBLL _postBLL;
         private static UserManager<ApplicationUser> _userManager;
-        public PostController(IPostService postService, IForumService forumService, IForumUserService forumUserService, UserManager<ApplicationUser> userManager)
+        public PostController(IPostService postService, IForumService forumService, IForumUserService forumUserService, IPostBLL postBLL, UserManager<ApplicationUser> userManager)
         {
             _postService = postService;
             _forumService = forumService;
             _forumUserService = forumUserService;
+            _postBLL=postBLL;
             _userManager = userManager;
         }
 
@@ -117,6 +120,16 @@ namespace TomarForumUI.Controllers
             return View(model);
         }
 
+        public async Task<IActionResult> Edit(int? id)
+        {
+            var post = await _postBLL.GetPostEditViewModel(id, User);
+
+            if (post.Result is null)
+            {
+                return View(post.Value);
+            }
+            return post.Result;
+        }
         private bool CheckAuthorAuthorization(ApplicationUser user)
         {
             return _userManager.GetRolesAsync(user).Result.Contains("Admin");
