@@ -18,5 +18,21 @@ namespace TomarForumBLL
         {
             _postService = postService;
         }
+
+        public async Task<ActionResult<PostEditViewModel>> GetPostEditViewModel(int? id, ClaimsPrincipal claimsPrincipal)
+        {
+            if (id is null)
+            {
+                return new BadRequestResult();
+            }
+
+            var post = _postService.GetById(id.Value);
+
+            return new PostEditViewModel
+            {
+                Title = post.Title,
+                Content = post.Content
+            };
+        }
     }
 }

@@ -8383,8 +8383,8 @@
     },
     "TomarForumViewModel/1.0.0": {
       "type": "project",
-      "path": "../../TomarForumViewModel/TomarForumViewModel.csproj",
-      "msbuildProject": "../../TomarForumViewModel/TomarForumViewModel.csproj"
+      "path": "../TomarForumViewModel/TomarForumViewModel.csproj",
+      "msbuildProject": "../TomarForumViewModel/TomarForumViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8397,7 +8397,8 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "TomarForumBLL >= 1.0.0",
       "TomarForumData >= 1.0.0",
-      "TomarForumService >= 1.0.0"
+      "TomarForumService >= 1.0.0",
+      "TomarForumViewModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8439,6 +8440,9 @@
             },
             "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumServices\\TomarForumService.csproj": {
               "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumServices\\TomarForumService.csproj"
+            },
+            "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumViewModel\\TomarForumViewModel.csproj": {
+              "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumViewModel\\TomarForumViewModel.csproj"
             }
           }
         }

@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\TomarForumViewModel\TomarForumViewModel.csproj" />
     <ProjectReference Include="..\TomarForumServices\TomarForumService.csproj" />
+    <ProjectReference Include="..\TomarForumViewModel\TomarForumViewModel.csproj" />
   </ItemGroup>
 
 </Project>

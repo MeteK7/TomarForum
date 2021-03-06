@@ -5883,8 +5883,8 @@
     },
     "TomarForumData/1.0.0": {
       "type": "project",
-      "path": "../TomarForum/TomarForumData/TomarForumData.csproj",
-      "msbuildProject": "../TomarForum/TomarForumData/TomarForumData.csproj"
+      "path": "../TomarForumData/TomarForumData.csproj",
+      "msbuildProject": "../TomarForumData/TomarForumData.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5900,11 +5900,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForumViewModel\\TomarForumViewModel.csproj",
+      "projectUniqueName": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumViewModel\\TomarForumViewModel.csproj",
       "projectName": "TomarForumViewModel",
-      "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForumViewModel\\TomarForumViewModel.csproj",
+      "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumViewModel\\TomarForumViewModel.csproj",
       "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
-      "outputPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForumViewModel\\obj\\",
+      "outputPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumViewModel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

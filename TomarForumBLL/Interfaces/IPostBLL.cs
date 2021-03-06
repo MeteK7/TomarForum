@@ -11,5 +11,6 @@ namespace TomarForumBLL.Interfaces
 {
     public interface IPostBLL
     {
+        Task<ActionResult<PostEditViewModel>> GetPostEditViewModel(int? id, ClaimsPrincipal claimsPrincipal);
     }
 }

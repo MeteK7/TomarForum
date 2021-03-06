@@ -34,6 +34,7 @@
           "TomarForumBLL": "1.0.0",
           "TomarForumData": "1.0.0",
           "TomarForumService": "1.0.0",
+          "TomarForumViewModel": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",

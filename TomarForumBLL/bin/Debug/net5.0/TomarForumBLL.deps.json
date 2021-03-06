@@ -1426,15 +1426,6 @@
         "runtime": {
           "TomarForumService.dll": {}
         }
-      },
-      "TomarForumViewModel/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "5.0.3",
-          "TomarForumData": "1.0.0"
-        },
-        "runtime": {
-          "TomarForumViewModel.dll": {}
-        }
       }
     }
   },
@@ -2332,11 +2323,6 @@
       "sha512": ""
     },
     "TomarForumService/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "TomarForumViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tUUnW3GcRBOddP3ZRZyX6PiNGh+soyFNQ4XJv1VJRlXZIqB/Sjinsc30x5PmL3hBoBeZhH+C/ak+Qf+EG64qow==",
+  "dgSpecHash": "P0K9C+VdaNr0iBZUudlKrFlpDSIOT6Ss4r1wV+0c+RuHPHqSlZn//p0VOk+TvQ/zcDtpOMgnEDYfWfnRCwaYmw==",
   "success": true,
-  "projectFilePath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForumViewModel\\TomarForumViewModel.csproj",
+  "projectFilePath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumViewModel\\TomarForumViewModel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.3\\microsoft.aspnetcore.cryptography.internal.5.0.3.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.3\\microsoft.aspnetcore.cryptography.keyderivation.5.0.3.nupkg.sha512",
