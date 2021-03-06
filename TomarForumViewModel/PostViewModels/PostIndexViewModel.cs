@@ -9,7 +9,7 @@ namespace TomarForumViewModel.PostViewModels
     public class PostIndexViewModel
     {
         public int Id { get; set; }
-        public string Title { get; set; }
+        public string PostTitle { get; set; }
         public string AuthorId { get; set; }
         public string AuthorName { get; set; }
         public string AuthorImageUrl { get; set; }

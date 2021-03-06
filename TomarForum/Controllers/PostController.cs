@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -30,42 +31,32 @@ namespace TomarForumUI.Controllers
             _userManager = userManager;
         }
 
+        [AllowAnonymous]
         public IActionResult Index(int id)
         {
-            var post = _postService.GetById(id);
-            var replies = BuildPostReplies(post.Replies);
+            var post =  _postBLL.GetPostIndexViewModel(id, User);
 
-            var model = new PostIndexViewModel
-            {
-                Id=post.Id,
-                Title=post.Title,
-                AuthorId=post.User.Id,
-                AuthorName=post.User.UserName,
-                AuthorImageUrl=post.User.ProfileImageUrl,
-                AuthorRating=post.User.Rating,
-                DateCreated=post.DateCreated,
-                PostContent=post.Content,//Try to correct this naming!!! One of them is PostContent and one of the is only content.
-                Replies =replies,
-                ForumId=post.Forum.Id,
-                ForumTitle=post.Forum.Title,
-                IsAuthorAdmin=CheckAuthorAuthorization(post.User)
-            };
-            return View(model);
+            return View(post.Value);
         }
 
-        public IActionResult Create(int id)
+        //public IActionResult Create(int id)
+        //{
+        //    var forum = _forumService.GetById(id);
+
+        //    var model = new NewPostViewModel
+        //    {
+        //        ForumTitle=forum.Title,
+        //        ForumId=forum.Id,
+        //        ForumImageUrl=forum.ImageUrl,
+        //        AuthorName=User.Identity.Name
+        //    };
+
+        //    return View(model);
+        //}
+
+        public IActionResult Create()
         {
-            var forum = _forumService.GetById(id);
-
-            var model = new NewPostViewModel
-            {
-                ForumTitle=forum.Title,
-                ForumId=forum.Id,
-                ForumImageUrl=forum.ImageUrl,
-                AuthorName=User.Identity.Name
-            };
-
-            return View(model);
+            return View(new NewPostViewModel());
         }
 
         [HttpPost]
@@ -109,31 +100,21 @@ namespace TomarForumUI.Controllers
 
         public IActionResult Edit(int id)
         {
-            var post = _postService.GetById(id);
+            var post = _postBLL.GetPostEditViewModel(id, User);
 
-            var model = new PostEditViewModel
-            {
-                Title = post.Title,
-                Content = post.Content
-            };
-
-            return View(model);
+            return View(post.Value);
         }
 
-        public async Task<IActionResult> Edit(int? id)
-        {
-            var post = await _postBLL.GetPostEditViewModel(id, User);
+        //[HttpPost]
+        //public async Task<IActionResult> Edit(PostEditViewModel postEditViewModel)
+        //{
+        //    var post = await _postBLL.UpdatePost(postEditViewModel, User);
 
-            if (post.Result is null)
-            {
-                return View(post.Value);
-            }
-            return post.Result;
-        }
-        private bool CheckAuthorAuthorization(ApplicationUser user)
-        {
-            return _userManager.GetRolesAsync(user).Result.Contains("Admin");
-        }
+        //    if (actionResult.Result is null)
+        //        return RedirectToAction("Edit", new { postEditViewModel.Post.Id });
+
+        //    return actionResult.Result;
+        //}
 
         private Post BuildPost(NewPostViewModel newPostViewModel, ApplicationUser user)
         {
@@ -149,19 +130,5 @@ namespace TomarForumUI.Controllers
             };
         }
 
-        private IEnumerable<PostReplyViewModel> BuildPostReplies(IEnumerable<TomarForumData.EntityModels.PostReply> replies)
-        {
-            return replies.Select(reply => new PostReplyViewModel
-            {
-                Id = reply.Id,
-                AuthorName = reply.User.UserName,
-                AuthorId = reply.User.Id,
-                AuthorImageUrl = reply.User.ProfileImageUrl,
-                AuthorRating = reply.User.Rating,
-                DateCreated = reply.DateCreated,
-                ReplyContent = reply.Content,//Try to correct this naming!!! One of them is ReplyContent and one of the is only content.
-                IsAuthorAdmin=CheckAuthorAuthorization(reply.User)
-            });
-        }
     }
 }

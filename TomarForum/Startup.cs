@@ -38,7 +38,7 @@ namespace TomarForumUI
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddScoped<IAdminBLL, AdminBLL>();
-
+            services.AddScoped<IPostBLL, PostBLL>();
             services.AddScoped<IForumService, ForumService>();
             services.AddScoped<IForumUserService, ForumUserService>();
             services.AddScoped<IPostService, PostService>();
