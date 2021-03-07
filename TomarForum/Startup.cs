@@ -44,6 +44,7 @@ namespace TomarForumUI
             services.AddScoped<IForumUserService, ForumUserService>();
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<IUploadService, UploadService>();
+            services.AddScoped<IProfileService, ProfileService>();
             services.AddScoped<IApplicationUserService, ApplicationUserService>();
 
             services.AddTransient<DataSeeder>();
