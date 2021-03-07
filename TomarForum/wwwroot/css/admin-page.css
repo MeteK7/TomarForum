@@ -10746,11 +10746,11 @@ body {
         margin: 0;
     }
 
-    .sb-topnav.navbar-dark #sidebarToggle {
+    .sb-topnav.navbar-dark #sidebar-toggle {
         color: rgba(255, 255, 255, 0.5);
     }
 
-    .sb-topnav.navbar-light #sidebarToggle {
+    .sb-topnav.navbar-light #sidebar-toggle {
         color: #212529;
     }
 
@@ -10886,3 +10886,21 @@ body {
 .ck-editor__editable {
     min-height: 500px;
 }
+
+.nav-admin-top {
+    background-color: cornflowerblue;
+}
+
+.nav-admin-side {
+    background-color: cornflowerblue;
+    color:white;
+}
+
+    .nav-admin-side a {
+        color: white;
+    }
+
+
+    .nav-admin-side a:hover {
+        color:chartreuse;
+    }
