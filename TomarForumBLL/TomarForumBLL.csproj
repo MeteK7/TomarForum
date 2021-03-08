@@ -8,9 +8,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\TomarForumViewModel\TomarForumViewModel.csproj" />
-    <ProjectReference Include="..\TomarForumServices\TomarForumService.csproj" />
+  <ItemGroup>    
+	  <ProjectReference Include="..\TomarForumService\TomarForumService.csproj" />
     <ProjectReference Include="..\TomarForumViewModel\TomarForumViewModel.csproj" />
   </ItemGroup>
 
