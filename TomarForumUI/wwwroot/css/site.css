@@ -145,20 +145,18 @@ body {
     font-family:"Playfair";
 }
 
-.home-search{
+.input-search{
     width:100%;
-    margin-top:8px;
     background:rgba(0,0,0,0.1);
     padding:8px;
     border:0px;
-    height:2.3em;
     font-size:2.1em;
     font-family:"Playfair";
     font-weight:bold;
     transition:ease-in 0.2s;
 }
 
-.home-search:focus{
+.input-search:focus{
     border:none !important;
     outline:none !important;
     transition:ease-in 0.2s;
