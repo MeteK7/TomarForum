@@ -396,3 +396,4 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.Views.pdb
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.csproj.CopyComplete
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.genruntimeconfig.cache
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
