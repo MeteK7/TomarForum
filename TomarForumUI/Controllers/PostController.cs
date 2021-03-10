@@ -65,7 +65,7 @@ namespace TomarForumUI.Controllers
             #region CREATING A NEW POST
             var userId = _userManager.GetUserId(User);
             var user = _userManager.FindByIdAsync(userId).Result;
-            var post = BuildPost(newPostViewModel, user);
+            var post = _postBLL.BuildPost(newPostViewModel, user);
 
             await _postService.Add(post);
             #endregion
@@ -78,17 +78,13 @@ namespace TomarForumUI.Controllers
 
             bool userFirstPostByForum = _forumService.CheckUserFirstPostByForum(userId.ToString(), newPostViewModel.ForumId);
 
-            if (userFirstPostByForum==true)//If it is the first time that the user is creating a post related with the forum, then increase one user of the forum.
+            //If it is the first time that the user is creating a post related with the forum, then increase one user of the forum bcz a new user has just used the forum for the first time.
+            if (userFirstPostByForum==true)
             {
                 forum.AmountTotalUser += 1;
 
-                #region INSERTING FORUM ENTRANCE BY USER
-                var model = new ForumUser
-                {
-                    User = user,
-                    Forum = forum
-                };
-
+                #region INSERTING NEW FORUM AMOUNT
+                var model = _postBLL.InsertForumUserAmount(user, forum);
                 await _forumUserService.Add(model);
                 #endregion
             }
@@ -104,31 +100,5 @@ namespace TomarForumUI.Controllers
 
             return View(post.Value);
         }
-
-        //[HttpPost]
-        //public async Task<IActionResult> Edit(PostEditViewModel postEditViewModel)
-        //{
-        //    var post = await _postBLL.UpdatePost(postEditViewModel, User);
-
-        //    if (actionResult.Result is null)
-        //        return RedirectToAction("Edit", new { postEditViewModel.Post.Id });
-
-        //    return actionResult.Result;
-        //}
-
-        private Post BuildPost(NewPostViewModel newPostViewModel, ApplicationUser user)
-        {
-            var forum = _forumService.GetById(newPostViewModel.ForumId);
-
-            return new Post
-            {
-                Title = newPostViewModel.Title,
-                Content = newPostViewModel.Content,
-                DateCreated = DateTime.Now,
-                User = user,
-                Forum=forum
-            };
-        }
-
     }
 }

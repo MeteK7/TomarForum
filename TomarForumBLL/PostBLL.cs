@@ -18,12 +18,14 @@ namespace TomarForumBLL
     public class PostBLL:IPostBLL
     {
         private readonly IPostService _postService;
+        private readonly IForumService _forumService;
         private static UserManager<ApplicationUser> _userManager;
 
-        public PostBLL(IPostService postService, UserManager<ApplicationUser> userManager)
+        public PostBLL(IPostService postService, IForumService forumService, UserManager<ApplicationUser> userManager)
         {
             _postService = postService;
             _userManager = userManager;
+            _forumService = forumService;
         }
 
         public ActionResult<PostIndexViewModel> GetPostIndexViewModel(int? id, ClaimsPrincipal claimsPrincipal)
@@ -76,10 +78,28 @@ namespace TomarForumBLL
 
         }
 
-        //public Task<ActionResult<PostEditViewModel>> UpdatePost(PostEditViewModel postEditViewModel, ClaimsPrincipal claimsPrincipal)
-        //{
+        public Post BuildPost(NewPostViewModel newPostViewModel, ApplicationUser user)
+        {
+            var forum = _forumService.GetById(newPostViewModel.ForumId);
 
-        //}
+            return new Post
+            {
+                Title = newPostViewModel.Title,
+                Content = newPostViewModel.Content,
+                DateCreated = DateTime.Now,
+                User = user,
+                Forum = forum
+            };
+        }
+
+        public ForumUser InsertForumUserAmount(ApplicationUser user, Forum forum)
+        {
+            return new ForumUser
+            {
+                User = user,
+                Forum = forum
+            };
+        }
 
         private bool CheckAuthorAuthorization(ApplicationUser user)
         {
