@@ -92,15 +92,6 @@ namespace TomarForumBLL
             };
         }
 
-        public ForumUser InsertForumUserAmount(ApplicationUser user, Forum forum)
-        {
-            return new ForumUser
-            {
-                User = user,
-                Forum = forum
-            };
-        }
-
         private bool CheckAuthorAuthorization(ApplicationUser user)
         {
             return _userManager.GetRolesAsync(user).Result.Contains("Admin");

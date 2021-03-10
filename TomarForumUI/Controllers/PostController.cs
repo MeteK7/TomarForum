@@ -21,6 +21,7 @@ namespace TomarForumUI.Controllers
         private readonly IForumService _forumService;
         private readonly IForumUserService _forumUserService;
         private readonly IPostBLL _postBLL;
+        private readonly IForumBLL _forumBLL;
         private static UserManager<ApplicationUser> _userManager;
         public PostController(IPostService postService, IForumService forumService, IForumUserService forumUserService, IPostBLL postBLL, UserManager<ApplicationUser> userManager)
         {
@@ -84,7 +85,7 @@ namespace TomarForumUI.Controllers
                 forum.AmountTotalUser += 1;
 
                 #region INSERTING NEW FORUM AMOUNT
-                var model = _postBLL.InsertForumUserAmount(user, forum);
+                var model = _forumBLL.InsertForumUserAmount(user, forum);
                 await _forumUserService.Add(model);
                 #endregion
             }

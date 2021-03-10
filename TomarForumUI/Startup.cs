@@ -39,6 +39,7 @@ namespace TomarForumUI
 
             services.AddScoped<IAdminBLL, AdminBLL>();
             services.AddScoped<IHomeBLL, HomeBLL>();
+            services.AddScoped<IForumBLL, ForumBLL>();
             services.AddScoped<IPostBLL, PostBLL>();
             services.AddScoped<IProfileBLL, ProfileBLL>();
             services.AddScoped<IForumService, ForumService>();
