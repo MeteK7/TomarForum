@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,6 @@ namespace TomarForumBLL.Interfaces
     {
         ForumUser GetForumUserNewAmount(ApplicationUser user, Forum forum);
         ForumIndexViewModel GetAllForums();
+        ForumTopicViewModel GetTopic(int id, string searchQuery);
     }
 }

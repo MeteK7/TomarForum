@@ -35,7 +35,7 @@ namespace TomarForumUI.Controllers
             return View(allForums);
         }
 
-        public IActionResult Topic(int id, string searchQuery)
+        public IActionResult Topic(int id, string searchQuery)/*FIX THE CODE ERROR BELOW!*/
         {
             var forum = _forumService.GetById(id);
             var posts = new List<Post>();
@@ -61,6 +61,28 @@ namespace TomarForumUI.Controllers
             };
 
             return View(model);
+
+            //THIS CODE GIVES NULL ERROR
+            //var topic = _forumBLL.GetTopic(id,searchQuery);
+
+            //return View(topic);
+        }
+
+        private ForumListViewModel BuildForumListing(Post post)
+        {
+            var forum = post.Forum;
+            return BuildForumListing(forum);
+        }
+
+        private ForumListViewModel BuildForumListing(Forum forum)
+        {
+            return new ForumListViewModel
+            {
+                Id = forum.Id,
+                Title = forum.Title,
+                Description = forum.Description,
+                ImageUrl = forum.ImageUrl
+            };
         }
 
         [HttpPost]
@@ -108,23 +130,6 @@ namespace TomarForumUI.Controllers
                 dataBasePath= $@"../../images/forums/{fileName}";
             }
             return dataBasePath;
-        }
-
-        private ForumListViewModel BuildForumListing(Post post)
-        {
-            var forum = post.Forum;
-            return BuildForumListing(forum);
-        }
-
-        private ForumListViewModel BuildForumListing(Forum forum)
-        {
-            return new ForumListViewModel
-            {
-                Id = forum.Id,
-                Title = forum.Title,
-                Description = forum.Description,
-                ImageUrl = forum.ImageUrl
-            };
         }
     }
 }
