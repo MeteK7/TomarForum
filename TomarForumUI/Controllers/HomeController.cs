@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Linq;
+using TomarForumBLL.Interfaces;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
 using TomarForumViewModel;
@@ -13,51 +14,18 @@ namespace TomarForumUI.Controllers
     public class HomeController : Controller
     {
         private readonly IPostService _postService;
-
-        public HomeController(IPostService postService)
+        private readonly IHomeBLL _homeBLL;
+        public HomeController(IPostService postService, IHomeBLL homeBLL)
         {
             _postService = postService;
+            _homeBLL = homeBLL;
         }
 
         public IActionResult Index()
         {
-            var model = BuildHomeIndexViewModel();
-            return View(model);
-        }
+            var model = _homeBLL.GetHomeIndexViewModel();
 
-        private HomeIndexViewModel BuildHomeIndexViewModel()
-        {
-            var latestPosts = _postService.GetLatestPosts(22);
-
-            var posts = latestPosts.Select(post => new PostListViewModel
-            {
-                Id = post.Id,
-                Title = post.Title,
-                AuthorName = post.User.UserName,
-                AuthorId = post.User.Id,
-                AuthorRating = post.User.Rating,
-                DatePosted=post.DateCreated.ToString(),
-                ReplyAmount=post.Replies.Count(),
-                Forum=GetForumListingForPost(post)
-            });
-
-            return new HomeIndexViewModel
-            {
-                LatestPosts = posts,
-                SearchQuery=""
-            };
-        }
-
-        private ForumListViewModel GetForumListingForPost(Post post)
-        {
-            var forum = post.Forum;
-
-            return new ForumListViewModel
-            {
-                Id=forum.Id,
-                Title=forum.Title,
-                ImageUrl=forum.ImageUrl
-            };
+            return View(model.Value);
         }
 
         public IActionResult Privacy()
