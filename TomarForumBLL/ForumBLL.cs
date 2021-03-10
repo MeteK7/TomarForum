@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace TomarForumBLL
     {
         private readonly IForumService _forumService;
         private readonly IPostService _postService;
+
         public ForumBLL(IForumService forumService, IPostService postService)
         {
             _forumService = forumService;
@@ -79,13 +81,13 @@ namespace TomarForumBLL
             return model;
         }
 
-        private ForumListViewModel BuildForumListing(Post post)
+        public ForumListViewModel BuildForumListing(Post post)
         {
             var forum = post.Forum;
             return BuildForumListing(forum);
         }
 
-        private ForumListViewModel BuildForumListing(Forum forum)
+        public ForumListViewModel BuildForumListing(Forum forum)
         {
             return new ForumListViewModel
             {
@@ -94,6 +96,21 @@ namespace TomarForumBLL
                 Description = forum.Description,
                 ImageUrl = forum.ImageUrl
             };
+        }
+
+        public async Task CreateForum(ForumCreateViewModel forumCreateViewModel, string imageUrl)
+        {
+            var forum = new Forum()
+            {
+                Title = forumCreateViewModel.Title,
+                Description = forumCreateViewModel.Description,
+                Created = DateTime.Now,
+                ImageUrl = imageUrl,
+                AmountTotalPost = forumCreateViewModel.AmountTotalPost,
+                AmountTotalUser = forumCreateViewModel.AmountTotalUser
+            };
+
+            await _forumService.Add(forum);
         }
     }
 }

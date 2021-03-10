@@ -14,5 +14,8 @@ namespace TomarForumBLL.Interfaces
         ForumUser GetForumUserNewAmount(ApplicationUser user, Forum forum);
         ForumIndexViewModel GetAllForums();
         ForumTopicViewModel GetTopic(int id, string searchQuery);
+        ForumListViewModel BuildForumListing(Post post);
+        ForumListViewModel BuildForumListing(Forum forum);
+        Task CreateForum(ForumCreateViewModel forumCreateViewModel, string imageUrl);
     }
 }

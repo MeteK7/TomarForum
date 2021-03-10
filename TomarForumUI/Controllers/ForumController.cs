@@ -51,13 +51,13 @@ namespace TomarForumUI.Controllers
                 Title = post.Title,
                 DatePosted = post.DateCreated.ToString(),
                 ReplyAmount=post.Replies.Count(),
-                Forum=BuildForumListing(post)
+                Forum=_forumBLL.BuildForumListing(post)
             });
 
             var model = new ForumTopicViewModel
             {
                 Posts = postListings,
-                Forum = BuildForumListing(forum)
+                Forum = _forumBLL.BuildForumListing(forum)
             };
 
             return View(model);
@@ -66,23 +66,6 @@ namespace TomarForumUI.Controllers
             //var topic = _forumBLL.GetTopic(id,searchQuery);
 
             //return View(topic);
-        }
-
-        private ForumListViewModel BuildForumListing(Post post)
-        {
-            var forum = post.Forum;
-            return BuildForumListing(forum);
-        }
-
-        private ForumListViewModel BuildForumListing(Forum forum)
-        {
-            return new ForumListViewModel
-            {
-                Id = forum.Id,
-                Title = forum.Title,
-                Description = forum.Description,
-                ImageUrl = forum.ImageUrl
-            };
         }
 
         [HttpPost]
@@ -101,17 +84,8 @@ namespace TomarForumUI.Controllers
         {
             string imageUrl = UploadFile(forumCreateViewModel);
 
-            var forum = new TomarForumData.EntityModels.Forum()
-            {
-                Title = forumCreateViewModel.Title,
-                Description = forumCreateViewModel.Description,
-                Created = DateTime.Now,
-                ImageUrl = imageUrl,
-                AmountTotalPost=forumCreateViewModel.AmountTotalPost,
-                AmountTotalUser=forumCreateViewModel.AmountTotalUser
-            };
-
-            await _forumService.Add(forum);
+            await _forumBLL.CreateForum(forumCreateViewModel, imageUrl);
+            
             return RedirectToAction("Index","Forum");
         }
 
