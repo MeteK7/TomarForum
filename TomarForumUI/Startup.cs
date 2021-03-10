@@ -43,7 +43,6 @@ namespace TomarForumUI
             services.AddScoped<IPostBLL, PostBLL>();
             services.AddScoped<IProfileBLL, ProfileBLL>();
             services.AddScoped<IForumService, ForumService>();
-            services.AddScoped<IForumUserService, ForumUserService>();
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<IUploadService, UploadService>();
             services.AddScoped<IProfileService, ProfileService>();

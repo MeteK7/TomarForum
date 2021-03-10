@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using TomarForumBLL.Interfaces;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
 using TomarForumViewModel.ForumViewModels;
@@ -18,31 +19,20 @@ namespace TomarForumUI.Controllers
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IForumService _forumService;
         private readonly IPostService _postService;
-        public ForumController(IForumService forumService, IPostService postService, IWebHostEnvironment webHostEnvironment)
+        private readonly IForumBLL _forumBLL;
+        public ForumController(IForumService forumService, IPostService postService, IWebHostEnvironment webHostEnvironment, IForumBLL forumBLL)
         {
             _forumService = forumService;
             _postService = postService;
             _webHostEnvironment = webHostEnvironment;
+            _forumBLL = forumBLL;
         }
 
         public IActionResult Index()
         {
-            var forums = _forumService.GetAll()
-                .Select(forum=>new ForumListViewModel {
-                    Id=forum.Id,
-                    Title=forum.Title,
-                    Description=forum.Description,
-                    ImageUrl=forum.ImageUrl,
-                    AmountTotalPost=forum.AmountTotalPost,
-                    AmountTotalUser=forum.AmountTotalUser
-                });
+            var allForums = _forumBLL.GetAllForums();
 
-            var model = new ForumIndexViewModel
-            {
-                ForumList = forums
-            };
-
-            return View(model);
+            return View(allForums);
         }
 
         public IActionResult Topic(int id, string searchQuery)
