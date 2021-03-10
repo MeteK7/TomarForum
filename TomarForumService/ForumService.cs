@@ -91,5 +91,11 @@ namespace TomarForumService
             await _applicationDbContext.SaveChangesAsync();
             return forum;
         }
+
+        public async Task AddNewUser(ForumUser forumUser)
+        {
+            _applicationDbContext.Add(forumUser);
+            await _applicationDbContext.SaveChangesAsync();
+        }
     }
 }

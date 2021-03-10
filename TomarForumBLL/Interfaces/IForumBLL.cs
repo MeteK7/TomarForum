@@ -9,6 +9,6 @@ namespace TomarForumBLL.Interfaces
 {
     public interface IForumBLL
     {
-        ForumUser InsertForumUserAmount(ApplicationUser user, Forum forum);
+        ForumUser GetForumUserNewAmount(ApplicationUser user, Forum forum);
     }
 }

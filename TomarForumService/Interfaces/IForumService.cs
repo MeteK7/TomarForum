@@ -19,5 +19,6 @@ namespace TomarForumService.Interfaces
         Task UpdateForumDescription(int forumId, string newDescription);
         Task<Forum> Update(Forum forum);
         Task Add(Forum forum);
+        Task AddNewUser(ForumUser forumUser);
     }
 }

@@ -10,8 +10,10 @@ namespace TomarForumBLL
 {
     public class ForumBLL: IForumBLL
     {
-        public ForumUser InsertForumUserAmount(ApplicationUser user, Forum forum)
+        public ForumUser GetForumUserNewAmount(ApplicationUser user, Forum forum)
         {
+            forum.AmountTotalUser += 1;
+
             return new ForumUser
             {
                 User = user,

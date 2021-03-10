@@ -19,15 +19,13 @@ namespace TomarForumUI.Controllers
     {
         private readonly IPostService _postService;
         private readonly IForumService _forumService;
-        private readonly IForumUserService _forumUserService;
         private readonly IPostBLL _postBLL;
         private readonly IForumBLL _forumBLL;
         private static UserManager<ApplicationUser> _userManager;
-        public PostController(IPostService postService, IForumService forumService, IForumUserService forumUserService, IPostBLL postBLL, UserManager<ApplicationUser> userManager)
+        public PostController(IPostService postService, IForumService forumService, IPostBLL postBLL, UserManager<ApplicationUser> userManager)
         {
             _postService = postService;
             _forumService = forumService;
-            _forumUserService = forumUserService;
             _postBLL=postBLL;
             _userManager = userManager;
         }
@@ -39,21 +37,6 @@ namespace TomarForumUI.Controllers
 
             return View(post.Value);
         }
-
-        //public IActionResult Create(int id)
-        //{
-        //    var forum = _forumService.GetById(id);
-
-        //    var model = new NewPostViewModel
-        //    {
-        //        ForumTitle=forum.Title,
-        //        ForumId=forum.Id,
-        //        ForumImageUrl=forum.ImageUrl,
-        //        AuthorName=User.Identity.Name
-        //    };
-
-        //    return View(model);
-        //}
 
         public IActionResult Create()
         {
@@ -74,22 +57,19 @@ namespace TomarForumUI.Controllers
             #region INCREASING THE TOTAL POST AMOUNT IN FORUM
             var forum = _forumService.GetById(newPostViewModel.ForumId);
             forum.AmountTotalPost += 1;
-            
             #endregion
 
+            #region INSERTING NEW FORUM AMOUNT
             bool userFirstPostByForum = _forumService.CheckUserFirstPostByForum(userId.ToString(), newPostViewModel.ForumId);
 
             //If it is the first time that the user is creating a post related with the forum, then increase one user of the forum bcz a new user has just used the forum for the first time.
             if (userFirstPostByForum==true)
             {
-                forum.AmountTotalUser += 1;
-
-                #region INSERTING NEW FORUM AMOUNT
-                var model = _forumBLL.InsertForumUserAmount(user, forum);
-                await _forumUserService.Add(model);
-                #endregion
+                var model = _forumBLL.GetForumUserNewAmount(user, forum);
+                await _forumService.AddNewUser(model);
             }
-
+            #endregion
+            
             await _forumService.Update(forum);
 
             return RedirectToAction("Index", "Post", new { id = post.Id });
