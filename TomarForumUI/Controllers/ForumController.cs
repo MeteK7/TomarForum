@@ -82,7 +82,7 @@ namespace TomarForumUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(ForumCreateViewModel forumCreateViewModel)
         {
-            string imageUrl = UploadFile(forumCreateViewModel);
+            string imageUrl = _forumBLL.UploadFile(forumCreateViewModel);
 
             await _forumBLL.CreateForum(forumCreateViewModel, imageUrl);
             

@@ -17,5 +17,6 @@ namespace TomarForumBLL.Interfaces
         ForumListViewModel BuildForumListing(Post post);
         ForumListViewModel BuildForumListing(Forum forum);
         Task CreateForum(ForumCreateViewModel forumCreateViewModel, string imageUrl);
+        string UploadFile(ForumCreateViewModel forumCreateViewModel);
     }
 }

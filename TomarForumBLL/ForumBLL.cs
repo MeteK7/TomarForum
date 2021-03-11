@@ -10,6 +10,8 @@ using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
 using TomarForumViewModel.ForumViewModels;
 using TomarForumViewModel.PostViewModels;
+using Microsoft.AspNetCore.Hosting;
+
 
 namespace TomarForumBLL
 {
@@ -17,10 +19,13 @@ namespace TomarForumBLL
     {
         private readonly IForumService _forumService;
         private readonly IPostService _postService;
+        private IHostingEnvironment _environment;
 
-        public ForumBLL(IForumService forumService, IPostService postService)
+        public ForumBLL(IForumService forumService, IPostService postService, IHostingEnvironment environment)
         {
             _forumService = forumService;
+            _postService = postService;
+            _environment = environment;
         }
         public ForumUser GetForumUserNewAmount(ApplicationUser user, Forum forum)
         {
@@ -111,6 +116,23 @@ namespace TomarForumBLL
             };
 
             await _forumService.Add(forum);
+        }
+        
+        public string UploadFile(ForumCreateViewModel forumCreateViewModel)
+        {
+            string filePath, dataBasePath="";
+            if (forumCreateViewModel != null)
+            {
+                string mainPath = Path.Combine(_environment.WebRootPath, @"images\forums");
+                string fileName = Guid.NewGuid().ToString() + "-" + forumCreateViewModel.ImageUpload.FileName;
+                filePath = Path.Combine(mainPath, fileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    forumCreateViewModel.ImageUpload.CopyTo(fileStream);
+                }
+                dataBasePath = $@"../../images/forums/{fileName}";
+            }
+            return dataBasePath;
         }
     }
 }
