@@ -35,8 +35,8 @@ namespace TomarForumUI.Controllers
         {
             var user = _applicationUserService.GetById(id);
             var userRoles = _userManager.GetRolesAsync(user).Result;
-
             var profile = _profileBLL.GetProfile(id);
+
             return View(profile);
         }
 
