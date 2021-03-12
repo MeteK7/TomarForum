@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TomarForumBLL.Interfaces;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
 using TomarForumViewModel.ForumViewModels;
@@ -14,46 +15,16 @@ namespace TomarForumUI.Controllers
     public class SearchController : Controller
     {
         private readonly IPostService _postService;
-        public SearchController(IPostService postService)
+        private readonly ISearchBLL _searchBLL;
+        public SearchController(IPostService postService, ISearchBLL searchBLL)
         {
             _postService = postService;
+            _searchBLL = searchBLL;
         }
         public IActionResult Result(string searchQuery)//Should be Result or Results?
         {
-            var posts = _postService.GetFilteredPosts(searchQuery);
-            var isNoResult = (!string.IsNullOrEmpty(searchQuery) && !posts.Any());
-            var postListings = posts.Select(post => new PostListViewModel
-            {
-                Id=post.Id,
-                AuthorId=post.User.Id,
-                AuthorName=post.User.UserName,
-                AuthorRating=post.User.Rating,
-                Title=post.Title,
-                DatePosted=post.DateCreated.ToString(),
-                ReplyAmount=post.Replies.Count(),
-                Forum=BuildForumListing(post)
-            });
-
-            var model = new SearchResultViewModel
-            {
-                Posts=postListings,
-                SearchQuery=searchQuery,
-                EmptySearchResult= isNoResult
-            };
-            return View(model);
-        }
-
-        private ForumListViewModel BuildForumListing(Post post)
-        {
-            var forum = post.Forum;
-
-            return new ForumListViewModel
-            {
-                Id = forum.Id,
-                ImageUrl = forum.ImageUrl,
-                Title = forum.Title,
-                Description = forum.Description
-            };
+            var searchResult = _searchBLL.GetResult(searchQuery);
+            return View(searchResult);
         }
 
         [HttpPost]
