@@ -15,12 +15,15 @@ namespace TomarForumBLL
     public class ProfileBLL:IProfileBLL
     {
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IApplicationUserService _applicationUserService;
         private readonly IProfileService _profileService;
-        public ProfileBLL(UserManager<ApplicationUser> userManager, IProfileService profileService)
+        public ProfileBLL(UserManager<ApplicationUser> userManager, IApplicationUserService applicationUserService, IProfileService profileService)
         {
             _userManager = userManager;
+            _applicationUserService = applicationUserService;
             _profileService = profileService;
         }
+
         public async Task<ProfileViewModel> GetProfileEditViewModel(ClaimsPrincipal claimsPrincipal)
         {
             var applicationUser=await _userManager.GetUserAsync(claimsPrincipal);
@@ -32,6 +35,25 @@ namespace TomarForumBLL
                 ProfileImageUrl = applicationUser.ProfileImageUrl,
                 MembershipCreatedOn = applicationUser.MembershipCreatedOn
             };
+        }
+
+        public ProfileViewModel GetProfile(string id)
+        {
+            var user = _applicationUserService.GetById(id);
+            var userRoles = _userManager.GetRolesAsync(user).Result;
+
+            var profile = new ProfileViewModel()
+            {
+                UserId = user.Id,
+                UserName = user.UserName,
+                UserRating = user.Rating.ToString(),
+                Email = user.Email,
+                ProfileImageUrl = user.ProfileImageUrl,
+                MembershipCreatedOn = user.MembershipCreatedOn,
+                IsAdmin = userRoles.Contains("Admin")
+            };
+
+            return profile;
         }
     }
 }

@@ -36,17 +36,8 @@ namespace TomarForumUI.Controllers
             var user = _applicationUserService.GetById(id);
             var userRoles = _userManager.GetRolesAsync(user).Result;
 
-            var model = new ProfileViewModel()
-            {
-                UserId=user.Id,
-                UserName=user.UserName,
-                UserRating=user.Rating.ToString(),
-                Email=user.Email,
-                ProfileImageUrl=user.ProfileImageUrl,
-                MembershipCreatedOn=user.MembershipCreatedOn,
-                IsAdmin=userRoles.Contains("Admin")
-            };
-            return View(model);
+            var profile = _profileBLL.GetProfile(id);
+            return View(profile);
         }
 
         public async Task<IActionResult> Edit()

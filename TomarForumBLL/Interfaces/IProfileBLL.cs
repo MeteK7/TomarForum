@@ -11,5 +11,6 @@ namespace TomarForumBLL.Interfaces
     public interface IProfileBLL
     {
         Task<ProfileViewModel> GetProfileEditViewModel(ClaimsPrincipal claimsPrincipal);
+        ProfileViewModel GetProfile(string id);
     }
 }
