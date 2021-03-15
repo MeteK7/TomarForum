@@ -45,12 +45,12 @@ namespace TomarForumUI.Controllers
             return View(await _profileBLL.GetProfileEditViewModel(User));
         }
 
-        [HttpPost]
-        public async Task<IActionResult> UploadProfileImage(IFormFile formFile)
-        {
-            var userId = _userManager.GetUserId(User);
+        //[HttpPost]
+        //public async Task<IActionResult> UploadProfileImage(IFormFile formFile)
+        //{
+        //    var userId = _userManager.GetUserId(User);
 
-            return View();
-        }
+        //    return View();
+        //}
     }
 }

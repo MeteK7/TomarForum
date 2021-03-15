@@ -28,3 +28,18 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumService\obj\Debug\n
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumService\obj\Debug\net5.0\TomarForumService.dll
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumService\obj\Debug\net5.0\ref\TomarForumService.dll
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumService\obj\Debug\net5.0\TomarForumService.pdb
+E:\Projects\TomarForum\TomarForumService\bin\Debug\net5.0\TomarForumService.deps.json
+E:\Projects\TomarForum\TomarForumService\bin\Debug\net5.0\TomarForumService.dll
+E:\Projects\TomarForum\TomarForumService\bin\Debug\net5.0\ref\TomarForumService.dll
+E:\Projects\TomarForum\TomarForumService\bin\Debug\net5.0\TomarForumService.pdb
+E:\Projects\TomarForum\TomarForumService\bin\Debug\net5.0\TomarForumData.dll
+E:\Projects\TomarForum\TomarForumService\bin\Debug\net5.0\TomarForumData.pdb
+E:\Projects\TomarForum\TomarForumService\obj\Debug\net5.0\TomarForumService.csprojAssemblyReference.cache
+E:\Projects\TomarForum\TomarForumService\obj\Debug\net5.0\TomarForumService.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\TomarForum\TomarForumService\obj\Debug\net5.0\TomarForumService.AssemblyInfoInputs.cache
+E:\Projects\TomarForum\TomarForumService\obj\Debug\net5.0\TomarForumService.AssemblyInfo.cs
+E:\Projects\TomarForum\TomarForumService\obj\Debug\net5.0\TomarForumService.csproj.CoreCompileInputs.cache
+E:\Projects\TomarForum\TomarForumService\obj\Debug\net5.0\TomarForumService.csproj.CopyComplete
+E:\Projects\TomarForum\TomarForumService\obj\Debug\net5.0\TomarForumService.dll
+E:\Projects\TomarForum\TomarForumService\obj\Debug\net5.0\ref\TomarForumService.dll
+E:\Projects\TomarForum\TomarForumService\obj\Debug\net5.0\TomarForumService.pdb

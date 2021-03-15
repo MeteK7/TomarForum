@@ -22,11 +22,12 @@ namespace TomarForumUI.Controllers
         private readonly IPostBLL _postBLL;
         private readonly IForumBLL _forumBLL;
         private static UserManager<ApplicationUser> _userManager;
-        public PostController(IPostService postService, IForumService forumService, IPostBLL postBLL, UserManager<ApplicationUser> userManager)
+        public PostController(IPostService postService, IForumService forumService, IPostBLL postBLL, IForumBLL forumBLL, UserManager<ApplicationUser> userManager)
         {
             _postService = postService;
             _forumService = forumService;
             _postBLL=postBLL;
+            _forumBLL = forumBLL;
             _userManager = userManager;
         }
 

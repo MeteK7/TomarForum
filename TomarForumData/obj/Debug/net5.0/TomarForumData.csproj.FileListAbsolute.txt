@@ -12,3 +12,18 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumData\obj\Debug\net5
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumData\obj\Debug\net5.0\ref\TomarForumData.dll
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.pdb
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.genruntimeconfig.cache
+E:\Projects\TomarForum\TomarForumData\bin\Debug\net5.0\TomarForumData.deps.json
+E:\Projects\TomarForum\TomarForumData\bin\Debug\net5.0\TomarForumData.runtimeconfig.json
+E:\Projects\TomarForum\TomarForumData\bin\Debug\net5.0\TomarForumData.runtimeconfig.dev.json
+E:\Projects\TomarForum\TomarForumData\bin\Debug\net5.0\TomarForumData.dll
+E:\Projects\TomarForum\TomarForumData\bin\Debug\net5.0\ref\TomarForumData.dll
+E:\Projects\TomarForum\TomarForumData\bin\Debug\net5.0\TomarForumData.pdb
+E:\Projects\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.csprojAssemblyReference.cache
+E:\Projects\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.AssemblyInfoInputs.cache
+E:\Projects\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.AssemblyInfo.cs
+E:\Projects\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.csproj.CoreCompileInputs.cache
+E:\Projects\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.dll
+E:\Projects\TomarForum\TomarForumData\obj\Debug\net5.0\ref\TomarForumData.dll
+E:\Projects\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.pdb
+E:\Projects\TomarForum\TomarForumData\obj\Debug\net5.0\TomarForumData.genruntimeconfig.cache

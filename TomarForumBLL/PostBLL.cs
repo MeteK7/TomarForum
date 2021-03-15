@@ -70,9 +70,7 @@ namespace TomarForumBLL
             {
                 return new PostEditViewModel
                 {
-                    PostId=post.Id,
-                    PostTitle = post.Title,
-                    PostContent = post.Content
+                    Post=post,
                 };
             }
 
