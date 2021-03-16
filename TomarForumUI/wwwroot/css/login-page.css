@@ -45,12 +45,13 @@
     background-color: rgba(217, 237, 247,0.4);
     /*-webkit-filter: blur(5px);  Blurres all the content including words in the div.*/
     backdrop-filter: blur(5px); /*Blurres only the background*/
-}
-
-.div-login-main:hover {
-    background: rgba(217, 237, 247,0.8);
     transition: background-color 1s linear;
 }
+
+    .div-login-main:hover {
+        background: rgba(217, 237, 247,0.8);
+        transition: background-color 1s linear;
+    }
 
 .p-footer {
     color: darkgray;
