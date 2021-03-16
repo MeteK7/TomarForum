@@ -1,6 +1,46 @@
 ﻿<!--Footer-->
-<footer class="border-top footer text-muted">
+@*<footer class="border-top footer text-muted">
     <div class="container">
         &copy; @DateTime.Now.Year - TomarForum - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+</footer>*@
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 footer-about wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                    <img class="logo-footer" src="assets/img/logo.png" alt="logo-footer" data-at2x="assets/img/logo.png">
+                    <p>
+                        We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
+                    </p>
+                    <p><a href="#">Our Team</a></p>
+                </div>
+                <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Arsuz 31225, Hatay TURKEY</p>
+                    <p><i class="fas fa-phone"></i> Phone: (0090) 549 268 1421</p></li>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:metekaba96@gmail.com">metekaba96@gmail.com</a></p>
+                    <p><i class="fab fa-skype"></i> Skype: live:metekaba</p>
+                </div>
+                <div class="col-md-4 col-lg-3 footer-social wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                    <h3>Follow us</h3>
+                    <p>
+                        <a href="https://www.instagram.com/metekaba/?hl=en"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mete-kaba-89b5221b8/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/MeteK7"><i class="fa fa-github"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 footer-copyright">
+                    <p>&copy; @DateTime.Now.Year - TomarForum - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
