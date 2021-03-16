@@ -65,8 +65,6 @@ html {
 }
 
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
     background-image: url("../../images/theme/abstract-white-shapes-background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
