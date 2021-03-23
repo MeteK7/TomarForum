@@ -2,16 +2,24 @@
     box-sizing: border-box
 }
 
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.div-slides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-}
-
-/* Hide the images by default */
-.div-slides {
-    display: none;
 }
 
 /* Next & previous buttons */
@@ -20,8 +28,8 @@
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
+    margin-top: -22px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -83,6 +91,7 @@
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fade {
@@ -102,5 +111,12 @@
 
     to {
         opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
     }
 }
