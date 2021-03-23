@@ -3,10 +3,10 @@
 <div class="container body-content">
     <div class="row front-page-splash">
         <div class="col-md-6 div-header-home">
-
+            @await Component.InvokeAsync("HomeSlideShow")
             <div class="div-search">
                 <form asp-controller="Search" asp-action="Search" method="post">
-                    <input asp-for="SearchQuery" type="text" class="input-search" placeholder="Search..."/>
+                    <input asp-for="SearchQuery" type="text" class="input-search" placeholder="Search..." />
                 </form>
             </div>
         </div>
