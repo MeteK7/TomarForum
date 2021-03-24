@@ -1,16 +1,15 @@
 ﻿@model TomarForumViewModel.HomeViewModels.HomeIndexViewModel
 
 <div class="container body-content">
-    <div class="row front-page-splash">
-        <div class="col-md-6 div-header-home">
-            @await Component.InvokeAsync("HomeSlideShow")
-            <div class="div-search">
+    <div class="row div-home-slideshow">
+        @await Component.InvokeAsync("HomeSlideShow")
+    </div>
+    <div class="row div-body-middle">
+            <div class="col-md-6 div-home-search">
                 <form asp-controller="Search" asp-action="Search" method="post">
                     <input asp-for="SearchQuery" type="text" class="input-search" placeholder="Search..." />
                 </form>
             </div>
-        </div>
-        <div class="col-md-6"></div>
     </div>
     <div class="row div-content-front">
         <h3 id="latest-posts">Latest Posts</h3>

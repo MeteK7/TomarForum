@@ -10,14 +10,18 @@ body {
 .div-slides {
     display: none
 }
+    .div-slides img {
+        height: 400px;
+        max-width: 100%;
+        vertical-align: middle;
+    }
 
-img {
-    vertical-align: middle;
+.div-home-slideshow {
+
 }
 
 /* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
+.div-slideshow-container {
     position: relative;
     margin: auto;
 }

@@ -12,12 +12,6 @@ a {
   color: #0366d6;
 }
 
-.div-search {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
@@ -111,20 +105,17 @@ body {
     background-color:white;
 }
 
-.front-page-splash{
-    background-image:url("../images/theme/front-splash.png");
-    background-repeat:no-repeat;
-    background-position:right;
+.div-body-middle {
+    font-family: "Playfair";
+    padding: 12px 0 0 0px;
 }
 
-.div-header-home{
-    font-family:"Playfair";
-    padding:12px 0 0 0px;
-    height:360px;
+.div-home-search {
+    width: 100%;
 }
 
-.section-description{
-    color:#EEE;
+.section-description {
+    color: #EEE;
 }
 
 .front-page-heading{
