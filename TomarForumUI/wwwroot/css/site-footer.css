@@ -18,6 +18,10 @@
     margin-bottom: 18px;
 }
 
+.footer-about {
+    text-align: center;
+}
+
 .footer-about p a {
     color: #aaa;
     border-bottom: 1px dashed #666;
