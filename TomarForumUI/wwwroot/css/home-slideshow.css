@@ -26,6 +26,10 @@ body {
     margin: auto;
 }
 
+.div-slideshow-dots {
+    text-align: center;
+}
+
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
