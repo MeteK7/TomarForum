@@ -82,5 +82,16 @@ namespace TomarForumUI.Controllers
 
             return View(post.Value);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(PostEditViewModel postEditViewModel)
+        {
+            var result = await _postBLL.UpdatePost(postEditViewModel, User);
+
+            if (result.Result is null)
+                return RedirectToAction("Edit", new { postEditViewModel.Post.Id });
+
+            return result.Result;
+        }
     }
 }
