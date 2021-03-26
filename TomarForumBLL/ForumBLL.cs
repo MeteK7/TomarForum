@@ -11,7 +11,7 @@ using TomarForumService.Interfaces;
 using TomarForumViewModel.ForumViewModels;
 using TomarForumViewModel.PostViewModels;
 using Microsoft.AspNetCore.Hosting;
-
+using System.Security.Claims;
 
 namespace TomarForumBLL
 {
@@ -117,7 +117,33 @@ namespace TomarForumBLL
 
             await _forumService.Add(forum);
         }
-        
+
+        public ActionResult<ForumEditViewModel> GetForumEditViewModel(int? id, ClaimsPrincipal claimsPrincipal)
+        {
+            if (id is null)
+            {
+                return new BadRequestResult();
+            }
+
+            var forumId = id.Value;
+
+            var forum = _forumService.GetById(forumId);
+
+            if (post is null)
+            {
+                return new NotFoundResult();
+            }
+
+            else
+            {
+                return new ForumEditViewModel
+                {
+                    Forum = forum,
+                };
+            }
+
+        }
+
         public string UploadFile(ForumCreateViewModel forumCreateViewModel)
         {
             string filePath, dataBasePath="";

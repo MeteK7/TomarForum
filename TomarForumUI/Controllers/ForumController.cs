@@ -91,7 +91,7 @@ namespace TomarForumUI.Controllers
 
         public IActionResult Edit()
         {
-            return View();
+            return View(await _forumBLL.);
         }
     }
 }
