@@ -127,9 +127,9 @@ namespace TomarForumBLL
 
             var forumId = id.Value;
 
-            var forum = _forumService.GetById(forumId);
+            var forum =  _forumService.GetById(forumId);
 
-            if (post is null)
+            if (forum is null)
             {
                 return new NotFoundResult();
             }
@@ -138,7 +138,9 @@ namespace TomarForumBLL
             {
                 return new ForumEditViewModel
                 {
-                    Forum = forum,
+                    Id=forum.Id,
+                    Title = forum.Title,
+                    Description=forum.Description,
                 };
             }
 

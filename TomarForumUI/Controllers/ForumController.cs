@@ -89,9 +89,11 @@ namespace TomarForumUI.Controllers
             return RedirectToAction("Index","Forum");
         }
 
-        public IActionResult Edit()
+        public IActionResult Edit(int? id)
         {
-            return View(await _forumBLL.);
+            var forum= _forumBLL.GetForumEditViewModel(id,User);
+
+            return View(forum.Value);
         }
     }
 }

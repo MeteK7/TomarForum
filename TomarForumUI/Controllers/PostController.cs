@@ -76,7 +76,7 @@ namespace TomarForumUI.Controllers
             return RedirectToAction("Index", "Post", new { id = post.Id });
         }
 
-        public IActionResult Edit(int id)
+        public IActionResult Edit(int? id)
         {
             var post = _postBLL.GetPostEditViewModel(id, User);
 
