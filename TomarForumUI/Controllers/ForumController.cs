@@ -88,5 +88,10 @@ namespace TomarForumUI.Controllers
             
             return RedirectToAction("Index","Forum");
         }
+
+        public IActionResult Edit()
+        {
+            return View();
+        }
     }
 }

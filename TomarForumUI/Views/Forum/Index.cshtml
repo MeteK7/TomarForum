@@ -35,6 +35,15 @@
                         <td>
                             @forum.AmountTotalUser User(s)
                         </td>
+                        @if (Context.User.Identity.IsAuthenticated)
+                        {
+                            <td>
+                                <a asp-controller="Forum" asp-action="Edit" asp-route-id="@forum.Id" class="fa fa-edit"></a>
+                            </td>
+                            <td>
+                                <a asp-controller="Forum" asp-action="Delete" asp-route-id="@forum.Id" class="fa fa-trash" style="color:darkred"></a>
+                            </td>
+                        }
                     </tr>
                 }
             </tbody>
