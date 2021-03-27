@@ -606,3 +606,4 @@ E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.genruntimeconf
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Post\Edit.cshtml.g.cs
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Shared\Components\HomeSlideShow\Default.cshtml.g.cs
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Forum\Edit.cshtml.g.cs
+E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Post\AllPostsOfUser.cshtml.g.cs

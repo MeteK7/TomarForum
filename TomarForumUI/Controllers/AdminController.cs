@@ -16,9 +16,10 @@ namespace TomarForumUI.Controllers
         {
             _adminBLL = adminBLL;
         }
-        public async Task<IActionResult> Index()
+
+        public IActionResult Index()
         {
-            return View(await _adminBLL.GetAdminDashboard(User));
+            return View();
         }
     }
 }

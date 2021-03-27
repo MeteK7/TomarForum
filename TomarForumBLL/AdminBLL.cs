@@ -21,13 +21,5 @@ namespace TomarForumBLL
             _userManager = userManager;
             _postService = postService;
         }
-        public async Task<AdminIndexViewModel> GetAdminDashboard(ClaimsPrincipal claimsPrincipal)
-        {
-            var applicationUser = await _userManager.GetUserAsync(claimsPrincipal);
-            return new AdminIndexViewModel
-            {
-                Posts = _postService.GetPostsByUser(applicationUser)
-            };
-        }
     }
 }

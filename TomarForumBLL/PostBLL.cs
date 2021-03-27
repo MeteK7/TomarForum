@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using TomarForumBLL.Interfaces;
 using TomarForumData.EntityModels;
 using TomarForumService.Interfaces;
+using TomarForumViewModel.AdminViewModels;
 using TomarForumViewModel.PostViewModels;
 using TomarForumViewModel.ReplyViewModels;
 
@@ -89,6 +90,16 @@ namespace TomarForumBLL
             return new PostEditViewModel
             {
                 Post = await _postService.Update(post)
+            };
+        }
+
+        public async Task<PostUserViewModel> GetAdminPosts(ClaimsPrincipal claimsPrincipal)
+        {
+            var applicationUser = await _userManager.GetUserAsync(claimsPrincipal);
+
+            return new PostUserViewModel
+            {
+                Posts = _postService.GetPostsByUser(applicationUser)
             };
         }
 

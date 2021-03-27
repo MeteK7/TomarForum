@@ -39,6 +39,11 @@ namespace TomarForumUI.Controllers
             return View(post.Value);
         }
 
+        public async Task<IActionResult> AllPostsOfUser()
+        {
+            return View(await _postBLL.GetAdminPosts(User));
+        }
+
         public IActionResult Create()
         {
             return View(new NewPostViewModel());

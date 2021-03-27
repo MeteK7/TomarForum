@@ -10,6 +10,6 @@ namespace TomarForumBLL.Interfaces
 {
     public interface IAdminBLL
     {
-        Task<AdminIndexViewModel> GetAdminDashboard(ClaimsPrincipal claimsPrincipal);
+        
     }
 }
