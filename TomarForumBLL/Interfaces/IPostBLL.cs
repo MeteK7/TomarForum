@@ -14,7 +14,7 @@ namespace TomarForumBLL.Interfaces
     {
         ActionResult<PostIndexViewModel> GetPostIndexViewModel(int? id, ClaimsPrincipal claimsPrincipal);
         ActionResult<PostEditViewModel> GetPostEditViewModel(int? id, ClaimsPrincipal claimsPrincipal);
-        //ActionResult<PostEditViewModel> UpdatePost(PostEditViewModel postEditViewModel, ClaimsPrincipal claimsPrincipal);
+        Task<ActionResult<PostEditViewModel>> UpdatePost(PostEditViewModel editViewModel, ClaimsPrincipal claimsPrincipal);
         Post BuildPost(NewPostViewModel newPostViewModel, ApplicationUser user);
     }
 }

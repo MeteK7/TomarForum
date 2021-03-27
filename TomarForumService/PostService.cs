@@ -53,9 +53,9 @@ namespace TomarForumService
                 .Where(post => post.User == applicationUser);
         }
 
-        public Post GetById(int id)
+        public Post GetById(int postId)
         {
-            return _applicationDbContext.Posts.Where(post => post.Id == id)
+            return _applicationDbContext.Posts.Where(post => post.Id == postId)
                 .Include(post => post.User)
                 .Include(post => post.Replies)
                     .ThenInclude(reply=>reply.User)

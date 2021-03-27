@@ -9,7 +9,7 @@ namespace TomarForumService.Interfaces
 {
     public interface IPostService
     {
-        Post GetById(int id);
+        Post GetById(int postId);
         Task Add(Post post);
         Task Delete(int id);
         Task EditPostContent(int id, string newContent);

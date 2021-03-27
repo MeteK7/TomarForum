@@ -76,6 +76,22 @@ namespace TomarForumBLL
 
         }
 
+        public async Task<ActionResult<PostEditViewModel>> UpdatePost(PostEditViewModel postEditViewModel, ClaimsPrincipal claimsPrincipal)
+        {
+            var post = _postService.GetById(postEditViewModel.Post.Id);
+
+            if (post == null)
+                return new NotFoundResult();
+
+            post.Title = postEditViewModel.Post.Title;
+            post.Content = postEditViewModel.Post.Content;
+
+            return new PostEditViewModel
+            {
+                Post = await _postService.Update(post)
+            };
+        }
+
         public Post BuildPost(NewPostViewModel newPostViewModel, ApplicationUser user)
         {
             var forum = _forumService.GetById(newPostViewModel.ForumId);
