@@ -12,6 +12,7 @@ namespace TomarForumService.Interfaces
         Post GetById(int postId);
         Task Add(Post post);
         Task Delete(int id);
+        Task<Post> Update(Post post);
         Task EditPostContent(int id, string newContent);
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetPostsByUser(ApplicationUser applicationUser);

@@ -28,6 +28,13 @@ namespace TomarForumService
             throw new NotImplementedException();
         }
 
+        public async Task<Post> Update(Post post)
+        {
+            _applicationDbContext.Update(post);
+            await _applicationDbContext.SaveChangesAsync();
+            return post;
+        }
+
         public Task EditPostContent(int id, string newContent)
         {
             throw new NotImplementedException();
