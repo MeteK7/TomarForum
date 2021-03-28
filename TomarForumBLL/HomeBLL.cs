@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using TomarForumBLL.Interfaces;
@@ -43,6 +46,51 @@ namespace TomarForumBLL
                 LatestPosts = posts,
                 SearchQuery = ""
             };
+        }
+
+        public string SendEmail(HomeContactViewModel homeContactViewModel)
+        {
+            string ownerEmail = "fake0941@gmail.com";
+            string guestFirstName = homeContactViewModel.GuestFirstName;
+            string guestLastName = homeContactViewModel.GuestLastName;
+            string guestPhoneNumber = homeContactViewModel.GuestPhoneNumber;
+            string guestEmail = homeContactViewModel.GuestEmailAddress;
+            string emailSubject = homeContactViewModel.Subject;
+            string emailBody = homeContactViewModel.Body;
+            string emailFullBody = "Guest's\n\nEmail: " + guestEmail + "\nName: " + guestFirstName + "\nSurname: " + guestLastName + "\nPhone Number: " + guestPhoneNumber + "\n\n\n" + emailBody;
+            string deliveryStatus;
+
+            using (MailMessage mailMessage = new MailMessage())
+            {
+                mailMessage.To.Add(ownerEmail);
+                mailMessage.From = new MailAddress(ownerEmail);
+                mailMessage.Subject = emailSubject;
+                mailMessage.Body = emailFullBody;
+                mailMessage.IsBodyHtml = false;
+
+                if (homeContactViewModel.Attachment != null)
+                {
+                    foreach (IFormFile attachedFile in homeContactViewModel.Attachment)
+                    {
+                        string fileName = Path.GetFileName(attachedFile.FileName);
+                        mailMessage.Attachments.Add(new Attachment(attachedFile.OpenReadStream(), fileName));
+                    }
+                }
+
+                using (SmtpClient smtpClient = new SmtpClient())
+                {
+                    smtpClient.Port = 587;
+                    smtpClient.Host = "smtp.gmail.com";
+                    smtpClient.EnableSsl = true;
+                    smtpClient.UseDefaultCredentials = true;
+                    smtpClient.Credentials = new System.Net.NetworkCredential("fake0941@gmail.com", "aszx323+776");
+                    smtpClient.Send(mailMessage);
+                }
+            }
+
+            deliveryStatus = "Mail has been sent successfully.";
+
+            return deliveryStatus;
         }
 
         private ForumListViewModel GetForumListingForPost(Post post)

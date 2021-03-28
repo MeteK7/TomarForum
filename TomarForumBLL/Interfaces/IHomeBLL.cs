@@ -11,5 +11,6 @@ namespace TomarForumBLL.Interfaces
     public interface IHomeBLL
     {
         ActionResult<HomeIndexViewModel> GetHomeIndexViewModel();
+        string SendEmail(HomeContactViewModel homeContactViewModel);
     }
 }
