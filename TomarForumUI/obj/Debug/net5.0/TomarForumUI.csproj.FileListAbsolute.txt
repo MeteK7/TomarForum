@@ -579,7 +579,6 @@ E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Home\Privacy.cs
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Post\Create.cshtml.g.cs
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Post\Index.cshtml.g.cs
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Profile\Detail.cshtml.g.cs
-E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Profile\Edit.cshtml.g.cs
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Profile\Index.cshtml.g.cs
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Search\Result.cshtml.g.cs
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Shared\Components\AdminFooter\Default.cshtml.g.cs
@@ -605,5 +604,6 @@ E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.pdb
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.genruntimeconfig.cache
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Post\Edit.cshtml.g.cs
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Shared\Components\HomeSlideShow\Default.cshtml.g.cs
+E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Admin\AllPostsOfUser.cshtml.g.cs
+E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Admin\EditUserProfile.cshtml.g.cs
 E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Forum\Edit.cshtml.g.cs
-E:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Post\AllPostsOfUser.cshtml.g.cs

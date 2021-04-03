@@ -40,11 +40,6 @@ namespace TomarForumUI.Controllers
             return View(profile);
         }
 
-        public async Task<IActionResult> Edit()
-        {
-            return View(await _profileBLL.GetProfileEditViewModel(User));
-        }
-
         //[HttpPost]
         //public async Task<IActionResult> UploadProfileImage(IFormFile formFile)
         //{

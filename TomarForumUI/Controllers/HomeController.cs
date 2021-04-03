@@ -41,7 +41,7 @@ namespace TomarForumUI.Controllers
         [HttpPost]
         public IActionResult Contact(HomeContactViewModel homeContactViewModel)
         {
-            ViewBag.Message = _homeBLL.SendEmail(homeContactViewModel);
+            ViewBag.Message = _homeBLL.SendEmail(homeContactViewModel);//IMPROVE THIS METHOD AND MAKE IT ASYNCHRONOUS BECAUSE THE MESSAGE IS NOT APPEARING.
             return View();
         }
 
