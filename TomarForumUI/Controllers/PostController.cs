@@ -39,9 +39,11 @@ namespace TomarForumUI.Controllers
             return View(post.Value);
         }
 
-        public IActionResult Create()
+        public IActionResult Create(int id)
         {
-            return View(new NewPostViewModel());
+            var forum = _forumBLL.GetForumById(id);
+
+            return View(forum);
         }
 
         [HttpPost]

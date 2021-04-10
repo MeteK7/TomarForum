@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TomarForumData.EntityModels;
 using TomarForumViewModel.ForumViewModels;
+using TomarForumViewModel.PostViewModels;
 
 namespace TomarForumBLL.Interfaces
 {
@@ -15,6 +16,7 @@ namespace TomarForumBLL.Interfaces
         ForumUser GetForumUserNewAmount(ApplicationUser user, Forum forum);
         ForumIndexViewModel GetAllForums();
         ActionResult<ForumEditViewModel> GetForumEditViewModel(int? id, ClaimsPrincipal claimsPrincipal);
+        public NewPostViewModel GetForumById(int id);
         ForumTopicViewModel GetTopic(int id, string searchQuery);
         ForumListViewModel BuildForumListing(Post post);
         ForumListViewModel BuildForumListing(Forum forum);

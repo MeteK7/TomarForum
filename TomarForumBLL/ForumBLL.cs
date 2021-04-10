@@ -15,7 +15,7 @@ using System.Security.Claims;
 
 namespace TomarForumBLL
 {
-    public class ForumBLL: IForumBLL
+    public class ForumBLL : IForumBLL
     {
         private readonly IForumService _forumService;
         private readonly IPostService _postService;
@@ -55,6 +55,19 @@ namespace TomarForumBLL
             {
                 ForumList = forums
             };
+            return model;
+        }
+
+        public NewPostViewModel GetForumById(int id)
+        {
+            var forum = _forumService.GetById(id);
+
+            var model = new NewPostViewModel
+            {
+                ForumTitle=forum.Title,
+                ForumImageUrl=forum.ImageUrl
+            };
+
             return model;
         }
 
