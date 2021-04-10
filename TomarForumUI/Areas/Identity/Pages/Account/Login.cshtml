@@ -28,7 +28,7 @@
     <div class="div-login-main">
         <div class="div-login-inside">
             <section>
-                <form id="account" method="post">
+                <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
                     <h4>Use a local account to log in.</h4>
                     <hr />
                     <div asp-validation-summary="All" class="text-danger"></div>

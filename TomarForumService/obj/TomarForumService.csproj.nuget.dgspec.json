@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\TomarForum\\TomarForumService\\TomarForumService.csproj": {}
+    "F:\\Projects\\TomarForum\\TomarForumService\\TomarForumService.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj": {
+    "F:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj",
+        "projectUniqueName": "F:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj",
         "projectName": "TomarForumData",
-        "projectPath": "E:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj",
-        "packagesPath": "C:\\Users\\LAB\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\TomarForum\\TomarForumData\\obj\\",
+        "projectPath": "F:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\TomarForum\\TomarForumData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LAB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -78,20 +78,20 @@
         }
       }
     },
-    "E:\\Projects\\TomarForum\\TomarForumService\\TomarForumService.csproj": {
+    "F:\\Projects\\TomarForum\\TomarForumService\\TomarForumService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\TomarForum\\TomarForumService\\TomarForumService.csproj",
+        "projectUniqueName": "F:\\Projects\\TomarForum\\TomarForumService\\TomarForumService.csproj",
         "projectName": "TomarForumService",
-        "projectPath": "E:\\Projects\\TomarForum\\TomarForumService\\TomarForumService.csproj",
-        "packagesPath": "C:\\Users\\LAB\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\TomarForum\\TomarForumService\\obj\\",
+        "projectPath": "F:\\Projects\\TomarForum\\TomarForumService\\TomarForumService.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\TomarForum\\TomarForumService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LAB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -106,8 +106,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj": {
-                "projectPath": "E:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj"
+              "F:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj": {
+                "projectPath": "F:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj"
               }
             }
           }
