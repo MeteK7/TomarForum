@@ -64,6 +64,7 @@ namespace TomarForumBLL
 
             var model = new NewPostViewModel
             {
+                ForumId=forum.Id,
                 ForumTitle=forum.Title,
                 ForumImageUrl=forum.ImageUrl
             };

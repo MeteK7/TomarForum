@@ -47,6 +47,17 @@ namespace TomarForumBLL
                 SearchQuery = ""
             };
         }
+        private ForumListViewModel GetForumListingForPost(Post post)
+        {
+            var forum = post.Forum;
+
+            return new ForumListViewModel
+            {
+                Id = forum.Id,
+                Title = forum.Title,
+                ImageUrl = forum.ImageUrl
+            };
+        }
 
         public string SendEmail(HomeContactViewModel homeContactViewModel)
         {
@@ -93,16 +104,6 @@ namespace TomarForumBLL
             return deliveryStatus;
         }
 
-        private ForumListViewModel GetForumListingForPost(Post post)
-        {
-            var forum = post.Forum;
 
-            return new ForumListViewModel
-            {
-                Id = forum.Id,
-                Title = forum.Title,
-                ImageUrl = forum.ImageUrl
-            };
-        }
     }
 }
