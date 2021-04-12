@@ -28,7 +28,7 @@
             @if (!User.Identity.IsAuthenticated)
             {
                 <p>
-                    <span><a asp-controller="Register" asp-action="Register">Register</a> as a member to create wonderful posts!</span>
+                    <span><a asp-area="Identity" asp-page="/Account/Register">Register</a> as a member to create wonderful posts!</span>
                 </p>
             }
         </div>

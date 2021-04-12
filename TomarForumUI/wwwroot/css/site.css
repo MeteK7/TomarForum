@@ -114,6 +114,12 @@ body {
     width: 100%;
 }
 
+.div-access-deny {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 .section-description {
     color: #EEE;
 }

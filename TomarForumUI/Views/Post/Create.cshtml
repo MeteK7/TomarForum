@@ -10,7 +10,7 @@
     </div>
     @if (!Context.User.Identity.IsAuthenticated)
     {
-        <div class="row">
+        <div class="div-access-deny">
             <div id="forum-index-content">
                 <div class="register">You must be a <a asp-area="Identity" asp-page="/Account/Register">registered member</a> to create a new post.</div>
             </div>
