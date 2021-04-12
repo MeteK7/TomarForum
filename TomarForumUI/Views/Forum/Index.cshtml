@@ -4,7 +4,7 @@
     <div class="div-header">
         <div class="div-heading">
             <span>Forums</span>
-            @if (Context.User.Identity.IsAuthenticated)
+            @if (Context.User.IsInRole("Admin"))
             {
                 <span id="span-btn">
                     <a asp-controller="Forum" asp-action="Create" class="btn btn-new">Create Forum</a>
@@ -35,7 +35,7 @@
                         <td>
                             @forum.AmountTotalUser User(s)
                         </td>
-                        @if (Context.User.Identity.IsAuthenticated)
+                        @if (Context.User.IsInRole("Admin"))
                         {
                             <td>
                                 <a asp-controller="Forum" asp-action="Edit" asp-route-id="@forum.Id" class="fa fa-edit"></a>

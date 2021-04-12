@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -14,6 +15,7 @@ using TomarForumViewModel.PostViewModels;
 
 namespace TomarForumUI.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ForumController : Controller
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
@@ -28,6 +30,7 @@ namespace TomarForumUI.Controllers
             _forumBLL = forumBLL;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             var allForums = _forumBLL.GetAllForums();
@@ -35,6 +38,7 @@ namespace TomarForumUI.Controllers
             return View(allForums);
         }
 
+        [AllowAnonymous]
         public IActionResult Topic(int id, string searchQuery)/*FIX THE CODE ERROR BELOW!*/
         {
             var forum = _forumService.GetById(id);
@@ -68,6 +72,7 @@ namespace TomarForumUI.Controllers
             //return View(topic);
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult Search(int id, string searchQuery)
         {
@@ -88,6 +93,7 @@ namespace TomarForumUI.Controllers
             
             return RedirectToAction("Index","Forum");
         }
+
 
         public IActionResult Edit(int? id)
         {
