@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj": {}
+    "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumData\\TomarForumData.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj": {
+    "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumData\\TomarForumData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj",
+        "projectUniqueName": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumData\\TomarForumData.csproj",
         "projectName": "TomarForumData",
-        "projectPath": "F:\\Projects\\TomarForum\\TomarForumData\\TomarForumData.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\TomarForum\\TomarForumData\\obj\\",
+        "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumData\\TomarForumData.csproj",
+        "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
+        "outputPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MeteK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

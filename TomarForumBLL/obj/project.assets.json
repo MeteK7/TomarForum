@@ -6986,23 +6986,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\MeteK\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\TomarForum\\TomarForumBLL\\TomarForumBLL.csproj",
+      "projectUniqueName": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumBLL\\TomarForumBLL.csproj",
       "projectName": "TomarForumBLL",
-      "projectPath": "F:\\Projects\\TomarForum\\TomarForumBLL\\TomarForumBLL.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\TomarForum\\TomarForumBLL\\obj\\",
+      "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumBLL\\TomarForumBLL.csproj",
+      "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
+      "outputPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumBLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MeteK\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7017,11 +7017,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\Projects\\TomarForum\\TomarForumService\\TomarForumService.csproj": {
-              "projectPath": "F:\\Projects\\TomarForum\\TomarForumService\\TomarForumService.csproj"
+            "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumService\\TomarForumService.csproj": {
+              "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumService\\TomarForumService.csproj"
             },
-            "F:\\Projects\\TomarForum\\TomarForumViewModel\\TomarForumViewModel.csproj": {
-              "projectPath": "F:\\Projects\\TomarForum\\TomarForumViewModel\\TomarForumViewModel.csproj"
+            "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumViewModel\\TomarForumViewModel.csproj": {
+              "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\TomarForum\\TomarForumViewModel\\TomarForumViewModel.csproj"
             }
           }
         }
@@ -7064,7 +7064,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   },

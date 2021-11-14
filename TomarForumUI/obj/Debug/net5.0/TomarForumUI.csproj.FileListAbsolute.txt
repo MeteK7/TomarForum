@@ -197,7 +197,6 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\r
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\TomarForumUI.pdb
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\TomarForumUI.genruntimeconfig.cache
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForum\obj\Debug\net5.0\Razor\Views\Profile\Edit.cshtml.g.cs
-C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.csprojAssemblyReference.cache
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.AssemblyInfoInputs.cache
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.AssemblyInfo.cs
@@ -375,7 +374,6 @@ C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Post\Create.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Post\Index.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Profile\Detail.cshtml.g.cs
-C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Profile\Edit.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Profile\Index.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Search\Result.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Shared\Components\AdminFooter\Default.cshtml.g.cs
@@ -814,3 +812,9 @@ F:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.dll
 F:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\ref\TomarForumUI.dll
 F:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.pdb
 F:\Projects\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.genruntimeconfig.cache
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\TomarForumUI.csproj.AssemblyReference.cache
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Admin\AllPostsOfUser.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Admin\EditUserProfile.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Forum\Edit.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Post\Edit.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\TomarForum\TomarForumUI\obj\Debug\net5.0\Razor\Views\Shared\Components\HomeSlideShow\Default.cshtml.g.cs
